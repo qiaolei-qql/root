@@ -1,0 +1,89 @@
+TIME:=$(shell date +'%Y%m%d')
+OS:=$(shell uname -s)
+ARCH:=$(shell uname -m)
+BIT32:=i686
+BIT64:=x86_64
+
+# source directions
+COMMON_DIR=common/
+DISPATCH_DIR=dispatch/
+OTHER_DIR=disconf/
+
+OBJ_DIR=./lib/
+
+# lib directions
+BOOST_DIR = /usr/local/include/boost-1_51/
+BOOST_THREAD_LIB = /usr/local/lib/libboost_thread.a
+BOOST_DATETIME_LIB = /usr/local/lib/libboost_date_time.a
+
+
+LIB_DIR = /usr/lib
+LOCAL_LIB_DIR = /usr/local/lib
+
+ZOOKEEPER_DIR =	/usr/local/include/c-client-src/
+ZOOKEEPER_LIB = /usr/local/lib/libzookeeper_mt.a
+
+ZK_HELPER_DIR = ../zookeeper
+ZK_HELPER_LIB = ../zookeeper/lib/libzkhelper_x86_64_Linux.a
+
+CON_HASH_DIR = ../
+CON_HASH_LIB = ../libconhash/bin/libconhash.a
+
+LOG4CPLUS_DIR = /usr/local/include/log4cplus
+LOG4CPLUS_LIB = /usr/local/lib/liblog4cplus.a
+
+
+ifeq ($(ARCH),$(BIT64))
+    LIB_DIR = /usr/lib64
+    LOCAL_LIB_DIR = /usr/local/lib64
+endif
+
+
+CC=gcc
+INCLUDE=-I/usr/include -I/usr/local/include -I./ -I$(BOOST_DIR) -I$(CON_HASH_DIR) -I$(ZOOKEEPER_DIR) -I$(ZK_HELPER_DIR) -I$(LOG4CPLUS_DIR)
+LOG=-DLOGGER
+
+CFLAGS:=-Wall -g -O2 $(INCLUDE) $(LOG) -D_DEBUG
+
+CPPFLAGS:=$(CFLAGS) 
+
+LIB=-lstdc++ -L${LIB_DIR} -L${LOCAL_LIB_DIR} -L./lib/ -lrt -lcrypto -lpthread -lz -lbz2 -lm -lc -L${LIBS_PATH}
+
+
+COMMON_SRC:=$(wildcard $(COMMON_DIR)*.cpp)
+DISPATCH_SRC:=$(wildcard $(DISPATCH_DIR)*.cpp)
+OTHER_SRC:=$(wildcard $(OTHER_DIR)*.cpp)
+
+COMMON_OBJ:=$(patsubst %.cpp,%.o,$(COMMON_SRC))
+DISPATCH_OBJ:=$(patsubst %.cpp,%.o,$(DISPATCH_SRC))
+OTHER_OBJ:=$(patsubst %.cpp,%.o,$(OTHER_SRC))
+
+COMMON_DEP:=$(patsubst %.cpp,%.d,$(COMMON_SRC))
+DISPATCH_DEP:=$(patsubst %.cpp,%.d,$(DISPATCH_SRC))
+OTHER_DEP:=$(patsubst %.cpp,%.d,$(OTHER_SRC))
+
+
+CPPFLAGS += -MD
+
+LIB_NAME=$(OBJ_DIR)libloadbalance_${ARCH}_${OS}.a
+all: $(LIB_NAME)
+
+
+$(LIB_NAME): $(COMMON_OBJ) $(DISPATCH_OBJ) $(OTHER_OBJ) ${LOG4CPLUS_LIB} $(ZK_HELPER_LIB) $(ZOOKEEPER_LIB) $(BOOST_THREAD_LIB) $(BOOST_DATETIME_LIB)
+	ar -r $@ $^
+	ranlib $(LIB_NAME)
+clean:
+	rm $(COMMON_DIR)*.o   $(DISPATCH_DIR)*.o  $(OTHER_DIR)*.o  -fv
+	rm $(COMMON_DIR)*.d   $(DISPATCH_DIR)*.d  $(OTHER_DIR)*.d  -fv
+	rm $(COMMON_DIR)*.gcov $(DISPATCH_DIR)*.gcov  $(OTHER_DIR)*.gcov  -fv
+	rm $(COMMON_DIR)*.gcda $(DISPATCH_DIR)*.gcda  $(OTHER_DIR)*.gcda  -fv
+	rm $(COMMON_DIR)*.gcno $(DISPATCH_DIR)*.gcno  $(OTHER_DIR)*.gcno  -fv
+	rm $(OBJ_NAME)
+
+-include $(COMMON_DEP) $(DISPATCH_DEP) $(OTHER_DEP)
+
+
+rebuild: clean all
+love: clean all
+
+
