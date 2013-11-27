@@ -1,0 +1,1644 @@
+2013-10-28 20:52:18:003 [140542432061184] src/SDRedisServerPool.cpp(42)[WARN] - redis pool conn num :1
+2013-10-28 20:52:18:003 [140542432061184] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7fd288000c10)
+2013-10-28 20:52:18:003 [140542432061184] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd288000d20)
+2013-10-28 20:52:18:003 [140542432061184] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-28 20:52:18:003 [140542442551040] src/SDRedisServerPool.cpp(42)[WARN] - redis pool conn num :2
+2013-10-28 20:52:18:003 [140542442551040] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7fd290000b90)
+2013-10-28 20:52:18:003 [140542442551040] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd290000ca0)
+2013-10-28 20:52:18:003 [140542442551040] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-28 20:52:18:004 [140542432061184] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd288000c10 ok.
+2013-10-28 20:52:18:004 [140542442551040] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd290000b90 ok.
+2013-10-28 20:52:18:004 [140542432061184] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-28 20:52:18:004 [140542432061184] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd288000d20)
+2013-10-28 20:52:18:004 [140542442551040] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-28 20:52:18:004 [140542442551040] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd290000ca0)
+2013-10-28 20:52:18:004 [140542442551040] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd290000b90 is valid.
+2013-10-28 20:52:18:004 [140542442551040] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd290000b90 key:key
+2013-10-28 20:52:18:004 [140542432061184] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd288000c10 is valid.
+2013-10-28 20:52:18:004 [140542432061184] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd288000c10 key:key
+2013-10-28 20:52:18:004 [140542442551040] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd290000b90 is valid.
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd288000c10 is valid.
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-28 20:52:18:005 [140542432061184] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-28 20:52:18:005 [140542442551040] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 14:30:05:817 [140381004441344] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :1
+2013-10-29 14:30:05:818 [140381004441344] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7facf0000c10)
+2013-10-29 14:30:05:818 [140381004441344] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7facf0000d00)
+2013-10-29 14:30:05:818 [140381004441344] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 14:30:05:818 [140380993951488] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :2
+2013-10-29 14:30:05:818 [140380993951488] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7facf8000b90)
+2013-10-29 14:30:05:818 [140380993951488] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7facf8000c80)
+2013-10-29 14:30:05:818 [140380993951488] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 14:30:05:839 [140381004441344] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf0000c10 ok.
+2013-10-29 14:30:05:840 [140380993951488] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf8000b90 ok.
+2013-10-29 14:30:05:840 [140381004441344] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 14:30:05:840 [140381004441344] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7facf0000d00)
+2013-10-29 14:30:05:840 [140381004441344] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf0000c10 is valid.
+2013-10-29 14:30:05:840 [140381004441344] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf0000c10 key:key
+2013-10-29 14:30:05:840 [140380993951488] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 14:30:05:840 [140380993951488] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7facf8000c80)
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf8000b90 is valid.
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf8000b90 key:key
+2013-10-29 14:30:05:840 [140381004441344] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-29 14:30:05:841 [140381004441344] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-29 14:30:05:841 [140381004441344] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf0000c10 is valid.
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7facf8000b90 is valid.
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 14:30:05:841 [140381004441344] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 14:30:05:841 [140381004441344] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 14:30:05:841 [140380993951488] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 14:30:05:842 [140380993951488] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 14:30:05:842 [140380993951488] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 14:30:05:842 [140381004441344] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 14:30:05:842 [140381004441344] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 14:30:05:842 [140381004441344] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 14:30:18:711 [140146754590464] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :1
+2013-10-29 14:30:18:711 [140146754590464] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f7668000c10)
+2013-10-29 14:30:18:712 [140146754590464] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f7668000d00)
+2013-10-29 14:30:18:712 [140146754590464] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 14:30:18:712 [140146765080320] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :2
+2013-10-29 14:30:18:712 [140146765080320] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f7670000b90)
+2013-10-29 14:30:18:712 [140146765080320] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f7670000c80)
+2013-10-29 14:30:18:712 [140146765080320] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 14:30:18:712 [140146754590464] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7668000c10 ok.
+2013-10-29 14:30:18:713 [140146765080320] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7670000b90 ok.
+2013-10-29 14:30:18:713 [140146754590464] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 14:30:18:713 [140146765080320] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 14:30:18:713 [140146765080320] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f7670000c80)
+2013-10-29 14:30:18:714 [140146765080320] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7670000b90 is valid.
+2013-10-29 14:30:18:714 [140146765080320] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7670000b90 key:key
+2013-10-29 14:30:18:713 [140146754590464] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f7668000d00)
+2013-10-29 14:30:18:714 [140146754590464] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7668000c10 is valid.
+2013-10-29 14:30:18:714 [140146754590464] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7668000c10 key:key
+2013-10-29 14:30:18:714 [140146765080320] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-29 14:30:18:714 [140146765080320] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-29 14:30:18:714 [140146765080320] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7670000b90 is valid.
+2013-10-29 14:30:18:715 [140146765080320] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 14:30:18:715 [140146765080320] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 14:30:18:715 [140146765080320] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 14:30:18:715 [140146765080320] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 14:30:18:715 [140146765080320] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 14:30:18:714 [140146754590464] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-29 14:30:18:715 [140146754590464] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-29 14:30:18:715 [140146754590464] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f7668000c10 is valid.
+2013-10-29 14:30:18:716 [140146754590464] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 14:30:18:716 [140146754590464] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 14:30:18:716 [140146754590464] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 14:30:18:716 [140146754590464] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 14:30:18:716 [140146754590464] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 15:36:35:352 [140227418801920] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :1
+2013-10-29 15:36:35:353 [140227418801920] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f8930000c10)
+2013-10-29 15:36:35:353 [140227418801920] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f893d7c3dc0)
+2013-10-29 15:36:35:353 [140227418801920] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 15:36:35:353 [140227408312064] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :2
+2013-10-29 15:36:35:353 [140227408312064] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f8938000b90)
+2013-10-29 15:36:35:353 [140227408312064] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f893cdc2dc0)
+2013-10-29 15:36:35:353 [140227408312064] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 15:36:35:357 [140227408312064] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8938000b90 ok.
+2013-10-29 15:36:35:358 [140227418801920] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8930000c10 ok.
+2013-10-29 15:36:35:359 [140227408312064] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 15:36:35:359 [140227408312064] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f893cdc2dc0)
+2013-10-29 15:36:35:359 [140227408312064] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8938000b90 is valid.
+2013-10-29 15:36:35:359 [140227408312064] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8938000b90 key:key
+2013-10-29 15:36:35:359 [140227418801920] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 15:36:35:359 [140227418801920] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f893d7c3dc0)
+2013-10-29 15:36:35:359 [140227418801920] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8930000c10 is valid.
+2013-10-29 15:36:35:359 [140227418801920] src/SDRedisStringHandler.cpp(46)[DEBUG] - set id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8930000c10 key:key
+2013-10-29 15:36:35:360 [140227418801920] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-29 15:36:35:360 [140227418801920] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-29 15:36:35:360 [140227418801920] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8930000c10 is valid.
+2013-10-29 15:36:35:360 [140227408312064] src/SDRedisServer.cpp(472)[DEBUG] - redisCommand SETEX key succ, reply type:5
+2013-10-29 15:36:35:360 [140227408312064] src/SDRedisServer.cpp(482)[DEBUG] - SETEX key:key reply type:5 value len:3
+2013-10-29 15:36:35:360 [140227408312064] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f8938000b90 is valid.
+2013-10-29 15:36:35:360 [140227408312064] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 15:36:35:360 [140227408312064] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 15:36:35:360 [140227418801920] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 15:36:35:360 [140227418801920] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 15:36:35:361 [140227418801920] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 15:36:35:361 [140227418801920] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 15:36:35:361 [140227418801920] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 15:36:35:361 [140227408312064] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 15:36:35:361 [140227408312064] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 15:36:35:361 [140227408312064] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value length:3
+2013-10-29 15:57:33:856 [140191369987840] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :1
+2013-10-29 15:57:33:856 [140191369987840] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f80d4000c10)
+2013-10-29 15:57:33:856 [140191369987840] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f80d8cefdc0)
+2013-10-29 15:57:33:856 [140191369987840] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 15:57:33:856 [140191380477696] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :2
+2013-10-29 15:57:33:856 [140191380477696] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f80cc000b90)
+2013-10-29 15:57:33:856 [140191380477696] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f80d96f0dc0)
+2013-10-29 15:57:33:856 [140191380477696] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 15:57:33:857 [140191369987840] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f80d4000c10 ok.
+2013-10-29 15:57:33:857 [140191380477696] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f80cc000b90 ok.
+2013-10-29 15:57:33:857 [140191369987840] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 15:57:33:857 [140191369987840] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f80d8cefdc0)
+2013-10-29 15:57:33:858 [140191369987840] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f80d4000c10 is valid.
+2013-10-29 15:57:33:858 [140191380477696] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 15:57:33:858 [140191380477696] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f80d96f0dc0)
+2013-10-29 15:57:33:858 [140191380477696] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f80cc000b90 is valid.
+2013-10-29 15:57:33:858 [140191369987840] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 15:57:33:859 [140191369987840] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 15:57:33:859 [140191380477696] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 15:57:33:859 [140191380477696] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 15:57:33:859 [140191369987840] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 15:57:33:859 [140191369987840] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 15:57:33:859 [140191369987840] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :val
+2013-10-29 15:57:33:859 [140191380477696] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 15:57:33:860 [140191380477696] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 15:57:33:860 [140191380477696] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :val
+2013-10-29 15:59:01:095 [140689623938816] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :1
+2013-10-29 15:59:01:096 [140689623938816] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7ff4d4000c10)
+2013-10-29 15:59:01:096 [140689623938816] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7ff4db0eedc0)
+2013-10-29 15:59:01:096 [140689623938816] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 15:59:01:096 [140689613448960] src/SDRedisServerPool.cpp(40)[WARN] - redis pool conn num :2
+2013-10-29 15:59:01:096 [140689613448960] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7ff4cc000b90)
+2013-10-29 15:59:01:096 [140689613448960] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7ff4da6eddc0)
+2013-10-29 15:59:01:096 [140689613448960] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-10-29 15:59:01:096 [140689623938816] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7ff4d4000c10 ok.
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7ff4db0eedc0)
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7ff4d4000c10 is valid.
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 15:59:01:097 [140689613448960] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7ff4cc000b90 ok.
+2013-10-29 15:59:01:097 [140689623938816] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :valvalue.length:3
+2013-10-29 15:59:01:098 [140689613448960] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-10-29 15:59:01:098 [140689613448960] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7ff4da6eddc0)
+2013-10-29 15:59:01:098 [140689613448960] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7ff4cc000b90 is valid.
+2013-10-29 15:59:01:099 [140689613448960] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:1
+2013-10-29 15:59:01:099 [140689613448960] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:1 value len:3
+2013-10-29 15:59:01:099 [140689613448960] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-10-29 15:59:01:099 [140689613448960] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 1
+2013-10-29 15:59:01:099 [140689613448960] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :valvalue.length:3
+2013-11-05 10:01:54:075 [140559564400384] src/SDRedisServerPoolSingleton.cpp(40)[WARN] - redis pool conn num :1
+2013-11-05 10:01:54:075 [140559564400384] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7fd684000c20)
+2013-11-05 10:01:54:075 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:54:075 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:54:075 [140559574890240] src/SDRedisServerPoolSingleton.cpp(40)[WARN] - redis pool conn num :2
+2013-11-05 10:01:54:075 [140559574890240] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7fd68c000ba0)
+2013-11-05 10:01:54:075 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:54:075 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:54:093 [140559574890240] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 ok.
+2013-11-05 10:01:54:093 [140559564400384] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 ok.
+2013-11-05 10:01:54:121 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:54:121 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:54:121 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:01:54:121 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:54:121 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:54:121 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:01:54:121 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:54:121 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:54:121 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:54:121 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:54:122 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:54:122 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:54:122 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:54:122 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:54:122 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:54:122 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:55:122 [140559574890240] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:55:122 [140559574890240] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:55:122 [140559574890240] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:55:122 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:55:122 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:55:122 [140559564400384] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:55:122 [140559564400384] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:55:122 [140559564400384] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:55:122 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:55:123 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:55:123 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:55:123 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:55:122 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:55:123 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:55:123 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:01:55:123 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:01:55:123 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:55:123 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:55:123 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:55:123 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:55:139 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:55:139 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:55:139 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:55:139 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:55:139 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:55:139 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:56:139 [140559574890240] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:56:139 [140559574890240] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:56:139 [140559574890240] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:56:139 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:56:139 [140559564400384] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:56:139 [140559564400384] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:56:139 [140559564400384] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:56:140 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:56:140 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:56:140 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:56:140 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:56:140 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:01:56:139 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:56:140 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:56:140 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:56:141 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:56:141 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:56:141 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:56:141 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:57:141 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:57:142 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:57:141 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:57:142 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:01:57:142 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:57:142 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:57:142 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:57:142 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:57:142 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:57:142 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:57:142 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:57:142 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:58:142 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:01:58:142 [140559564400384] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:01:58:143 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:58:143 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:58:143 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:58:143 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:58:143 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:58:143 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:58:144 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:58:144 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:58:144 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:59:143 [140559574890240] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:01:59:144 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:59:144 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:01:59:145 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:01:59:145 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:01:59:145 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:01:59:145 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:01:59:145 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd69387edc0)
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd69387edc0)
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd68c000ba0 is valid.
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7fd692e7ddc0)
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:02:00:145 [140559564400384] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7fd692e7ddc0)
+2013-11-05 10:02:00:146 [140559564400384] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7fd684000c20 is valid.
+2013-11-05 10:02:00:145 [140559574890240] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:02:00:146 [140559574890240] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:02:00:146 [140559574890240] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:02:00:146 [140559574890240] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:02:00:146 [140559574890240] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:02:00:146 [140559564400384] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:02:00:146 [140559564400384] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:02:00:146 [140559564400384] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:02:00:146 [140559564400384] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:02:00:146 [140559564400384] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:55:398 [139894432282368] src/SDRedisServerPoolSingleton.cpp(40)[WARN] - redis pool conn num :1
+2013-11-05 10:29:55:398 [139894432282368] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f3bb0000c20)
+2013-11-05 10:29:55:398 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:55:398 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:55:398 [139894421792512] src/SDRedisServerPoolSingleton.cpp(40)[WARN] - redis pool conn num :2
+2013-11-05 10:29:55:398 [139894421792512] src/SDRedisServer.cpp(13)[DEBUG] - SDRedisServer(0x7f3ba8000ba0)
+2013-11-05 10:29:55:398 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:55:398 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:55:415 [139894421792512] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 ok.
+2013-11-05 10:29:55:415 [139894432282368] src/SDRedisServer.cpp(48)[DEBUG] - connect to id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 ok.
+2013-11-05 10:29:55:415 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:55:415 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:55:415 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:29:55:415 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:29:55:416 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:55:416 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:55:416 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:55:416 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:55:416 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:55:416 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:56:417 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:56:417 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:56:436 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:56:436 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:56:436 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:56:436 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:56:436 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:56:436 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:56:437 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:56:437 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:56:438 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:56:438 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:56:438 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:57:438 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:57:438 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:57:439 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:57:439 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:57:439 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:57:439 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:57:439 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:57:439 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:57:439 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:57:439 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:29:58:439 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:58:439 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:58:439 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:58:439 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:29:58:439 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:58:440 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:58:440 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:58:440 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:58:440 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:58:440 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:29:59:440 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:59:441 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:59:441 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:29:59:441 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:59:441 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:59:441 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:29:59:441 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:29:59:442 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:29:59:442 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:29:59:442 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:00:441 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:00:442 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:00:442 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:00:443 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:00:443 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:00:443 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:00:443 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:00:443 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:01:443 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:01:443 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:01:444 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:01:444 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:01:444 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:01:444 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:01:444 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:01:444 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:01:444 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:01:444 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:02:444 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:02:445 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:02:444 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:02:445 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:02:445 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:02:445 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:02:445 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:02:445 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:02:445 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:02:445 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:02:445 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:02:445 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:03:445 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:03:446 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:03:446 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:03:446 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:03:446 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:03:446 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:03:446 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:03:447 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:03:447 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:03:447 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:04:446 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:04:446 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:04:446 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:04:446 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:04:446 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:04:447 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:04:447 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:04:448 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:04:448 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:04:448 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:04:448 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:04:448 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:05:447 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:05:448 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:05:448 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:05:449 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:06:448 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:06:449 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:06:459 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:06:450 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:06:459 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:06:459 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:06:459 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:06:459 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:06:460 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:06:460 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:06:460 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:06:460 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:06:460 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:07:459 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:07:459 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:07:460 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:07:460 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:07:461 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:07:461 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:07:461 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:07:461 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:07:461 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:08:460 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:08:460 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:08:460 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:08:460 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:08:460 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:08:460 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:08:461 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:08:461 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:08:462 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:08:462 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:08:462 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:08:462 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:08:462 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:09:461 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:09:461 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:09:461 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:09:461 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:09:461 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:09:461 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:09:462 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:09:462 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:09:463 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:09:463 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:09:463 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:09:463 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:09:463 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:10:462 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:10:463 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:10:463 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:10:463 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:10:463 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:10:463 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:10:463 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:10:463 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:10:464 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:10:464 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:10:464 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:10:464 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:10:464 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:11:463 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:11:463 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:11:463 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:11:463 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:11:463 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:11:464 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:11:464 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:11:464 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:11:464 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:11:476 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:11:464 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:11:476 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:11:476 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:11:476 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:11:476 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:11:477 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:11:477 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:11:477 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:11:477 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:11:477 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:12:476 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:12:476 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:12:476 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:12:477 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:12:477 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:12:478 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:12:478 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:12:478 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:12:478 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:12:478 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:12:478 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:13:478 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:13:478 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:13:479 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:13:479 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:13:479 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:13:479 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:13:479 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:13:479 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:13:479 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:13:479 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:13:479 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:14:479 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:14:479 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:14:480 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:14:480 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:14:480 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:14:480 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:14:480 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:14:480 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:15:480 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:15:480 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:15:481 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:15:481 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:15:482 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:15:482 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:15:482 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:15:482 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:15:482 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:15:482 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:15:482 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:15:482 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:16:482 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:16:482 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:16:493 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:16:493 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:16:493 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:16:493 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:16:493 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:16:494 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:16:494 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:17:493 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:17:494 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:17:494 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:17:494 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:17:494 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:17:494 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:17:495 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:17:494 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:17:495 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:17:495 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:17:495 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:17:495 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:17:495 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:18:495 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:18:495 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:18:495 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:18:495 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:18:495 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:18:495 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:18:496 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:18:496 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:18:496 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:18:496 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:18:496 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:18:496 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:18:496 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:19:496 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:19:497 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:19:497 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:19:498 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:19:498 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:19:498 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:19:498 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:19:498 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:19:498 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:19:498 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:19:498 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:19:498 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:19:498 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:20:498 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:20:498 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:20:498 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:20:498 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:20:498 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:20:499 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:20:499 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:20:499 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:20:499 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:20:499 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:20:499 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:21:499 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:21:499 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:21:499 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:21:500 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:21:500 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:21:501 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:21:501 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:21:501 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:22:500 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:22:501 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:22:501 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:22:502 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:22:502 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:22:502 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:22:502 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:22:502 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:22:502 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:22:502 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:23:502 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:23:502 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:23:502 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:23:502 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:23:502 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:23:502 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:23:502 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:23:503 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:23:503 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:23:503 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:23:503 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:23:503 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:24:503 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:24:504 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:24:504 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:24:504 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:24:504 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:24:505 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:24:505 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:25:505 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:25:505 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:25:506 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:25:506 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:25:506 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:25:506 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:25:506 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:25:506 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:25:506 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:25:506 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:25:506 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:26:506 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:26:506 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:26:507 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:26:514 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:26:514 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:26:514 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:26:514 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:26:514 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:26:514 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:26:515 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:26:515 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:26:515 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:27:515 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:27:515 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:27:515 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:27:515 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:27:516 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:27:515 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:27:516 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:27:516 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:27:516 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:27:516 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:28:516 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:28:516 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:28:517 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:28:517 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:28:517 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:28:517 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:28:517 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:28:517 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:28:518 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:28:518 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:28:518 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:29:517 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:29:518 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:29:518 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:29:519 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:29:519 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:29:519 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:29:519 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:30:519 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:30:520 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:30:520 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:30:519 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:30:520 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:30:520 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:30:520 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:30:520 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:30:520 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:31:520 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:31:576 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:31:576 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:31:520 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:31:576 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:31:576 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:31:577 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:31:577 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:31:577 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:31:577 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:32:577 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:32:577 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:32:578 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:32:578 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:32:578 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:32:578 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:32:579 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:32:579 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:32:579 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:33:578 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:33:578 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:33:578 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:33:578 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:33:578 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:33:578 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:33:579 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:33:579 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:33:580 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:33:580 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:33:580 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:33:580 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:33:580 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:34:579 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:34:580 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:34:580 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:34:580 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:34:581 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:35:581 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:35:581 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:35:581 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:35:581 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:35:581 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:35:582 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:36:582 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:36:590 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:36:582 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:36:590 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:36:590 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:36:590 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:36:590 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:36:590 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:36:590 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:36:590 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:36:590 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:36:590 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:36:591 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:36:591 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:36:591 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:36:591 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:36:591 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:36:591 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:37:591 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:37:591 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:37:591 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:37:592 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:37:592 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:37:592 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:37:592 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:38:592 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:38:593 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:38:593 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:38:593 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:38:593 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:38:593 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:38:593 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:38:594 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:38:594 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:38:594 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:39:593 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:39:593 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:39:593 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:39:593 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:39:593 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:39:594 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:39:594 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:39:595 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:39:595 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:39:595 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:39:595 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:39:595 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:40:595 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:40:595 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:40:595 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:40:595 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:40:595 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:40:595 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:40:596 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:40:596 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:40:596 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:40:596 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:40:596 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:40:597 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:41:596 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:41:596 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:41:596 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:41:596 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:41:597 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:41:597 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:41:597 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:41:597 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:41:597 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:41:597 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:41:597 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:41:607 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:41:607 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:41:607 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:41:607 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:41:607 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:41:607 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:41:607 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:41:607 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:41:607 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:41:607 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:41:608 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:41:608 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:41:608 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:41:608 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:41:608 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:42:608 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:42:608 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:42:609 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:42:609 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:42:609 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:42:609 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:42:609 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:42:609 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:42:609 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:42:609 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:42:609 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:42:609 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5511dc0)
+2013-11-05 10:30:43:609 [139894421792512] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3ba8000ba0 is valid.
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisStringHandler.cpp(24)[DEBUG] - ~SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisHandler.cpp(29)[DEBUG] - ~SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisServerPoolSingleton.cpp(62)[DEBUG] - conn put 
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisHandler.cpp(23)[DEBUG] - SDRedisHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisHandler.cpp(34)[DEBUG] - SDRedisHandler start init
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisHandler.cpp(43)[DEBUG] - SDRedisHandler init succ!
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisStringHandler.cpp(17)[DEBUG] - SDRedisStringHandler(0x7f3bb5f12dc0)
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisHandler.cpp(62)[DEBUG] - connection to:id:0 host:127.0.0.1 port:6379 db:0 this:0x7f3bb0000c20 is valid.
+2013-11-05 10:30:43:610 [139894421792512] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:43:610 [139894421792512] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:43:610 [139894421792512] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:43:610 [139894421792512] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:43:610 [139894421792512] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisServer.cpp(836)[DEBUG] - redisCommand GET key succ, reply type:4
+2013-11-05 10:30:43:610 [139894432282368] src/SDRedisServer.cpp(850)[DEBUG] - GET key:key reply type:4 value len:0
+2013-11-05 10:30:43:611 [139894432282368] src/SDRedisServer.cpp(572)[DEBUG] - redisCommand EXPIRE key 43200 succ, reply type:3
+2013-11-05 10:30:43:611 [139894432282368] src/SDRedisServer.cpp(582)[DEBUG] - expire key:key in cache return 0
+2013-11-05 10:30:43:611 [139894432282368] src/SDRedisStringHandler.cpp(38)[DEBUG] - query: key value :value.length:0
