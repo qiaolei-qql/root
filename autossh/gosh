@@ -1,0 +1,25 @@
+#!/bin/sh
+
+user="qiaolei"
+host=""
+login()
+{
+	line="`grep $host hostkeys.conf | grep $user | grep -v "#"`"
+	host=`echo ${line} | awk '{print $1}'`
+	passwd=`echo ${line} |awk '{print $3}'`
+	ip=`echo ${host} | egrep -o "[0-9.]+"`
+	if [ "X"$ip!="X" ];then
+		./autologin.inner.expect $user $host $passwd
+	else
+		./autologin.expect $user $host $passwd
+	fi
+}
+if [ $# = 0 ];then
+	echo "Usage ./login.sh host user(defalut qiaolei)"
+	exit
+elif [ $# = 2 ];then
+	user="$2"
+fi
+host=$1
+cd /home/qiaolei/bin
+login
