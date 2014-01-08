@@ -1,0 +1,12 @@
+#!/usr/bin/expect
+
+if {$argc != 1} {
+	send_user "Usage: ./svnco.sh svndir\n"
+	exit
+}
+set timeout 10
+#spawn svn --username qiaolei  co http://10.10.16.252/bin_svn/xl_download/data_server/dcdn
+spawn svn --username qiaolei  co  [lindex $argv 0]
+expect "*qiaolei*:"
+send "ql021429\r"
+interact 
