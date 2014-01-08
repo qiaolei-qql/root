@@ -18,7 +18,7 @@ expect {
 if {$flag == 0} {
 	expect "*qiaolei*:"
 }
-send "ej@j-sd9.com\r"
+send ".com\r"
 expect "*passcode:"
 expect_user -re "(.*)\n"
 set pass $expect_out(1,string)
