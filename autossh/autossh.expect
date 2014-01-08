@@ -10,7 +10,14 @@ set passwd [lindex $argv 2]
 set timeout 10
 #spawn svn --username qiaolei  co http://10.10.16.252/bin_svn/xl_download/data_server/dcdn
 spawn ssh qiaolei@twin0501.sandai.net
-expect "*qiaolei*:"
+set flag 0
+expect {
+	"*connecting*" {send "yes\r"}
+	"*qiaolei**" {set flag 1}
+}
+if {$flag == 0} {
+	expect "*qiaolei*:"
+}
 send "ej@j-sd9.com\r"
 expect "*passcode:"
 expect_user -re "(.*)\n"
@@ -20,7 +27,14 @@ send "$pass\n"
 expect "]*"
 send "ssh ${user}@${hostname}\r"
 send_user "ssh ${user}@${hostname}\r"
+set flag 0
+expect {
+	"*connecting*" {send "yes\r"}
+	"*password:*" {set flag 1}
+}
 #spawn ssh ${user}@${hostname}
-expect "*password:*"
+if {$flag == 0} {
+	expect "*password:*"
+}
 send "${passwd}\r"
 interact 
