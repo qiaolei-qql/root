@@ -4,14 +4,18 @@ user="qiaolei"
 host=""
 login()
 {
-	line="`grep $host hostkeys.conf | grep $user | grep -v "#"`"
+	line=`grep $host hostkeys.conf | grep $user | grep -v "#"`
+	if [ -z "${line}" ];then
+		echo "$host $user not found in hostkeys.conf" 
+		exit
+	fi
 	host=`echo ${line} | awk '{print $1}'`
 	passwd=`echo ${line} |awk '{print $3}'`
 	ip=`echo ${host} | egrep -o "[0-9.]+"`
 	if [ "X"$ip!="X" ];then
-		./autologin.inner.expect $user $host $passwd
+		./autossh.inner.expect $user $host $passwd
 	else
-		./autologin.expect $user $host $passwd
+		./autossh.expect $user $host $passwd
 	fi
 }
 if [ $# = 0 ];then

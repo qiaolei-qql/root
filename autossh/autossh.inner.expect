@@ -10,6 +10,14 @@ set passwd [lindex $argv 2]
 set timeout 40
 #spawn svn --username qiaolei  co http://10.10.16.252/bin_svn/xl_download/data_server/dcdn
 spawn ssh ${user}@${hostname}
-expect "*password:*"
+set flag 0
+expect {
+	"*connecting*" {send "yes\r"}
+	"*password:*" {set flag 1}
+}
+#{send "${passwd}\r";expect eof;interact}
+if {$flag == 0} {
+	expect "*password:*"
+}
 send "${passwd}\r"
 interact 
