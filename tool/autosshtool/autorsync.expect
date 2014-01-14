@@ -1,14 +1,30 @@
 #!/usr/bin/expect
 
-if {$argc != 3} {
-	send_user "Usage: ./autologin.expect user hostname passwd\n"
+if {$argc != 5} {
+	send_user "Usage: ./autorsync.expect user hostname passwd src_file dest_path\n"
 	exit
 }
 set user [lindex $argv 0]
 set hostname [lindex $argv 1]
 set passwd [lindex $argv 2]
-set timeout 10
+set src_file [lindex $argv 3]
+set dest_path [lindex $argv 4]
+set timeout 100
 #spawn svn --username qiaolei  co http://10.10.16.252/bin_svn/xl_download/data_server/dcdn
+
+spawn rsync -avzP ${src_file} qiaolei@twin0501.sandai.net:/home/qiaolei/tmp
+send_user "rsync -avzP ${src_file} ${user}@${hostname}:${dest_path}\r"
+set flag 0
+expect {
+	"*connecting*" {send "yes\r"}
+	"*qiaolei**" {set flag 1}
+}
+if {$flag == 0} {
+	expect "*qiaolei*:"
+}
+send "ej@j-sd9.com\r"
+expect eof
+
 spawn ssh qiaolei@twin0501.sandai.net
 set flag 0
 expect {
@@ -25,8 +41,8 @@ set pass $expect_out(1,string)
 
 send "$pass\n"
 expect "]*"
-send "ssh ${user}@${hostname}\r"
-send_user "ssh ${user}@${hostname}\r"
+send "rsync -avzP /home/qiaolei/tmp/${src_file} ${user}@${hostname}:${dest_path}\r"
+send_user "rsync -avzP ${src_file} ${user}@${hostname}:${dest_path}\r"
 set flag 0
 expect {
 	"*connecting*" {send "yes\r"}
@@ -37,4 +53,6 @@ if {$flag == 0} {
 	expect "*password:*"
 }
 send "${passwd}\r"
+expect "]*"
+send "exit\r"
 interact 

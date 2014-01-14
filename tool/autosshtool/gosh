@@ -4,7 +4,7 @@ user="qiaolei"
 host=""
 login()
 {
-	line=`grep $host hostkeys.conf | grep $user | grep -v "#"`
+	line=`grep $host hostkeys.conf | grep $user `
 	if [ -z "${line}" ];then
 		echo "$host $user not found in hostkeys.conf" 
 		exit
