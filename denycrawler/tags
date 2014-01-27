@@ -1,0 +1,1038 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDITIONAL_SAFE_LEN	common/common.h	50;"	d
+AF_LOCAL	libs/antirez-hiredis-d5d8843/net.h	39;"	d
+ARCH	Makefile	/^ARCH:=$(shell uname -m)$/;"	m
+BINARY_SERIALIZE	src/SDCondValue.h	41;"	d
+BINS	libs/antirez-hiredis-d5d8843/Makefile	/^BINS=hiredis-example hiredis-test$/;"	m
+BIT32	Makefile	/^BIT32:=i686$/;"	m
+BIT64	Makefile	/^BIT64:=x86_64$/;"	m
+BOOST_DIR	Makefile	/^BOOST_DIR = \/usr\/local\/include\/boost-1_51\/$/;"	m
+CC	Makefile	/^CC=gcc$/;"	m
+CC	libs/antirez-hiredis-d5d8843/Makefile	/^CC:=$(shell sh -c 'type $(CC) >\/dev\/null 2>\/dev\/null && echo $(CC) || echo gcc')$/;"	m
+CFLAGS	Makefile	/^CFLAGS:=-Wall -g -O2 $(INCLUDE) $(LOG) $/;"	m
+CHECK_CONN	src/SDRedisHandler.h	55;"	d
+CHECK_CONN	src/SDRedisStringHandler.h	42;"	d
+CHECK_REDIS_CONN	src_xllog/SDRedisServer.h	132;"	d
+CMysql	common/cmysql.h	/^class CMysql$/;"	c
+COMMON_DEP	Makefile	/^COMMON_DEP:=$(patsubst %.cpp,%.d,$(COMMON_SRC))$/;"	m
+COMMON_DIR	Makefile	/^COMMON_DIR=common\/$/;"	m
+COMMON_OBJ	Makefile	/^COMMON_OBJ:=$(patsubst %.cpp,%.o,$(COMMON_SRC))$/;"	m
+COMMON_SRC	Makefile	/^COMMON_SRC:=$(wildcard $(COMMON_DIR)*.cpp)$/;"	m
+CONN_TCP	libs/antirez-hiredis-d5d8843/test.c	/^    CONN_TCP,$/;"	e	enum:connection_type	file:
+CONN_UNIX	libs/antirez-hiredis-d5d8843/test.c	/^    CONN_UNIX$/;"	e	enum:connection_type	file:
+CPPFLAGS	Makefile	/^CPPFLAGS:=$(CFLAGS) $/;"	m
+Condition	src/SDCondValue.h	/^	Condition()$/;"	f	class:Condition
+Condition	src/SDCondValue.h	/^	Condition(string field, string value, int value_type)$/;"	f	class:Condition
+Condition	src/SDCondValue.h	/^class Condition$/;"	c
+DEBUG	libs/antirez-hiredis-d5d8843/Makefile	/^DEBUG?= -g -ggdb$/;"	m
+DECL_LOGGER	common/SDLogger.h	19;"	d
+DECODE_VALUE_INT	src/SDCondValue.h	213;"	d
+DECODE_VALUE_STR	src/SDCondValue.h	195;"	d
+DICT_ERR	libs/antirez-hiredis-d5d8843/dict.h	40;"	d
+DICT_HT_INITIAL_SIZE	libs/antirez-hiredis-d5d8843/dict.h	76;"	d
+DICT_NOTUSED	libs/antirez-hiredis-d5d8843/dict.h	43;"	d
+DICT_OK	libs/antirez-hiredis-d5d8843/dict.h	39;"	d
+DYLIBNAME	libs/antirez-hiredis-d5d8843/Makefile	/^DYLIBNAME=$(LIBNAME).$(DYLIBSUFFIX)$/;"	m
+DYLIBSUFFIX	libs/antirez-hiredis-d5d8843/Makefile	/^  DYLIBSUFFIX=dylib$/;"	m
+DYLIBSUFFIX	libs/antirez-hiredis-d5d8843/Makefile	/^DYLIBSUFFIX=so$/;"	m
+DYLIB_MAJOR_NAME	libs/antirez-hiredis-d5d8843/Makefile	/^  DYLIB_MAJOR_NAME=$(LIBNAME).$(HIREDIS_MAJOR).$(DYLIBSUFFIX)$/;"	m
+DYLIB_MAJOR_NAME	libs/antirez-hiredis-d5d8843/Makefile	/^DYLIB_MAJOR_NAME=$(LIBNAME).$(DYLIBSUFFIX).$(HIREDIS_MAJOR)$/;"	m
+DYLIB_MAKE_CMD	libs/antirez-hiredis-d5d8843/Makefile	/^  DYLIB_MAKE_CMD=$(CC) -G -o $(DYLIBNAME) -h $(DYLIB_MINOR_NAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	libs/antirez-hiredis-d5d8843/Makefile	/^  DYLIB_MAKE_CMD=$(CC) -shared -Wl,-install_name,$(DYLIB_MINOR_NAME) -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MAKE_CMD	libs/antirez-hiredis-d5d8843/Makefile	/^DYLIB_MAKE_CMD=$(CC) -shared -Wl,-soname,$(DYLIB_MINOR_NAME) -o $(DYLIBNAME) $(LDFLAGS)$/;"	m
+DYLIB_MINOR_NAME	libs/antirez-hiredis-d5d8843/Makefile	/^  DYLIB_MINOR_NAME=$(LIBNAME).$(HIREDIS_MAJOR).$(HIREDIS_MINOR).$(DYLIBSUFFIX)$/;"	m
+DYLIB_MINOR_NAME	libs/antirez-hiredis-d5d8843/Makefile	/^DYLIB_MINOR_NAME=$(LIBNAME).$(DYLIBSUFFIX).$(HIREDIS_MAJOR).$(HIREDIS_MINOR)$/;"	m
+ENCODE_VALUE_INT	src/SDCondValue.h	206;"	d
+ENCODE_VALUE_STR	src/SDCondValue.h	188;"	d
+FAST_LOG_LEVEL_DEBUG	common/fast_log.h	13;"	d
+FAST_LOG_LEVEL_ERROR	common/fast_log.h	16;"	d
+FAST_LOG_LEVEL_MESSAGE	common/fast_log.h	14;"	d
+FAST_LOG_LEVEL_WARN	common/fast_log.h	15;"	d
+FAST_LOG_SIGN	common/fast_log.h	11;"	d
+FLOAT_WIDTH_TEST	libs/antirez-hiredis-d5d8843/test.c	157;"	d	file:
+GetAffectedCols	common/cmysql.h	/^	unsigned int GetAffectedCols() {$/;"	f	class:CMysql
+GetConnectHandle	common/cmysql.h	/^	MYSQL* GetConnectHandle() { return &m_connection; }$/;"	f	class:CMysql
+HASH_HANDLER	src/SDRedisHandler.cpp	/^std::string SDRedisHandler::HASH_HANDLER   = "HASH";$/;"	m	class:SDRedisHandler	file:
+HASH_HANDLER	src/SDRedisHandler.h	/^        static std::string HASH_HANDLER;$/;"	m	class:SDRedisHandler
+HEX_DATA_MAP	common/SDUtility.cpp	/^const char SDUtility::HEX_DATA_MAP[] = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'};$/;"	m	class:SDUtility	file:
+HEX_DATA_MAP	common/SDUtility.h	/^	const static char HEX_DATA_MAP[];$/;"	m	class:SDUtility
+HIREDIS_MAJOR	libs/antirez-hiredis-d5d8843/Makefile	/^HIREDIS_MAJOR=0$/;"	m
+HIREDIS_MAJOR	libs/antirez-hiredis-d5d8843/hiredis.h	38;"	d
+HIREDIS_MAJOR	libs/include/hiredis/hiredis.h	38;"	d
+HIREDIS_MINOR	libs/antirez-hiredis-d5d8843/Makefile	/^HIREDIS_MINOR=10$/;"	m
+HIREDIS_MINOR	libs/antirez-hiredis-d5d8843/hiredis.h	39;"	d
+HIREDIS_MINOR	libs/include/hiredis/hiredis.h	39;"	d
+HIREDIS_PATCH	libs/antirez-hiredis-d5d8843/hiredis.h	40;"	d
+HIREDIS_PATCH	libs/include/hiredis/hiredis.h	40;"	d
+IMPL_LOGGER	common/SDLogger.h	20;"	d
+INCLUDE	Makefile	/^INCLUDE:=-I\/usr\/include -I\/usr\/local\/include  -I. -I.\/include -I.\/libs\/include -I.\/libs\/ -I${BOOST_DIR} -I\/usr\/local\/log4cplus\/include -I\/usr\/local\/mysql\/include\/mysql$/;"	m
+INCLUDE_PATH	libs/antirez-hiredis-d5d8843/Makefile	/^INCLUDE_PATH?=include\/hiredis$/;"	m
+INIT_PROCESS_PID	common/common.h	44;"	d
+INSTALL	libs/antirez-hiredis-d5d8843/Makefile	/^  INSTALL= cp -r$/;"	m
+INSTALL	libs/antirez-hiredis-d5d8843/Makefile	/^  INSTALL?= cp -r$/;"	m
+INSTALL	libs/antirez-hiredis-d5d8843/Makefile	/^INSTALL?= cp -a$/;"	m
+INSTALL_INCLUDE_PATH	libs/antirez-hiredis-d5d8843/Makefile	/^INSTALL_INCLUDE_PATH= $(PREFIX)\/$(INCLUDE_PATH)$/;"	m
+INSTALL_LIBRARY_PATH	libs/antirez-hiredis-d5d8843/Makefile	/^INSTALL_LIBRARY_PATH= $(PREFIX)\/$(LIBRARY_PATH)$/;"	m
+INTEGER_WIDTH_TEST	libs/antirez-hiredis-d5d8843/test.c	148;"	d	file:
+Init	src_xllog/SDRedisServerPool.cpp	/^bool SDRedisServerPool::Init()$/;"	f	class:SDRedisServerPool
+LIB	Makefile	/^LIB=-lstdc++ -L${LIB_DIR} -L${LOCAL_LIB_DIR} -L.\/lib\/ -lrt -lcrypto -lpthread -lz -lbz2 -lm -lc -L${LIBS_PATH}  \/usr\/local\/lib\/liblog4cplus.a  .\/libs\/libhiredis.a \/usr\/local\/mysql\/lib\/mysql\/libmysqlclient_r.a   \/usr\/local\/lib\/libboost_system.a  \/usr\/local\/lib\/libboost_thread.a  \/usr\/local\/lib\/libboost_program_options.a \/usr\/local\/lib\/libboost_serialization.a$/;"	m
+LIBNAME	libs/antirez-hiredis-d5d8843/Makefile	/^LIBNAME=libhiredis$/;"	m
+LIBRARY_PATH	libs/antirez-hiredis-d5d8843/Makefile	/^LIBRARY_PATH?=lib$/;"	m
+LIBS_PATH	Makefile	/^LIBS_PATH:=${PWD}\/libs$/;"	m
+LIB_DIR	Makefile	/^    LIB_DIR = \/usr\/lib64$/;"	m
+LIB_DIR	Makefile	/^LIB_DIR = \/usr\/lib$/;"	m
+LIB_NAME	Makefile	/^LIB_NAME=bin\/deny_crawler_${ARCH}_${OS}$/;"	m
+LOCAL_LIB_DIR	Makefile	/^    LOCAL_LIB_DIR = \/usr\/local\/lib64$/;"	m
+LOCAL_LIB_DIR	Makefile	/^LOCAL_LIB_DIR = \/usr\/local\/lib$/;"	m
+LOG	Makefile	/^LOG=-DLOGGER -D_DEBUG$/;"	m
+LOG4CPLUS_CLASS_DECLARE	src_xllog/xl_log4cplus.h	100;"	d
+LOG4CPLUS_CLASS_DECLARE	src_xllog/xl_log4cplus.h	115;"	d
+LOG4CPLUS_CLASS_IMPLEMENT	src_xllog/xl_log4cplus.h	101;"	d
+LOG4CPLUS_CLASS_IMPLEMENT	src_xllog/xl_log4cplus.h	116;"	d
+LOG4CPLUS_DEBUG	common/SDLogger.h	25;"	d
+LOG4CPLUS_DEBUG	common/SDLogger.h	26;"	d
+LOG4CPLUS_DEBUG	src_xllog/xl_log4cplus.h	91;"	d
+LOG4CPLUS_DECLARE	src_xllog/xl_log4cplus.h	113;"	d
+LOG4CPLUS_DECLARE	src_xllog/xl_log4cplus.h	98;"	d
+LOG4CPLUS_ERROR	src_xllog/xl_log4cplus.h	94;"	d
+LOG4CPLUS_FATAL	src_xllog/xl_log4cplus.h	95;"	d
+LOG4CPLUS_IMPLEMENT	src_xllog/xl_log4cplus.h	114;"	d
+LOG4CPLUS_IMPLEMENT	src_xllog/xl_log4cplus.h	99;"	d
+LOG4CPLUS_INFO	common/SDLogger.h	30;"	d
+LOG4CPLUS_INFO	common/SDLogger.h	31;"	d
+LOG4CPLUS_INFO	src_xllog/xl_log4cplus.h	92;"	d
+LOG4CPLUS_INIT	src_xllog/xl_log4cplus.h	112;"	d
+LOG4CPLUS_INIT	src_xllog/xl_log4cplus.h	97;"	d
+LOG4CPLUS_THIS_DEBUG	src_xllog/xl_log4cplus.h	104;"	d
+LOG4CPLUS_THIS_DEBUG	src_xllog/xl_log4cplus.h	119;"	d
+LOG4CPLUS_THIS_ERROR	src_xllog/xl_log4cplus.h	107;"	d
+LOG4CPLUS_THIS_ERROR	src_xllog/xl_log4cplus.h	122;"	d
+LOG4CPLUS_THIS_FATAL	src_xllog/xl_log4cplus.h	108;"	d
+LOG4CPLUS_THIS_FATAL	src_xllog/xl_log4cplus.h	123;"	d
+LOG4CPLUS_THIS_INFO	src_xllog/xl_log4cplus.h	105;"	d
+LOG4CPLUS_THIS_INFO	src_xllog/xl_log4cplus.h	120;"	d
+LOG4CPLUS_THIS_TRACE	src_xllog/xl_log4cplus.h	103;"	d
+LOG4CPLUS_THIS_TRACE	src_xllog/xl_log4cplus.h	118;"	d
+LOG4CPLUS_THIS_WARN	src_xllog/xl_log4cplus.h	106;"	d
+LOG4CPLUS_THIS_WARN	src_xllog/xl_log4cplus.h	121;"	d
+LOG4CPLUS_TRACE	src_xllog/xl_log4cplus.h	90;"	d
+LOG4CPLUS_WARN	src_xllog/xl_log4cplus.h	93;"	d
+LOGGER_DEBUG	src_xllog/xl_log4cplus.h	49;"	d
+LOGGER_DEBUG	src_xllog/xl_log4cplus.h	66;"	d
+LOGGER_DEC	src_xllog/xl_log4cplus.h	44;"	d
+LOGGER_DEC	src_xllog/xl_log4cplus.h	61;"	d
+LOGGER_ERROR	src_xllog/xl_log4cplus.h	52;"	d
+LOGGER_ERROR	src_xllog/xl_log4cplus.h	69;"	d
+LOGGER_FATAL	src_xllog/xl_log4cplus.h	53;"	d
+LOGGER_FATAL	src_xllog/xl_log4cplus.h	70;"	d
+LOGGER_IMP	src_xllog/xl_log4cplus.h	45;"	d
+LOGGER_IMP	src_xllog/xl_log4cplus.h	62;"	d
+LOGGER_IMP_EX	src_xllog/xl_log4cplus.h	46;"	d
+LOGGER_IMP_EX	src_xllog/xl_log4cplus.h	63;"	d
+LOGGER_INFO	src_xllog/xl_log4cplus.h	50;"	d
+LOGGER_INFO	src_xllog/xl_log4cplus.h	67;"	d
+LOGGER_METHOD	src_xllog/xl_log4cplus.h	47;"	d
+LOGGER_METHOD	src_xllog/xl_log4cplus.h	64;"	d
+LOGGER_TRACE	src_xllog/xl_log4cplus.h	48;"	d
+LOGGER_TRACE	src_xllog/xl_log4cplus.h	65;"	d
+LOGGER_WARN	src_xllog/xl_log4cplus.h	51;"	d
+LOGGER_WARN	src_xllog/xl_log4cplus.h	68;"	d
+LOG_CLS_DEC	src_xllog/xl_log4cplus.h	33;"	d
+LOG_CLS_DEC	src_xllog/xl_log4cplus.h	73;"	d
+LOG_CLS_DEC_EX	src_xllog/xl_log4cplus.h	34;"	d
+LOG_CLS_DEC_EX	src_xllog/xl_log4cplus.h	74;"	d
+LOG_DEBUG	src_xllog/xl_log4cplus.h	37;"	d
+LOG_DEBUG	src_xllog/xl_log4cplus.h	78;"	d
+LOG_ERROR	src_xllog/xl_log4cplus.h	40;"	d
+LOG_ERROR	src_xllog/xl_log4cplus.h	81;"	d
+LOG_FATAL	src_xllog/xl_log4cplus.h	41;"	d
+LOG_FATAL	src_xllog/xl_log4cplus.h	82;"	d
+LOG_INFO	src_xllog/xl_log4cplus.h	38;"	d
+LOG_INFO	src_xllog/xl_log4cplus.h	79;"	d
+LOG_INIT	src_xllog/xl_log4cplus.h	29;"	d
+LOG_INIT	src_xllog/xl_log4cplus.h	57;"	d
+LOG_INIT_EX	src_xllog/xl_log4cplus.h	30;"	d
+LOG_INIT_EX	src_xllog/xl_log4cplus.h	58;"	d
+LOG_METHOD	src_xllog/xl_log4cplus.h	35;"	d
+LOG_METHOD	src_xllog/xl_log4cplus.h	76;"	d
+LOG_TRACE	src_xllog/xl_log4cplus.h	36;"	d
+LOG_TRACE	src_xllog/xl_log4cplus.h	77;"	d
+LOG_WARN	src_xllog/xl_log4cplus.h	39;"	d
+LOG_WARN	src_xllog/xl_log4cplus.h	80;"	d
+MAX_BUFSIZE	common/common.h	48;"	d
+MAX_LINE_LEN	common/common.h	49;"	d
+MAX_MLINE_LEN	common/common.h	45;"	d
+NUL	common/common.h	30;"	d
+NULL	common/common.h	33;"	d
+OBJ	libs/antirez-hiredis-d5d8843/Makefile	/^OBJ=net.o hiredis.o sds.o async.o$/;"	m
+OBJ_DIR	Makefile	/^OBJ_DIR=.\/lib\/$/;"	m
+OPTIMIZATION	libs/antirez-hiredis-d5d8843/Makefile	/^OPTIMIZATION?=-O3$/;"	m
+OS	Makefile	/^OS:=$(shell uname -s)$/;"	m
+PAGE_SIZE	common/common.h	46;"	d
+PIPE_BUF_ATOMIC	common/common.h	47;"	d
+PREFIX	libs/antirez-hiredis-d5d8843/Makefile	/^PREFIX?=\/usr\/local$/;"	m
+REAL_CFLAGS	libs/antirez-hiredis-d5d8843/Makefile	/^REAL_CFLAGS=$(OPTIMIZATION) -fPIC $(CFLAGS) $(WARNINGS) $(DEBUG)$/;"	m
+REAL_LDFLAGS	libs/antirez-hiredis-d5d8843/Makefile	/^REAL_LDFLAGS=$(LDFLAGS)$/;"	m
+REDIS_BLOCK	libs/antirez-hiredis-d5d8843/hiredis.h	57;"	d
+REDIS_BLOCK	libs/include/hiredis/hiredis.h	57;"	d
+REDIS_CONNECTED	libs/antirez-hiredis-d5d8843/hiredis.h	61;"	d
+REDIS_CONNECTED	libs/include/hiredis/hiredis.h	61;"	d
+REDIS_DISCONNECTING	libs/antirez-hiredis-d5d8843/hiredis.h	67;"	d
+REDIS_DISCONNECTING	libs/include/hiredis/hiredis.h	67;"	d
+REDIS_ERR	libs/antirez-hiredis-d5d8843/hiredis.h	42;"	d
+REDIS_ERR	libs/include/hiredis/hiredis.h	42;"	d
+REDIS_ERR_EOF	libs/antirez-hiredis-d5d8843/hiredis.h	50;"	d
+REDIS_ERR_EOF	libs/include/hiredis/hiredis.h	50;"	d
+REDIS_ERR_IO	libs/antirez-hiredis-d5d8843/hiredis.h	49;"	d
+REDIS_ERR_IO	libs/include/hiredis/hiredis.h	49;"	d
+REDIS_ERR_OOM	libs/antirez-hiredis-d5d8843/hiredis.h	52;"	d
+REDIS_ERR_OOM	libs/include/hiredis/hiredis.h	52;"	d
+REDIS_ERR_OTHER	libs/antirez-hiredis-d5d8843/hiredis.h	53;"	d
+REDIS_ERR_OTHER	libs/include/hiredis/hiredis.h	53;"	d
+REDIS_ERR_PROTOCOL	libs/antirez-hiredis-d5d8843/hiredis.h	51;"	d
+REDIS_ERR_PROTOCOL	libs/include/hiredis/hiredis.h	51;"	d
+REDIS_FREEING	libs/antirez-hiredis-d5d8843/hiredis.h	71;"	d
+REDIS_FREEING	libs/include/hiredis/hiredis.h	71;"	d
+REDIS_IN_CALLBACK	libs/antirez-hiredis-d5d8843/hiredis.h	74;"	d
+REDIS_IN_CALLBACK	libs/include/hiredis/hiredis.h	74;"	d
+REDIS_OK	libs/antirez-hiredis-d5d8843/hiredis.h	43;"	d
+REDIS_OK	libs/include/hiredis/hiredis.h	43;"	d
+REDIS_REPLY_ARRAY	libs/antirez-hiredis-d5d8843/hiredis.h	80;"	d
+REDIS_REPLY_ARRAY	libs/include/hiredis/hiredis.h	80;"	d
+REDIS_REPLY_ERROR	libs/antirez-hiredis-d5d8843/hiredis.h	84;"	d
+REDIS_REPLY_ERROR	libs/include/hiredis/hiredis.h	84;"	d
+REDIS_REPLY_INTEGER	libs/antirez-hiredis-d5d8843/hiredis.h	81;"	d
+REDIS_REPLY_INTEGER	libs/include/hiredis/hiredis.h	81;"	d
+REDIS_REPLY_NIL	libs/antirez-hiredis-d5d8843/hiredis.h	82;"	d
+REDIS_REPLY_NIL	libs/include/hiredis/hiredis.h	82;"	d
+REDIS_REPLY_STATUS	libs/antirez-hiredis-d5d8843/hiredis.h	83;"	d
+REDIS_REPLY_STATUS	libs/include/hiredis/hiredis.h	83;"	d
+REDIS_REPLY_STRING	libs/antirez-hiredis-d5d8843/hiredis.h	79;"	d
+REDIS_REPLY_STRING	libs/include/hiredis/hiredis.h	79;"	d
+REDIS_SUBSCRIBED	libs/antirez-hiredis-d5d8843/hiredis.h	77;"	d
+REDIS_SUBSCRIBED	libs/include/hiredis/hiredis.h	77;"	d
+RedisKey	src/SDCondValue.h	/^	RedisKey()$/;"	f	class:RedisKey
+RedisKey	src/SDCondValue.h	/^	RedisKey(uint32_t type,std::vector <Condition> condition):m_type(type),m_condition(condition)$/;"	f	class:RedisKey
+RedisKey	src/SDCondValue.h	/^class RedisKey$/;"	c
+SANDAI_C_LOGGER_H_200508162107	common/SDLogger.h	13;"	d
+SANDAI_C_SDCONFIGURATION_H_200508270949	common/SDConfiguration.h	14;"	d
+SDAutoRedis	src_xllog/SDRedisServerPool.h	/^	SDAutoRedis(SDRedisServerPool_ptr pool, bool autocreate)$/;"	f	class:SDAutoRedis
+SDAutoRedis	src_xllog/SDRedisServerPool.h	/^	SDAutoRedis(const SDAutoRedis& other)$/;"	f	class:SDAutoRedis
+SDAutoRedis	src_xllog/SDRedisServerPool.h	/^class SDAutoRedis$/;"	c
+SDConfiguration	common/SDConfiguration.cpp	/^SDConfiguration::SDConfiguration()$/;"	f	class:SDConfiguration
+SDConfiguration	common/SDConfiguration.cpp	/^SDConfiguration::SDConfiguration(const char* file_name)$/;"	f	class:SDConfiguration
+SDConfiguration	common/SDConfiguration.h	/^class SDConfiguration$/;"	c
+SDConfigurationSingleton	src/SDConfigurationSingleton.h	/^	SDConfigurationSingleton(){m_config=NULL;}$/;"	f	class:SDConfigurationSingleton
+SDConfigurationSingleton	src/SDConfigurationSingleton.h	/^	SDConfigurationSingleton(const SDConfigurationSingleton&){}$/;"	f	class:SDConfigurationSingleton
+SDConfigurationSingleton	src/SDConfigurationSingleton.h	/^class SDConfigurationSingleton$/;"	c
+SDDenyCrawler	src_xllog/SDDenyCrawler.cpp	/^SDDenyCrawler::SDDenyCrawler()$/;"	f	class:SDDenyCrawler
+SDDenyCrawler	src_xllog/SDDenyCrawler.h	/^class SDDenyCrawler $/;"	c
+SDDenyFrequentCrawler	src_xllog/SDDenyFrequentCrawler.cpp	/^SDDenyFrequentCrawler::SDDenyFrequentCrawler()$/;"	f	class:SDDenyFrequentCrawler
+SDDenyFrequentCrawler	src_xllog/SDDenyFrequentCrawler.h	/^class SDDenyFrequentCrawler : public SDDisCache$/;"	c
+SDDenyFrequentCrawlerValue	src_xllog/SDDenyFrequentCrawler.h	/^struct SDDenyFrequentCrawlerValue$/;"	s
+SDDenyIpOverPidNumLimitCrawler	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^SDDenyIpOverPidNumLimitCrawler::SDDenyIpOverPidNumLimitCrawler()$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+SDDenyIpOverPidNumLimitCrawler	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^class SDDenyIpOverPidNumLimitCrawler : public SDDisCache$/;"	c
+SDDenyIpOverPidNumLimitCrawlerValue	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^struct SDDenyIpOverPidNumLimitCrawlerValue$/;"	s
+SDDenySlowCrawler	src_xllog/SDDenySlowCrawler.cpp	/^SDDenySlowCrawler::SDDenySlowCrawler()$/;"	f	class:SDDenySlowCrawler
+SDDenySlowCrawler	src_xllog/SDDenySlowCrawler.h	/^class SDDenySlowCrawler : public SDDisCache$/;"	c
+SDDenySlowCrawlerValue	src_xllog/SDDenySlowCrawler.h	/^struct SDDenySlowCrawlerValue$/;"	s
+SDItemData	common/SDConfiguration.h	/^	SDItemData(const std::string& s1, const std::string& s2)$/;"	f	class:SDItemData
+SDItemData	common/SDConfiguration.h	/^class SDItemData$/;"	c
+SDRedisHandler	src/SDRedisHandler.cpp	/^SDRedisHandler::SDRedisHandler(SDRedisServer_ptr redis_server, uint32_t update_key_tos, uint32_t $/;"	f	class:SDRedisHandler
+SDRedisHandler	src/SDRedisHandler.h	/^class SDRedisHandler$/;"	c
+SDRedisHandler_ptr	src/SDRedisHandler.h	/^typedef boost::shared_ptr<SDRedisHandler> SDRedisHandler_ptr;$/;"	t
+SDRedisServer	src/SDRedisServer.cpp	/^SDRedisServer::SDRedisServer(std::string id,$/;"	f	class:SDRedisServer
+SDRedisServer	src/SDRedisServer.h	/^class SDRedisServer:boost::noncopyable$/;"	c
+SDRedisServer	src_xllog/SDRedisServer.cpp	/^SDRedisServer::SDRedisServer(std::string id,$/;"	f	class:SDRedisServer
+SDRedisServer	src_xllog/SDRedisServer.h	/^class SDRedisServer: boost::noncopyable$/;"	c
+SDRedisServerPool	src/SDRedisServerPool.cpp	/^SDRedisServerPool::SDRedisServerPool()$/;"	f	class:SDRedisServerPool
+SDRedisServerPool	src/SDRedisServerPool.h	/^class SDRedisServerPool$/;"	c
+SDRedisServerPool	src_xllog/SDRedisServerPool.cpp	/^SDRedisServerPool::SDRedisServerPool(const SDRedisServerPool& rs_pool)$/;"	f	class:SDRedisServerPool
+SDRedisServerPool	src_xllog/SDRedisServerPool.cpp	/^SDRedisServerPool::SDRedisServerPool(unsigned poolsize, const std::string &id, const std::string& host, uint16_t port, uint16_t db_index)$/;"	f	class:SDRedisServerPool
+SDRedisServerPool	src_xllog/SDRedisServerPool.h	/^class SDRedisServerPool$/;"	c
+SDRedisServerPool_ptr	src/SDRedisServerPool.h	/^typedef boost::shared_ptr<SDRedisServerPool> SDRedisServerPool_ptr;$/;"	t
+SDRedisServerPool_ptr	src_xllog/SDRedisServerPool.h	/^typedef boost::shared_ptr<SDRedisServerPool> SDRedisServerPool_ptr;$/;"	t
+SDRedisServer_ptr	src/SDRedisServer.h	/^typedef boost::shared_ptr<SDRedisServer> SDRedisServer_ptr;$/;"	t
+SDRedisServer_ptr	src_xllog/SDRedisServer.h	/^typedef boost::shared_ptr<SDRedisServer> SDRedisServer_ptr;$/;"	t
+SDRedisStringHandler	src/SDRedisStringHandler.cpp	/^SDRedisStringHandler::SDRedisStringHandler(SDRedisServer_ptr redis_server, uint32_t update_key_tos, uint32_t set_key_tos,uint32_t empty_key_tos)$/;"	f	class:SDRedisStringHandler
+SDRedisStringHandler	src/SDRedisStringHandler.h	/^class SDRedisStringHandler: public SDRedisHandler$/;"	c
+SDRedisStringHandler_ptr	src/SDRedisStringHandler.h	/^typedef boost::shared_ptr<SDRedisStringHandler> SDRedisStringHandler_ptr;$/;"	t
+SDUtility	common/SDUtility.h	/^class SDUtility$/;"	c
+SD_CONFIGURATION_SINGLETON_H	src/SDConfigurationSingleton.h	2;"	d
+SD_DENY_CRAWLER_H	src_xllog/SDDenyCrawler.h	2;"	d
+SD_DENY_FREQUENT_CRAWLER_H	src_xllog/SDDenyFrequentCrawler.h	2;"	d
+SD_DENY_IP_OVER_LIMIT_CRAWLER_H	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	2;"	d
+SD_DENY_SLOW_CRAWLER_H	src_xllog/SDDenySlowCrawler.h	2;"	d
+SD_UTILITY_H	common/SDUtility.h	2;"	d
+SERIALIZE	src/SDCondValue.h	/^	static const uint8_t SERIALIZE = TEXT_SERIALIZE;$/;"	m	class:Value
+SET_HANDLER	src/SDRedisHandler.cpp	/^std::string SDRedisHandler::SET_HANDLER      = "SET";$/;"	m	class:SDRedisHandler	file:
+SET_HANDLER	src/SDRedisHandler.h	/^        static std::string SET_HANDLER;$/;"	m	class:SDRedisHandler
+SRC_DEP	Makefile	/^SRC_DEP:=$(patsubst %.cpp,%.d,$(SRC_SRC))$/;"	m
+SRC_DIR	Makefile	/^SRC_DIR=src\/$/;"	m
+SRC_OBJ	Makefile	/^SRC_OBJ:=$(patsubst %.cpp,%.o,$(SRC_SRC))$/;"	m
+SRC_SRC	Makefile	/^SRC_SRC:=$(wildcard $(SRC_DIR)*.cpp)$/;"	m
+STLIBNAME	libs/antirez-hiredis-d5d8843/Makefile	/^STLIBNAME=$(LIBNAME).$(STLIBSUFFIX)$/;"	m
+STLIBSUFFIX	libs/antirez-hiredis-d5d8843/Makefile	/^STLIBSUFFIX=a$/;"	m
+STLIB_MAKE_CMD	libs/antirez-hiredis-d5d8843/Makefile	/^STLIB_MAKE_CMD=ar rcs $(STLIBNAME)$/;"	m
+STRING2INT	common/cmysql.h	/^typedef map<string, int> STRING2INT;$/;"	t
+STRING_HANDLER	src/SDRedisHandler.cpp	/^std::string SDRedisHandler::STRING_HANDLER = "STRING";$/;"	m	class:SDRedisHandler	file:
+STRING_HANDLER	src/SDRedisHandler.h	/^        static std::string STRING_HANDLER;$/;"	m	class:SDRedisHandler
+TEST_DEP	Makefile	/^TEST_DEP:=$(patsubst %.cpp,%.d,$(TEST_SRC))$/;"	m
+TEST_DIR	Makefile	/^TEST_DIR=test\/$/;"	m
+TEST_OBJ	Makefile	/^TEST_OBJ:=$(patsubst %.cpp,%.o,$(TEST_SRC))$/;"	m
+TEST_SRC	Makefile	/^TEST_SRC:=$(wildcard $(TEST_DIR)*.cpp)$/;"	m
+TEXT_SERIALIZE	src/SDCondValue.h	42;"	d
+TIME	Makefile	/^TIME:=$(shell date +'%Y%m%d')$/;"	m
+TSDEBUG	src_xllog/xl_log4cplus.h	132;"	d
+TSDEBUG	src_xllog/xl_log4cplus.h	141;"	d
+TSERROR	src_xllog/xl_log4cplus.h	135;"	d
+TSERROR	src_xllog/xl_log4cplus.h	144;"	d
+TSFATAL	src_xllog/xl_log4cplus.h	136;"	d
+TSFATAL	src_xllog/xl_log4cplus.h	145;"	d
+TSINFO	src_xllog/xl_log4cplus.h	133;"	d
+TSINFO	src_xllog/xl_log4cplus.h	142;"	d
+TSTRACE	src_xllog/xl_log4cplus.h	131;"	d
+TSTRACE	src_xllog/xl_log4cplus.h	140;"	d
+TSWARN	src_xllog/xl_log4cplus.h	134;"	d
+TSWARN	src_xllog/xl_log4cplus.h	143;"	d
+TYPE_INT16	src/SDCondValue.h	36;"	d
+TYPE_INT32	src/SDCondValue.h	37;"	d
+TYPE_INT64	src/SDCondValue.h	38;"	d
+TYPE_INT8	src/SDCondValue.h	35;"	d
+TYPE_STRING	src/SDCondValue.h	34;"	d
+UrlDecode	common/SDUtility.cpp	/^string SDUtility::UrlDecode(const std::string& src)$/;"	f	class:SDUtility
+UrlEncode	common/SDUtility.cpp	/^string SDUtility::UrlEncode(const string& src)$/;"	f	class:SDUtility
+V_BIT	common/common.h	37;"	d
+Value	src/SDCondValue.h	/^    Value() {};$/;"	f	class:Value
+Value	src/SDCondValue.h	/^    Value(string field, string value, int value_type)$/;"	f	class:Value
+Value	src/SDCondValue.h	/^class Value$/;"	c
+WARNINGS	libs/antirez-hiredis-d5d8843/Makefile	/^WARNINGS=-Wall -W -Wstrict-prototypes -Wwrite-strings$/;"	m
+XML_SERIALIZE	src/SDCondValue.h	43;"	d
+_BASE_HEADER_H_	src/base_header.h	12;"	d
+_BASE_HEADER_H_	src_xllog/base_header.h	12;"	d
+_BSD_SOURCE	libs/antirez-hiredis-d5d8843/fmacros.h	5;"	d
+_CMYSQL_H	common/cmysql.h	2;"	d
+_EL_ADD_READ	libs/antirez-hiredis-d5d8843/async.c	44;"	d	file:
+_EL_ADD_WRITE	libs/antirez-hiredis-d5d8843/async.c	50;"	d	file:
+_EL_CLEANUP	libs/antirez-hiredis-d5d8843/async.c	56;"	d	file:
+_EL_DEL_READ	libs/antirez-hiredis-d5d8843/async.c	47;"	d	file:
+_EL_DEL_WRITE	libs/antirez-hiredis-d5d8843/async.c	53;"	d	file:
+_LOG4CPLUS_LOGGING_MACROS_HEADER_	src_xllog/xl_log4cplus.h	89;"	d
+_POSIX_C_SOURCE	libs/antirez-hiredis-d5d8843/fmacros.h	9;"	d
+_XOPEN_SOURCE	libs/antirez-hiredis-d5d8843/fmacros.h	11;"	d
+_XOPEN_SOURCE	libs/antirez-hiredis-d5d8843/fmacros.h	13;"	d
+__COMMON_H_albert	common/common.h	2;"	d
+__DICT_H	libs/antirez-hiredis-d5d8843/dict.h	37;"	d
+__FAST_LOG_albert__	common/fast_log.h	2;"	d
+__HIREDIS_AE_H__	libs/antirez-hiredis-d5d8843/adapters/ae.h	2;"	d
+__HIREDIS_ASYNC_H	libs/antirez-hiredis-d5d8843/async.h	33;"	d
+__HIREDIS_FMACRO_H	libs/antirez-hiredis-d5d8843/fmacros.h	2;"	d
+__HIREDIS_H	libs/antirez-hiredis-d5d8843/hiredis.h	33;"	d
+__HIREDIS_H	libs/include/hiredis/hiredis.h	33;"	d
+__HIREDIS_LIBEVENT_H__	libs/antirez-hiredis-d5d8843/adapters/libevent.h	2;"	d
+__HIREDIS_LIBEV_H__	libs/antirez-hiredis-d5d8843/adapters/libev.h	2;"	d
+__NET_H	libs/antirez-hiredis-d5d8843/net.h	34;"	d
+__SDS_H	libs/antirez-hiredis-d5d8843/sds.h	32;"	d
+__SD_CONDITION_VALUE_H__	src/SDCondValue.h	2;"	d
+__SD_REDIS_HANDLER_H__	src/SDRedisHandler.h	2;"	d
+__SD_REDIS_SERVER_H__	src/SDRedisServer.h	2;"	d
+__SD_REDIS_SERVER_H__	src_xllog/SDRedisServer.h	2;"	d
+__SD_REDIS_SERVER_POOL_H__	src/SDRedisServerPool.h	2;"	d
+__SD_REDIS_SERVER_POOL_H__	src_xllog/SDRedisServerPool.h	2;"	d
+__SD_REDIS_STRING_HANDLER_H__	src/SDRedisStringHandler.h	2;"	d
+__XL_LOG4CPLUS_H_77D80A29_3746_4E1D_AD42_855D11851904__	src_xllog/xl_log4cplus.h	17;"	d
+__failed_tests	libs/antirez-hiredis-d5d8843/sds.c	/^int __failed_tests = 0;$/;"	v
+__redisAppendCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^int __redisAppendCommand(redisContext *c, char *cmd, size_t len) {$/;"	f
+__redisAsyncCommand	libs/antirez-hiredis-d5d8843/async.c	/^static int __redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, char *cmd, size_t len) {$/;"	f	file:
+__redisAsyncCopyError	libs/antirez-hiredis-d5d8843/async.c	/^static void __redisAsyncCopyError(redisAsyncContext *ac) {$/;"	f	file:
+__redisAsyncDisconnect	libs/antirez-hiredis-d5d8843/async.c	/^static void __redisAsyncDisconnect(redisAsyncContext *ac) {$/;"	f	file:
+__redisAsyncFree	libs/antirez-hiredis-d5d8843/async.c	/^static void __redisAsyncFree(redisAsyncContext *ac) {$/;"	f	file:
+__redisAsyncHandleConnect	libs/antirez-hiredis-d5d8843/async.c	/^static int __redisAsyncHandleConnect(redisAsyncContext *ac) {$/;"	f	file:
+__redisBlockForReply	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void *__redisBlockForReply(redisContext *c) {$/;"	f	file:
+__redisGetSubscribeCallback	libs/antirez-hiredis-d5d8843/async.c	/^static int __redisGetSubscribeCallback(redisAsyncContext *ac, redisReply *reply, redisCallback *dstcb) {$/;"	f	file:
+__redisPushCallback	libs/antirez-hiredis-d5d8843/async.c	/^static int __redisPushCallback(redisCallbackList *list, redisCallback *source) {$/;"	f	file:
+__redisReaderSetError	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void __redisReaderSetError(redisReader *r, int type, const char *str) {$/;"	f	file:
+__redisReaderSetErrorOOM	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void __redisReaderSetErrorOOM(redisReader *r) {$/;"	f	file:
+__redisReaderSetErrorProtocolByte	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void __redisReaderSetErrorProtocolByte(redisReader *r, char byte) {$/;"	f	file:
+__redisRunCallback	libs/antirez-hiredis-d5d8843/async.c	/^static void __redisRunCallback(redisAsyncContext *ac, redisCallback *cb, redisReply *reply) {$/;"	f	file:
+__redisSetError	libs/antirez-hiredis-d5d8843/hiredis.c	/^void __redisSetError(redisContext *c, int type, const char *str) {$/;"	f
+__redisSetErrorFromErrno	libs/antirez-hiredis-d5d8843/net.c	/^static void __redisSetErrorFromErrno(redisContext *c, int type, const char *prefix) {$/;"	f	file:
+__redisShiftCallback	libs/antirez-hiredis-d5d8843/async.c	/^static int __redisShiftCallback(redisCallbackList *list, redisCallback *target) {$/;"	f	file:
+__test_num	libs/antirez-hiredis-d5d8843/sds.c	/^int __test_num = 0;$/;"	v
+_dictClear	libs/antirez-hiredis-d5d8843/dict.c	/^static int _dictClear(dict *ht) {$/;"	f	file:
+_dictExpandIfNeeded	libs/antirez-hiredis-d5d8843/dict.c	/^static int _dictExpandIfNeeded(dict *ht) {$/;"	f	file:
+_dictInit	libs/antirez-hiredis-d5d8843/dict.c	/^static int _dictInit(dict *ht, dictType *type, void *privDataPtr) {$/;"	f	file:
+_dictKeyIndex	libs/antirez-hiredis-d5d8843/dict.c	/^static int _dictKeyIndex(dict *ht, const void *key) {$/;"	f	file:
+_dictNextPower	libs/antirez-hiredis-d5d8843/dict.c	/^static unsigned long _dictNextPower(unsigned long size) {$/;"	f	file:
+_dictReset	libs/antirez-hiredis-d5d8843/dict.c	/^static void _dictReset(dict *ht) {$/;"	f	file:
+addRead	libs/antirez-hiredis-d5d8843/async.h	/^        void (*addRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon2
+addWrite	libs/antirez-hiredis-d5d8843/async.h	/^        void (*addWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon2
+already_file_size	common/fast_log.h	/^	uint32_t already_file_size;$/;"	m	struct:__anon1
+atouint32	common/SDUtility.cpp	/^uint32_t SDUtility::atouint32(const char* ptr, int32_t len)$/;"	f	class:SDUtility
+atouint64	common/SDUtility.cpp	/^uint32_t SDUtility::atouint64(char* ptr, int32_t len)$/;"	f	class:SDUtility
+btquery_valid	src_xllog/SDDenyCrawler.cpp	/^bool SDDenyCrawler::btquery_valid(uint32_t ip,const string& peerid,const string& info_id)$/;"	f	class:SDDenyCrawler
+buf	libs/antirez-hiredis-d5d8843/hiredis.h	/^    char *buf; \/* Read buffer *\/$/;"	m	struct:redisReader
+buf	libs/antirez-hiredis-d5d8843/sds.h	/^    char buf[];$/;"	m	struct:sdshdr
+buf	libs/include/hiredis/hiredis.h	/^    char *buf; \/* Read buffer *\/$/;"	m	struct:redisReader
+bulklen	libs/antirez-hiredis-d5d8843/hiredis.c	/^static size_t bulklen(size_t len) {$/;"	f	file:
+c	libs/antirez-hiredis-d5d8843/async.h	/^    redisContext c;$/;"	m	struct:redisAsyncContext
+callbackDict	libs/antirez-hiredis-d5d8843/async.c	/^static dictType callbackDict = {$/;"	v	file:
+callbackHash	libs/antirez-hiredis-d5d8843/async.c	/^static unsigned int callbackHash(const void *key) {$/;"	f	file:
+callbackKeyCompare	libs/antirez-hiredis-d5d8843/async.c	/^static int callbackKeyCompare(void *privdata, const void *key1, const void *key2) {$/;"	f	file:
+callbackKeyDestructor	libs/antirez-hiredis-d5d8843/async.c	/^static void callbackKeyDestructor(void *privdata, void *key) {$/;"	f	file:
+callbackValDestructor	libs/antirez-hiredis-d5d8843/async.c	/^static void callbackValDestructor(void *privdata, void *val) {$/;"	f	file:
+callbackValDup	libs/antirez-hiredis-d5d8843/async.c	/^static void *callbackValDup(void *privdata, const void *src) {$/;"	f	file:
+channels	libs/antirez-hiredis-d5d8843/async.h	/^        struct dict *channels;$/;"	m	struct:redisAsyncContext::__anon3	typeref:struct:redisAsyncContext::__anon3::dict
+check_connection	src/SDRedisHandler.cpp	/^bool SDRedisHandler::check_connection()$/;"	f	class:SDRedisHandler
+chrtos	libs/antirez-hiredis-d5d8843/hiredis.c	/^static size_t chrtos(char *buf, size_t size, char byte) {$/;"	f	file:
+cleanup	libs/antirez-hiredis-d5d8843/async.h	/^        void (*cleanup)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon2
+cleanupFunc	src_xllog/SDDenyFrequentCrawler.cpp	/^int SDDenyFrequentCrawler::cleanupFunc(void *primary_key, uint32_t primary_key_len, void *second_key, uint32_t second_key_len, void *data, uint32_t data_len, void *arg)$/;"	f	class:SDDenyFrequentCrawler
+cleanupFunc	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^int SDDenyIpOverPidNumLimitCrawler::cleanupFunc(void *primary_key, uint32_t primary_key_len, void *second_key, uint32_t second_key_len, void *data, uint32_t data_len, void *arg)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+cleanupFunc	src_xllog/SDDenySlowCrawler.cpp	/^int SDDenySlowCrawler::cleanupFunc(void *primary_key, uint32_t primary_key_len, void *second_key, uint32_t second_key_len, void *data, uint32_t data_len, void *arg)$/;"	f	class:SDDenySlowCrawler
+clone	src/SDRedisStringHandler.h	/^        virtual SDRedisStringHandler* clone(SDRedisServer_ptr redis_server)$/;"	f	class:SDRedisStringHandler
+close	src/SDRedisServer.cpp	/^bool SDRedisServer::close()$/;"	f	class:SDRedisServer
+close	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::close()$/;"	f	class:SDRedisServer
+config	libs/antirez-hiredis-d5d8843/test.c	/^struct config {$/;"	s	file:
+connect	libs/antirez-hiredis-d5d8843/test.c	/^static redisContext *connect(struct config config) {$/;"	f	file:
+connect	src/SDRedisServer.cpp	/^bool SDRedisServer::connect(uint32_t toms)$/;"	f	class:SDRedisServer
+connect	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::connect(uint32_t toms)$/;"	f	class:SDRedisServer
+connectCallback	libs/antirez-hiredis-d5d8843/example-ae.c	/^void connectCallback(const redisAsyncContext *c, int status) {$/;"	f
+connectCallback	libs/antirez-hiredis-d5d8843/example-libev.c	/^void connectCallback(const redisAsyncContext *c, int status) {$/;"	f
+connectCallback	libs/antirez-hiredis-d5d8843/example-libevent.c	/^void connectCallback(const redisAsyncContext *c, int status) {$/;"	f
+connection_type	libs/antirez-hiredis-d5d8843/test.c	/^enum connection_type {$/;"	g	file:
+context	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^    redisAsyncContext *context;$/;"	m	struct:redisAeEvents
+context	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^    redisAsyncContext *context;$/;"	m	struct:redisLibevEvents
+context	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^    redisAsyncContext *context;$/;"	m	struct:redisLibeventEvents
+copyValuePointorFunc	src_xllog/SDDenyFrequentCrawler.cpp	/^void SDDenyFrequentCrawler::copyValuePointorFunc(void** desc_ptr, void *src_ptr)$/;"	f	class:SDDenyFrequentCrawler
+copyValuePointorFunc	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^void SDDenyIpOverPidNumLimitCrawler::copyValuePointorFunc(void** desc_ptr, void *src_ptr)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+copyValuePointorFunc	src_xllog/SDDenySlowCrawler.cpp	/^void SDDenySlowCrawler::copyValuePointorFunc(void** desc_ptr, void *src_ptr)$/;"	f	class:SDDenySlowCrawler
+createArray	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *(*createArray)(const redisReadTask*, int);$/;"	m	struct:redisReplyObjectFunctions
+createArray	libs/include/hiredis/hiredis.h	/^    void *(*createArray)(const redisReadTask*, int);$/;"	m	struct:redisReplyObjectFunctions
+createArrayObject	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void *createArrayObject(const redisReadTask *task, int elements) {$/;"	f	file:
+createInteger	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *(*createInteger)(const redisReadTask*, long long);$/;"	m	struct:redisReplyObjectFunctions
+createInteger	libs/include/hiredis/hiredis.h	/^    void *(*createInteger)(const redisReadTask*, long long);$/;"	m	struct:redisReplyObjectFunctions
+createIntegerObject	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void *createIntegerObject(const redisReadTask *task, long long value) {$/;"	f	file:
+createNil	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *(*createNil)(const redisReadTask*);$/;"	m	struct:redisReplyObjectFunctions
+createNil	libs/include/hiredis/hiredis.h	/^    void *(*createNil)(const redisReadTask*);$/;"	m	struct:redisReplyObjectFunctions
+createNilObject	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void *createNilObject(const redisReadTask *task) {$/;"	f	file:
+createReplyObject	libs/antirez-hiredis-d5d8843/hiredis.c	/^static redisReply *createReplyObject(int type) {$/;"	f	file:
+createString	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *(*createString)(const redisReadTask*, char*, size_t);$/;"	m	struct:redisReplyObjectFunctions
+createString	libs/include/hiredis/hiredis.h	/^    void *(*createString)(const redisReadTask*, char*, size_t);$/;"	m	struct:redisReplyObjectFunctions
+createStringObject	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void *createStringObject(const redisReadTask *task, char *str, size_t len) {$/;"	f	file:
+cur_time	common/fast_log.h	/^	time_t cur_time;$/;"	m	struct:__anon1
+data	libs/antirez-hiredis-d5d8843/async.h	/^        void *data;$/;"	m	struct:redisAsyncContext::__anon2
+data	libs/antirez-hiredis-d5d8843/async.h	/^    void *data;$/;"	m	struct:redisAsyncContext
+defaultFunctions	libs/antirez-hiredis-d5d8843/hiredis.c	/^static redisReplyObjectFunctions defaultFunctions = {$/;"	v	file:
+delRead	libs/antirez-hiredis-d5d8843/async.h	/^        void (*delRead)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon2
+delWrite	libs/antirez-hiredis-d5d8843/async.h	/^        void (*delWrite)(void *privdata);$/;"	m	struct:redisAsyncContext::__anon2
+deleteIP	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^bool SDDenyIpOverPidNumLimitCrawler::deleteIP(int32_t ip)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+deleteIP	src_xllog/SDDenySlowCrawler.cpp	/^bool SDDenySlowCrawler::deleteIP(int32_t ip)$/;"	f	class:SDDenySlowCrawler
+dict	libs/antirez-hiredis-d5d8843/dict.h	/^typedef struct dict {$/;"	s
+dict	libs/antirez-hiredis-d5d8843/dict.h	/^} dict;$/;"	t	typeref:struct:dict
+dictAdd	libs/antirez-hiredis-d5d8843/dict.c	/^static int dictAdd(dict *ht, void *key, void *val) {$/;"	f	file:
+dictCompareHashKeys	libs/antirez-hiredis-d5d8843/dict.h	101;"	d
+dictCreate	libs/antirez-hiredis-d5d8843/dict.c	/^static dict *dictCreate(dictType *type, void *privDataPtr) {$/;"	f	file:
+dictDelete	libs/antirez-hiredis-d5d8843/dict.c	/^static int dictDelete(dict *ht, const void *key) {$/;"	f	file:
+dictEntry	libs/antirez-hiredis-d5d8843/dict.h	/^typedef struct dictEntry {$/;"	s
+dictEntry	libs/antirez-hiredis-d5d8843/dict.h	/^} dictEntry;$/;"	t	typeref:struct:dictEntry
+dictExpand	libs/antirez-hiredis-d5d8843/dict.c	/^static int dictExpand(dict *ht, unsigned long size) {$/;"	f	file:
+dictFind	libs/antirez-hiredis-d5d8843/dict.c	/^static dictEntry *dictFind(dict *ht, const void *key) {$/;"	f	file:
+dictFreeEntryKey	libs/antirez-hiredis-d5d8843/dict.h	90;"	d
+dictFreeEntryVal	libs/antirez-hiredis-d5d8843/dict.h	79;"	d
+dictGenHashFunction	libs/antirez-hiredis-d5d8843/dict.c	/^static unsigned int dictGenHashFunction(const unsigned char *buf, int len) {$/;"	f	file:
+dictGetEntryKey	libs/antirez-hiredis-d5d8843/dict.h	108;"	d
+dictGetEntryVal	libs/antirez-hiredis-d5d8843/dict.h	109;"	d
+dictGetIterator	libs/antirez-hiredis-d5d8843/dict.c	/^static dictIterator *dictGetIterator(dict *ht) {$/;"	f	file:
+dictHashKey	libs/antirez-hiredis-d5d8843/dict.h	106;"	d
+dictIterator	libs/antirez-hiredis-d5d8843/dict.h	/^typedef struct dictIterator {$/;"	s
+dictIterator	libs/antirez-hiredis-d5d8843/dict.h	/^} dictIterator;$/;"	t	typeref:struct:dictIterator
+dictNext	libs/antirez-hiredis-d5d8843/dict.c	/^static dictEntry *dictNext(dictIterator *iter) {$/;"	f	file:
+dictRelease	libs/antirez-hiredis-d5d8843/dict.c	/^static void dictRelease(dict *ht) {$/;"	f	file:
+dictReleaseIterator	libs/antirez-hiredis-d5d8843/dict.c	/^static void dictReleaseIterator(dictIterator *iter) {$/;"	f	file:
+dictReplace	libs/antirez-hiredis-d5d8843/dict.c	/^static int dictReplace(dict *ht, void *key, void *val) {$/;"	f	file:
+dictSetHashKey	libs/antirez-hiredis-d5d8843/dict.h	94;"	d
+dictSetHashVal	libs/antirez-hiredis-d5d8843/dict.h	83;"	d
+dictSize	libs/antirez-hiredis-d5d8843/dict.h	111;"	d
+dictSlots	libs/antirez-hiredis-d5d8843/dict.h	110;"	d
+dictType	libs/antirez-hiredis-d5d8843/dict.h	/^typedef struct dictType {$/;"	s
+dictType	libs/antirez-hiredis-d5d8843/dict.h	/^} dictType;$/;"	t	typeref:struct:dictType
+disconnect	libs/antirez-hiredis-d5d8843/test.c	/^static void disconnect(redisContext *c) {$/;"	f	file:
+disconnectCallback	libs/antirez-hiredis-d5d8843/example-ae.c	/^void disconnectCallback(const redisAsyncContext *c, int status) {$/;"	f
+disconnectCallback	libs/antirez-hiredis-d5d8843/example-libev.c	/^void disconnectCallback(const redisAsyncContext *c, int status) {$/;"	f
+disconnectCallback	libs/antirez-hiredis-d5d8843/example-libevent.c	/^void disconnectCallback(const redisAsyncContext *c, int status) {$/;"	f
+dump	src/SDRedisHandler.h	/^        std::string dump() {return m_redis_server->dump();}$/;"	f	class:SDRedisHandler
+dump	src/SDRedisServer.h	/^	std::string dump() const$/;"	f	class:SDRedisServer
+dump	src_xllog/SDDenyFrequentCrawler.h	/^    std::string dump()$/;"	f	struct:SDDenyFrequentCrawlerValue
+dump	src_xllog/SDRedisServer.h	/^	std::string dump() const$/;"	f	class:SDRedisServer
+dump_slow_crawler_value	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^std::string SDDenyIpOverPidNumLimitCrawler::dump_slow_crawler_value(SDDenyIpOverPidNumLimitCrawlerValue& cache_value)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+dump_slow_crawler_value	src_xllog/SDDenySlowCrawler.cpp	/^std::string SDDenySlowCrawler::dump_slow_crawler_value(SDDenySlowCrawlerValue& cache_value)$/;"	f	class:SDDenySlowCrawler
+element	libs/antirez-hiredis-d5d8843/hiredis.h	/^    struct redisReply **element; \/* elements vector for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	typeref:struct:redisReply::redisReply
+element	libs/include/hiredis/hiredis.h	/^    struct redisReply **element; \/* elements vector for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply	typeref:struct:redisReply::redisReply
+elements	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int elements; \/* number of elements in multibulk container *\/$/;"	m	struct:redisReadTask
+elements	libs/antirez-hiredis-d5d8843/hiredis.h	/^    size_t elements; \/* number of elements, for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply
+elements	libs/include/hiredis/hiredis.h	/^    int elements; \/* number of elements in multibulk container *\/$/;"	m	struct:redisReadTask
+elements	libs/include/hiredis/hiredis.h	/^    size_t elements; \/* number of elements, for REDIS_REPLY_ARRAY *\/$/;"	m	struct:redisReply
+entry	libs/antirez-hiredis-d5d8843/dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+err	libs/antirez-hiredis-d5d8843/async.h	/^    int err;$/;"	m	struct:redisAsyncContext
+err	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisContext
+err	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisReader
+err	libs/include/hiredis/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisContext
+err	libs/include/hiredis/hiredis.h	/^    int err; \/* Error flags, 0 when there is no error *\/$/;"	m	struct:redisReader
+err_log_fp	common/fast_log.h	/^	FILE *err_log_fp;$/;"	m	struct:__anon1
+errstr	libs/antirez-hiredis-d5d8843/async.h	/^    char *errstr;$/;"	m	struct:redisAsyncContext
+errstr	libs/antirez-hiredis-d5d8843/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisContext
+errstr	libs/antirez-hiredis-d5d8843/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisReader
+errstr	libs/include/hiredis/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisContext
+errstr	libs/include/hiredis/hiredis.h	/^    char errstr[128]; \/* String representation of error when applicable *\/$/;"	m	struct:redisReader
+ev	libs/antirez-hiredis-d5d8843/async.h	/^    } ev;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon2
+exist	src/SDRedisServer.cpp	/^int SDRedisServer::exist(const std::string &key, bool &exist)$/;"	f	class:SDRedisServer
+exist	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::exist(const std::string &key, bool &exist)$/;"	f	class:SDRedisServer
+expire	src/SDRedisServer.cpp	/^int SDRedisServer::expire(const std::string &key, uint32_t duration_time)$/;"	f	class:SDRedisServer
+expire	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::expire(const std::string &key, uint32_t duration_time)$/;"	f	class:SDRedisServer
+fails	libs/antirez-hiredis-d5d8843/test.c	/^static int tests = 0, fails = 0;$/;"	v	file:
+fast_log_debug	common/fast_log.h	/^int inline fast_log_debug(fast_log_t *fltp, char *log_str, uint32_t log_str_len)$/;"	f
+fast_log_error	common/fast_log.h	/^int inline fast_log_error(fast_log_t *fltp, char *log_str, uint32_t log_str_len)$/;"	f
+fast_log_message	common/fast_log.h	/^int inline fast_log_message(fast_log_t *fltp, char *log_str, uint32_t log_str_len)$/;"	f
+fast_log_t	common/fast_log.h	/^} fast_log_t;$/;"	t	typeref:struct:__anon1
+fast_log_warn	common/fast_log.h	/^int inline fast_log_warn(fast_log_t *fltp, char *log_str, uint32_t log_str_len)$/;"	f
+fd	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^    int fd;$/;"	m	struct:redisAeEvents
+fd	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int fd;$/;"	m	struct:redisContext
+fd	libs/include/hiredis/hiredis.h	/^    int fd;$/;"	m	struct:redisContext
+flags	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int flags;$/;"	m	struct:redisContext
+flags	libs/include/hiredis/hiredis.h	/^    int flags;$/;"	m	struct:redisContext
+fn	libs/antirez-hiredis-d5d8843/async.h	/^    redisCallbackFn *fn;$/;"	m	struct:redisCallback
+fn	libs/antirez-hiredis-d5d8843/hiredis.h	/^    redisReplyObjectFunctions *fn;$/;"	m	struct:redisReader
+fn	libs/include/hiredis/hiredis.h	/^    redisReplyObjectFunctions *fn;$/;"	m	struct:redisReader
+format	common/SDUtility.cpp	/^string SDUtility::format(int n)$/;"	f	class:SDUtility
+format	common/SDUtility.cpp	/^string SDUtility::format(long n)$/;"	f	class:SDUtility
+format	common/SDUtility.cpp	/^string SDUtility::format(uint32_t n)$/;"	f	class:SDUtility
+format_time	common/SDUtility.cpp	/^string SDUtility::format_time(time_t unix_time)$/;"	f	class:SDUtility
+free	libs/antirez-hiredis-d5d8843/sds.h	/^    int free;$/;"	m	struct:sdshdr
+freeObject	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void (*freeObject)(void*);$/;"	m	struct:redisReplyObjectFunctions
+freeObject	libs/include/hiredis/hiredis.h	/^    void (*freeObject)(void*);$/;"	m	struct:redisReplyObjectFunctions
+freeReplyObject	libs/antirez-hiredis-d5d8843/hiredis.c	/^void freeReplyObject(void *reply) {$/;"	f
+free_space	common/fast_log.h	/^	uint32_t free_space;$/;"	m	struct:__anon1
+gbk2utf8	common/SDUtility.cpp	/^string SDUtility::gbk2utf8(const char* text)$/;"	f	class:SDUtility
+get	src/SDRedisServerPool.cpp	/^SDRedisServer_ptr SDRedisServerPool::get()$/;"	f	class:SDRedisServerPool
+get	src_xllog/SDRedisServerPool.cpp	/^SDRedisServer_ptr SDRedisServerPool::get(bool autocreate)$/;"	f	class:SDRedisServerPool
+getCallback	libs/antirez-hiredis-d5d8843/example-ae.c	/^void getCallback(redisAsyncContext *c, void *r, void *privdata) {$/;"	f
+getCallback	libs/antirez-hiredis-d5d8843/example-libev.c	/^void getCallback(redisAsyncContext *c, void *r, void *privdata) {$/;"	f
+getCallback	libs/antirez-hiredis-d5d8843/example-libevent.c	/^void getCallback(redisAsyncContext *c, void *r, void *privdata) {$/;"	f
+getInt	common/SDConfiguration.cpp	/^int SDConfiguration::getInt(const char *key, int default_value) const$/;"	f	class:SDConfiguration
+getString	common/SDConfiguration.cpp	/^string SDConfiguration::getString(const char* key, const std::string& default_value) const$/;"	f	class:SDConfiguration
+get_acc_intervals_variance	src_xllog/SDDenySlowCrawler.cpp	/^float SDDenySlowCrawler::get_acc_intervals_variance(list<uint32_t>& acc_intervals)$/;"	f	class:SDDenySlowCrawler
+get_config	src/SDConfigurationSingleton.cpp	/^SDConfiguration* SDConfigurationSingleton::get_config()$/;"	f	class:SDConfigurationSingleton
+get_db_index	src/SDRedisServerPool.h	/^	inline uint16_t get_db_index() const {return m_db_index;}$/;"	f	class:SDRedisServerPool
+get_db_index	src_xllog/SDRedisServerPool.h	/^	inline uint16_t get_db_index() const {return m_db_index;}$/;"	f	class:SDRedisServerPool
+get_host	src/SDRedisServerPool.h	/^	inline std::string	get_host() const {return m_host;}$/;"	f	class:SDRedisServerPool
+get_host	src_xllog/SDRedisServerPool.h	/^	inline std::string	get_host() const {return m_host;}$/;"	f	class:SDRedisServerPool
+get_id	src_xllog/SDRedisServerPool.h	/^	inline std::string get_id() const {return m_id;}$/;"	f	class:SDRedisServerPool
+get_instance	src/SDConfigurationSingleton.h	/^	static SDConfigurationSingleton* get_instance(){return m_instance;}$/;"	f	class:SDConfigurationSingleton
+get_instance	src/SDRedisServerPool.h	/^    static SDRedisServerPool* get_instance(){return m_instance;}$/;"	f	class:SDRedisServerPool
+get_local_datestring	common/SDUtility.cpp	/^string SDUtility::get_local_datestring()$/;"	f	class:SDUtility
+get_port	src/SDRedisServerPool.h	/^	inline uint16_t	get_port() const {return m_port;}$/;"	f	class:SDRedisServerPool
+get_port	src_xllog/SDRedisServerPool.h	/^	inline uint16_t	get_port() const {return m_port;}$/;"	f	class:SDRedisServerPool
+get_statistic	src/SDRedisStringHandler.cpp	/^std::string SDRedisStringHandler::get_statistic(int reset)$/;"	f	class:SDRedisStringHandler
+hashFunction	libs/antirez-hiredis-d5d8843/dict.h	/^    unsigned int (*hashFunction)(const void *key);$/;"	m	struct:dictType
+head	libs/antirez-hiredis-d5d8843/async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList
+hget	src/SDRedisServer.cpp	/^int SDRedisServer::hget(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hget	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hget(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hget2	src/SDRedisServer.cpp	/^int SDRedisServer::hget2(const std::string &key, std::vector<Value> &values, uint32_t duration_time = -1,bool is_set_expire = false)$/;"	f	class:SDRedisServer
+hget2	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hget2(const std::string &key, std::vector<Value> &values, uint32_t duration_time = -1,bool is_set_expire = false)$/;"	f	class:SDRedisServer
+hgetall	src/SDRedisServer.cpp	/^int SDRedisServer::hgetall(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hgetall	src/SDRedisServer.cpp	/^int SDRedisServer::hgetall(const std::string &key,std::vector<Value>&values,uint32_t duration_time,bool is_set_expire)$/;"	f	class:SDRedisServer
+hgetall	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hgetall(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hgetall	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hgetall(const std::string &key,std::vector<Value>&values,uint32_t duration_time,bool is_set_expire)$/;"	f	class:SDRedisServer
+hincrby	src/SDRedisServer.cpp	/^int SDRedisServer::hincrby(const std::string &key,const std::string &filed,int32_t &increment)$/;"	f	class:SDRedisServer
+hincrby	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hincrby(const std::string &key,const std::string &filed,int32_t &increment)$/;"	f	class:SDRedisServer
+host	libs/antirez-hiredis-d5d8843/test.c	/^        const char *host;$/;"	m	struct:config::__anon4	file:
+host16_t	common/common.h	/^typedef	uint16_t	host16_t;$/;"	t
+host32_t	common/common.h	/^typedef	uint32_t	host32_t;$/;"	t
+host64_t	common/common.h	/^typedef	uint64_t	host64_t;$/;"	t
+hrem	src/SDRedisServer.cpp	/^int SDRedisServer::hrem(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hrem	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hrem(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hset	src/SDRedisServer.cpp	/^int SDRedisServer::hset(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hset	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hset(const std::string &key, std::vector<Value> &values)$/;"	f	class:SDRedisServer
+hset2	src/SDRedisServer.cpp	/^int SDRedisServer::hset2(const std::string &key, std::vector<Value> &values, uint32_t duration_time = -1)$/;"	f	class:SDRedisServer
+hset2	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::hset2(const std::string &key, std::vector<Value> &values, uint32_t duration_time = -1)$/;"	f	class:SDRedisServer
+ht	libs/antirez-hiredis-d5d8843/dict.h	/^    dict *ht;$/;"	m	struct:dictIterator
+idx	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int idx; \/* index in parent (array) object *\/$/;"	m	struct:redisReadTask
+idx	libs/include/hiredis/hiredis.h	/^    int idx; \/* index in parent (array) object *\/$/;"	m	struct:redisReadTask
+index	libs/antirez-hiredis-d5d8843/dict.h	/^    int index;$/;"	m	struct:dictIterator
+info	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::info(std::map<std::string,std::string>& info_map)$/;"	f	class:SDRedisServer
+init	src/SDConfigurationSingleton.cpp	/^void SDConfigurationSingleton::init(SDConfiguration* config)$/;"	f	class:SDConfigurationSingleton
+init	src/SDRedisHandler.cpp	/^bool SDRedisHandler::init()$/;"	f	class:SDRedisHandler
+init	src/SDRedisServerPool.cpp	/^bool SDRedisServerPool::init(const std::string& host, uint16_t port, uint16_t db_index)$/;"	f	class:SDRedisServerPool
+initIPCache	src_xllog/SDDenyFrequentCrawler.cpp	/^bool SDDenyFrequentCrawler::initIPCache($/;"	f	class:SDDenyFrequentCrawler
+initIPCache	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^bool SDDenyIpOverPidNumLimitCrawler::initIPCache($/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+initIPCache	src_xllog/SDDenySlowCrawler.cpp	/^bool SDDenySlowCrawler::initIPCache($/;"	f	class:SDDenySlowCrawler
+insertIP	src_xllog/SDDenyFrequentCrawler.cpp	/^bool SDDenyFrequentCrawler::insertIP(int32_t ip,const  SDDenyFrequentCrawlerValue& value)$/;"	f	class:SDDenyFrequentCrawler
+insertIP	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^bool SDDenyIpOverPidNumLimitCrawler::insertIP(int32_t ip,const  SDDenyIpOverPidNumLimitCrawlerValue& value)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+insertIP	src_xllog/SDDenySlowCrawler.cpp	/^bool SDDenySlowCrawler::insertIP(int32_t ip,const  SDDenySlowCrawlerValue& value)$/;"	f	class:SDDenySlowCrawler
+insertItem	common/SDConfiguration.cpp	/^void SDConfiguration::insertItem(const SDItemData& item)$/;"	f	class:SDConfiguration
+integer	libs/antirez-hiredis-d5d8843/hiredis.h	/^    long long integer; \/* The integer when type is REDIS_REPLY_INTEGER *\/$/;"	m	struct:redisReply
+integer	libs/include/hiredis/hiredis.h	/^    long long integer; \/* The integer when type is REDIS_REPLY_INTEGER *\/$/;"	m	struct:redisReply
+intlen	libs/antirez-hiredis-d5d8843/hiredis.c	/^static int intlen(int i) {$/;"	f	file:
+invalid	libs/antirez-hiredis-d5d8843/async.h	/^        redisCallbackList invalid;$/;"	m	struct:redisAsyncContext::__anon3
+ip_aton	common/SDUtility.cpp	/^uint32_t SDUtility::ip_aton(const  string & ip)$/;"	f	class:SDUtility
+ip_ntoa	common/SDUtility.cpp	/^string SDUtility::ip_ntoa(uint32_t ip)$/;"	f	class:SDUtility
+is_connected	src/SDRedisServer.h	/^	bool is_connected(){return (m_redis_context != NULL);}$/;"	f	class:SDRedisServer
+is_connected	src_xllog/SDRedisServer.h	/^	bool is_connected(){return (m_redis_context != NULL);}$/;"	f	class:SDRedisServer
+key	libs/antirez-hiredis-d5d8843/dict.h	/^    void *key;$/;"	m	struct:dictEntry
+keyCompare	libs/antirez-hiredis-d5d8843/dict.h	/^    int (*keyCompare)(void *privdata, const void *key1, const void *key2);$/;"	m	struct:dictType
+keyDestructor	libs/antirez-hiredis-d5d8843/dict.h	/^    void (*keyDestructor)(void *privdata, void *key);$/;"	m	struct:dictType
+keyDup	libs/antirez-hiredis-d5d8843/dict.h	/^    void *(*keyDup)(void *privdata, const void *key);$/;"	m	struct:dictType
+len	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int len; \/* Length of string *\/$/;"	m	struct:redisReply
+len	libs/antirez-hiredis-d5d8843/hiredis.h	/^    size_t len; \/* Buffer length *\/$/;"	m	struct:redisReader
+len	libs/antirez-hiredis-d5d8843/sds.h	/^    int len;$/;"	m	struct:sdshdr
+len	libs/include/hiredis/hiredis.h	/^    int len; \/* Length of string *\/$/;"	m	struct:redisReply
+len	libs/include/hiredis/hiredis.h	/^    size_t len; \/* Buffer length *\/$/;"	m	struct:redisReader
+load	common/SDConfiguration.cpp	/^bool SDConfiguration::load(const char* file_name)$/;"	f	class:SDConfiguration
+loadLine	common/SDConfiguration.cpp	/^bool SDConfiguration::loadLine(char* buffer)$/;"	f	class:SDConfiguration
+lock	common/fast_log.h	/^	int lock;$/;"	m	struct:__anon1
+log_daily	common/fast_log.h	/^	uint32_t log_daily;$/;"	m	struct:__anon1
+log_date	common/fast_log.h	/^	char log_date[256];$/;"	m	struct:__anon1
+log_fd	common/fast_log.h	/^	int log_fd;$/;"	m	struct:__anon1
+log_file_num	common/fast_log.h	/^	uint32_t log_file_num;$/;"	m	struct:__anon1
+log_file_plate	common/fast_log.h	/^	char log_file_plate[MAX_LINE_LEN];$/;"	m	struct:__anon1
+log_file_size	common/fast_log.h	/^	uint32_t log_file_size;$/;"	m	struct:__anon1
+log_interval	common/fast_log.h	/^	char log_interval[32];$/;"	m	struct:__anon1
+log_level	common/fast_log.h	/^	int log_level;$/;"	m	struct:__anon1
+loop	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^    aeEventLoop *loop;$/;"	m	struct:redisAeEvents
+loop	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^    struct ev_loop *loop;$/;"	m	struct:redisLibevEvents	typeref:struct:redisLibevEvents::ev_loop
+loop	libs/antirez-hiredis-d5d8843/example-ae.c	/^static aeEventLoop *loop;$/;"	v	file:
+m_ErrMsg	common/cmysql.h	/^	char* m_ErrMsg;$/;"	m	class:CMysql
+m_FieldIndex	common/cmysql.h	/^	STRING2INT m_FieldIndex;$/;"	m	class:CMysql
+m_acc_intervals	src_xllog/SDDenySlowCrawler.h	/^    list<uint32_t> m_acc_intervals;$/;"	m	struct:SDDenySlowCrawlerValue
+m_autocreate	src_xllog/SDRedisServerPool.h	/^	bool m_autocreate;$/;"	m	class:SDAutoRedis
+m_bConnected	common/cmysql.h	/^	bool m_bConnected, m_bIfConfig;$/;"	m	class:CMysql
+m_bFieldIndexInitialized	common/cmysql.h	/^	bool m_bFieldIndexInitialized;$/;"	m	class:CMysql
+m_bIfConfig	common/cmysql.h	/^	bool m_bConnected, m_bIfConfig;$/;"	m	class:CMysql
+m_bt_deny_frequent_crawler	src_xllog/SDDenyCrawler.h	/^    SDBtDenyFrequentCrawler* m_bt_deny_frequent_crawler;$/;"	m	class:SDDenyCrawler
+m_bt_deny_slow_crawler	src_xllog/SDDenyCrawler.h	/^    SDBtDenySlowCrawler* m_bt_deny_slow_crawler;$/;"	m	class:SDDenyCrawler
+m_condition	src/SDCondValue.h	/^	std::vector <Condition> m_condition;$/;"	m	class:RedisKey
+m_config	src/SDConfigurationSingleton.h	/^	SDConfiguration* m_config;$/;"	m	class:SDConfigurationSingleton
+m_conn_num	src/SDRedisServerPool.h	/^    int m_conn_num;$/;"	m	class:SDRedisServerPool
+m_conn_ptrs	src/SDRedisServerPool.h	/^	list<SDRedisServer_ptr> m_conn_ptrs;$/;"	m	class:SDRedisServerPool
+m_conn_timeout	src/SDRedisHandler.h	/^        uint32_t m_conn_timeout;		\/\/ connection timeout$/;"	m	class:SDRedisHandler
+m_connection	common/cmysql.h	/^	MYSQL m_connection;$/;"	m	class:CMysql
+m_content	common/SDConfiguration.h	/^	std::vector<SDItemData> m_content;$/;"	m	class:SDConfiguration
+m_db_index	src/SDRedisServer.h	/^	uint16_t m_db_index;$/;"	m	class:SDRedisServer
+m_db_index	src/SDRedisServerPool.h	/^	uint16_t m_db_index;$/;"	m	class:SDRedisServerPool
+m_db_index	src_xllog/SDRedisServer.h	/^	uint16_t m_db_index;$/;"	m	class:SDRedisServer
+m_db_index	src_xllog/SDRedisServerPool.h	/^	uint16_t m_db_index;$/;"	m	class:SDRedisServerPool
+m_deny_frequent_crawler	src_xllog/SDDenyCrawler.h	/^    SDDenyFrequentCrawler* m_deny_frequent_crawler;$/;"	m	class:SDDenyCrawler
+m_deny_ip_over_pid_limit_crawler	src_xllog/SDDenyCrawler.h	/^    SDDenyIpOverPidNumLimitCrawler* m_deny_ip_over_pid_limit_crawler;$/;"	m	class:SDDenyCrawler
+m_deny_slow_crawler	src_xllog/SDDenyCrawler.h	/^    SDDenySlowCrawler* m_deny_slow_crawler;$/;"	m	class:SDDenyCrawler
+m_deny_timeout	src_xllog/SDDenyFrequentCrawler.h	/^    uint32_t m_deny_timeout;$/;"	m	struct:SDDenyFrequentCrawlerValue
+m_ds_rw_lock	src_xllog/SDDenyFrequentCrawler.h	/^    boost::shared_mutex m_ds_rw_lock;$/;"	m	class:SDDenyFrequentCrawler
+m_ds_rw_lock	src_xllog/SDDenySlowCrawler.h	/^    boost::shared_mutex m_ds_rw_lock;$/;"	m	class:SDDenySlowCrawler
+m_empty_key_expire_time	src/SDRedisHandler.h	/^        uint32_t	m_empty_key_expire_time;$/;"	m	class:SDRedisHandler
+m_field	src/SDCondValue.h	/^    string m_field;$/;"	m	class:Condition
+m_field	src/SDCondValue.h	/^    string m_field;$/;"	m	class:Value
+m_file_name	common/SDConfiguration.h	/^	char m_file_name[max_path];$/;"	m	class:SDConfiguration
+m_fltp_log	src_xllog/SDDenyFrequentCrawler.h	/^	fast_log_t * m_fltp_log;$/;"	m	class:SDDenyFrequentCrawler
+m_fltp_log	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^	fast_log_t * m_fltp_log;$/;"	m	class:SDDenyIpOverPidNumLimitCrawler
+m_fltp_log	src_xllog/SDDenySlowCrawler.h	/^	fast_log_t * m_fltp_log;$/;"	m	class:SDDenySlowCrawler
+m_host	src/SDRedisServer.h	/^	std::string m_host;	\/\/ redis server host			$/;"	m	class:SDRedisServer
+m_host	src/SDRedisServerPool.h	/^	std::string m_host;$/;"	m	class:SDRedisServerPool
+m_host	src_xllog/SDRedisServer.h	/^	std::string m_host;	\/\/ redis server host			$/;"	m	class:SDRedisServer
+m_host	src_xllog/SDRedisServerPool.h	/^	std::string m_host;$/;"	m	class:SDRedisServerPool
+m_iField	common/cmysql.h	/^	unsigned int  m_iField;$/;"	m	class:CMysql
+m_iRows	common/cmysql.h	/^	unsigned int  m_iRows;$/;"	m	class:CMysql
+m_id	src/SDRedisServer.h	/^	std::string m_id;		\/\/ redis_id$/;"	m	class:SDRedisServer
+m_id	src_xllog/SDRedisServer.h	/^	std::string m_id;		\/\/ redis_id$/;"	m	class:SDRedisServer
+m_id	src_xllog/SDRedisServerPool.h	/^	std::string m_id;$/;"	m	class:SDRedisServerPool
+m_in_use	src/SDRedisServer.h	/^	bool m_in_use;		\/\/if be used right now$/;"	m	class:SDRedisServer
+m_in_use	src_xllog/SDRedisServer.h	/^	bool m_in_use;		\/\/if be used right now$/;"	m	class:SDRedisServer
+m_instance	src/SDConfigurationSingleton.h	/^	static SDConfigurationSingleton* m_instance;$/;"	m	class:SDConfigurationSingleton
+m_instance	src/SDRedisServerPool.cpp	/^SDRedisServerPool* SDRedisServerPool::m_instance = new SDRedisServerPool();$/;"	m	class:SDRedisServerPool	file:
+m_instance	src/SDRedisServerPool.h	/^    static SDRedisServerPool* m_instance;$/;"	m	class:SDRedisServerPool
+m_iopn_rw_lock	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^    boost::shared_mutex m_iopn_rw_lock;$/;"	m	class:SDDenyIpOverPidNumLimitCrawler
+m_key	common/SDConfiguration.h	/^	std::string m_key;$/;"	m	class:SDItemData
+m_last_acc_time	src_xllog/SDDenySlowCrawler.h	/^	uint32_t m_last_acc_time;$/;"	m	struct:SDDenySlowCrawlerValue
+m_lock	src_xllog/SDRedisServerPool.h	/^	SDLock m_lock;$/;"	m	class:SDRedisServerPool
+m_max_acc_interval	src_xllog/SDDenySlowCrawler.h	/^	uint32_t m_max_acc_interval;$/;"	m	class:SDDenySlowCrawler
+m_max_acc_interval_variance	src_xllog/SDDenySlowCrawler.h	/^    float m_max_acc_interval_variance;$/;"	m	class:SDDenySlowCrawler
+m_max_pid_num	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^	uint32_t m_max_pid_num;$/;"	m	class:SDDenyIpOverPidNumLimitCrawler
+m_max_variance_num	src_xllog/SDDenySlowCrawler.h	/^	uint32_t m_max_variance_num;$/;"	m	class:SDDenySlowCrawler
+m_mutex	src/SDRedisServerPool.h	/^    boost::mutex m_mutex;$/;"	m	class:SDRedisServerPool
+m_peerids	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^    set<string> m_peerids;$/;"	m	struct:SDDenyIpOverPidNumLimitCrawlerValue
+m_port	src/SDRedisServer.h	/^	uint16_t m_port;		\/\/ redis server port$/;"	m	class:SDRedisServer
+m_port	src/SDRedisServerPool.h	/^	uint16_t	m_port;$/;"	m	class:SDRedisServerPool
+m_port	src_xllog/SDRedisServer.h	/^	uint16_t m_port;		\/\/ redis server port$/;"	m	class:SDRedisServer
+m_port	src_xllog/SDRedisServerPool.h	/^	uint16_t	m_port;$/;"	m	class:SDRedisServerPool
+m_query_critical_times_each_ip	src_xllog/SDDenyFrequentCrawler.h	/^	uint32_t m_query_critical_times_each_ip;$/;"	m	class:SDDenyFrequentCrawler
+m_query_times	src_xllog/SDDenyFrequentCrawler.h	/^	uint32_t m_query_times;$/;"	m	struct:SDDenyFrequentCrawlerValue
+m_query_times	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^	uint32_t m_query_times;$/;"	m	struct:SDDenyIpOverPidNumLimitCrawlerValue
+m_query_times	src_xllog/SDDenySlowCrawler.h	/^	uint32_t m_query_times;$/;"	m	struct:SDDenySlowCrawlerValue
+m_redis_context	src/SDRedisServer.h	/^	redisContext *m_redis_context;	\/\/ redis handle$/;"	m	class:SDRedisServer
+m_redis_context	src_xllog/SDRedisServer.h	/^	redisContext *m_redis_context;	\/\/ redis handle$/;"	m	class:SDRedisServer
+m_redis_server	src/SDRedisHandler.h	/^        SDRedisServer_ptr m_redis_server;$/;"	m	class:SDRedisHandler
+m_redis_server	src_xllog/SDRedisServerPool.h	/^	SDRedisServer_ptr m_redis_server;$/;"	m	class:SDAutoRedis
+m_result	common/cmysql.h	/^	MYSQL_RES *m_result;$/;"	m	class:CMysql
+m_row	common/cmysql.h	/^	MYSQL_ROW m_row;$/;"	m	class:CMysql
+m_rs_pool	src_xllog/SDRedisServerPool.h	/^	SDRedisServerPool_ptr m_rs_pool;$/;"	m	class:SDAutoRedis
+m_rspool_list	src_xllog/SDRedisServerPool.h	/^	std::vector<SDRedisServer_ptr> m_rspool_list;$/;"	m	class:SDRedisServerPool
+m_set_key_expire_time	src/SDRedisHandler.h	/^        uint32_t	m_set_key_expire_time;$/;"	m	class:SDRedisHandler
+m_sign	src_xllog/SDDenyFrequentCrawler.h	/^    const static uint32_t m_sign = 123456789;$/;"	m	class:SDDenyFrequentCrawler
+m_sign	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^    const static uint32_t m_sign = 123456787;$/;"	m	class:SDDenyIpOverPidNumLimitCrawler
+m_sign	src_xllog/SDDenySlowCrawler.h	/^    const static uint32_t m_sign = 123456788;$/;"	m	class:SDDenySlowCrawler
+m_stat_deny_time_interval	src_xllog/SDDenyFrequentCrawler.h	/^	uint32_t m_stat_deny_time_interval;	$/;"	m	class:SDDenyFrequentCrawler
+m_stat_start_times	src_xllog/SDDenySlowCrawler.h	/^    uint32_t m_stat_start_times;$/;"	m	class:SDDenySlowCrawler
+m_stat_time_interval	src_xllog/SDDenyFrequentCrawler.h	/^	uint32_t m_stat_time_interval;	$/;"	m	class:SDDenyFrequentCrawler
+m_stat_time_interval	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^	uint32_t m_stat_time_interval;	$/;"	m	class:SDDenyIpOverPidNumLimitCrawler
+m_szHost	common/cmysql.h	/^	char m_szHost[65];	\/\/ 数据库主机名$/;"	m	class:CMysql
+m_szPass	common/cmysql.h	/^	char m_szPass[65];	\/\/ 数据库用户密码$/;"	m	class:CMysql
+m_szUser	common/cmysql.h	/^	char m_szUser[65];	\/\/ 数据库用户名$/;"	m	class:CMysql
+m_timeout	src_xllog/SDDenyFrequentCrawler.h	/^	uint32_t m_timeout;	$/;"	m	struct:SDDenyFrequentCrawlerValue
+m_timeout	src_xllog/SDDenyIpOverPidNumLimitCrawler.h	/^	uint32_t m_timeout;$/;"	m	struct:SDDenyIpOverPidNumLimitCrawlerValue
+m_type	src/SDCondValue.h	/^	uint32_t m_type;$/;"	m	class:RedisKey
+m_update_key_expire_time	src/SDRedisHandler.h	/^        uint32_t	m_update_key_expire_time;$/;"	m	class:SDRedisHandler
+m_value	common/SDConfiguration.h	/^	std::string m_value;$/;"	m	class:SDItemData
+m_value	src/SDCondValue.h	/^    string m_value;$/;"	m	class:Condition
+m_value	src/SDCondValue.h	/^    string m_value;$/;"	m	class:Value
+m_value_type	src/SDCondValue.h	/^    int m_value_type;$/;"	m	class:Condition
+m_value_type	src/SDCondValue.h	/^    int m_value_type;$/;"	m	class:Value
+main	libs/antirez-hiredis-d5d8843/example-ae.c	/^int main (int argc, char **argv) {$/;"	f
+main	libs/antirez-hiredis-d5d8843/example-libev.c	/^int main (int argc, char **argv) {$/;"	f
+main	libs/antirez-hiredis-d5d8843/example-libevent.c	/^int main (int argc, char **argv) {$/;"	f
+main	libs/antirez-hiredis-d5d8843/example.c	/^int main(void) {$/;"	f
+main	libs/antirez-hiredis-d5d8843/sds.c	/^int main(void) {$/;"	f
+main	libs/antirez-hiredis-d5d8843/test.c	/^int main(int argc, char **argv) {$/;"	f
+main	src/main.cpp	/^int main(){$/;"	f
+main	src_xllog/main.cpp	/^int main(){$/;"	f
+map_size	common/fast_log.h	/^	uint32_t map_size;$/;"	m	struct:__anon1
+max_line_length	common/SDConfiguration.h	/^	static const int max_line_length = 1024;$/;"	m	class:SDConfiguration
+max_path	common/SDConfiguration.h	/^	static const int max_path = 1024;$/;"	m	class:SDConfiguration
+migrate	src/SDRedisServer.cpp	/^int SDRedisServer::migrate(std::string &dst_redis_ip, uint16_t dst_redis_port, const std::string &key, uint32_t db, uint32_t to_ms)$/;"	f	class:SDRedisServer
+migrate	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::migrate(std::string &dst_redis_ip, uint16_t dst_redis_port, const std::string &key, uint32_t db, uint32_t to_ms)$/;"	f	class:SDRedisServer
+moveToNextTask	libs/antirez-hiredis-d5d8843/hiredis.c	/^static void moveToNextTask(redisReader *r) {$/;"	f	file:
+mutex	common/fast_log.h	/^	pthread_mutex_t mutex;$/;"	m	struct:__anon1
+network16_t	common/common.h	/^typedef	uint16_t	network16_t;$/;"	t
+network32_t	common/common.h	/^typedef	uint32_t	network32_t;$/;"	t
+network64_t	common/common.h	/^typedef	uint64_t	network64_t;$/;"	t
+next	libs/antirez-hiredis-d5d8843/async.h	/^    struct redisCallback *next; \/* simple singly linked list *\/$/;"	m	struct:redisCallback	typeref:struct:redisCallback::redisCallback
+next	libs/antirez-hiredis-d5d8843/dict.h	/^    struct dictEntry *next;$/;"	m	struct:dictEntry	typeref:struct:dictEntry::dictEntry
+nextArgument	libs/antirez-hiredis-d5d8843/async.c	/^static char *nextArgument(char *start, char **str, size_t *len) {$/;"	f	file:
+nextEntry	libs/antirez-hiredis-d5d8843/dict.h	/^    dictEntry *entry, *nextEntry;$/;"	m	struct:dictIterator
+now_address	common/fast_log.h	/^	void *now_address;$/;"	m	struct:__anon1
+obj	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *obj; \/* holds user-generated value for a read task *\/$/;"	m	struct:redisReadTask
+obj	libs/include/hiredis/hiredis.h	/^    void *obj; \/* holds user-generated value for a read task *\/$/;"	m	struct:redisReadTask
+obuf	libs/antirez-hiredis-d5d8843/hiredis.h	/^    char *obuf; \/* Write buffer *\/$/;"	m	struct:redisContext
+obuf	libs/include/hiredis/hiredis.h	/^    char *obuf; \/* Write buffer *\/$/;"	m	struct:redisContext
+onConnect	libs/antirez-hiredis-d5d8843/async.h	/^    redisConnectCallback *onConnect;$/;"	m	struct:redisAsyncContext
+onDisconnect	libs/antirez-hiredis-d5d8843/async.h	/^    redisDisconnectCallback *onDisconnect;$/;"	m	struct:redisAsyncContext
+operator <	common/SDConfiguration.h	/^	friend bool operator< (const SDItemData& s1, const SDItemData& s2)$/;"	f	class:SDItemData
+operator <	src/SDCondValue.h	/^    bool operator <  (const Condition &a) const$/;"	f	class:Condition
+operator <	src/SDCondValue.h	/^    bool operator <  (const Condition &a) const$/;"	f	class:Value
+operator <	src/SDRedisServer.cpp	/^bool SDRedisServer::operator<(const SDRedisServer& other) const$/;"	f	class:SDRedisServer
+operator <	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::operator<(const SDRedisServer& other) const$/;"	f	class:SDRedisServer
+operator =	src/SDConfigurationSingleton.h	/^	SDConfigurationSingleton& operator=(const SDConfigurationSingleton&){return *this;}$/;"	f	class:SDConfigurationSingleton
+operator =	src_xllog/SDRedisServerPool.h	/^	SDAutoRedis& operator=(const SDAutoRedis& other)$/;"	f	class:SDAutoRedis
+parent	libs/antirez-hiredis-d5d8843/hiredis.h	/^    struct redisReadTask *parent; \/* parent task *\/$/;"	m	struct:redisReadTask	typeref:struct:redisReadTask::redisReadTask
+parent	libs/include/hiredis/hiredis.h	/^    struct redisReadTask *parent; \/* parent task *\/$/;"	m	struct:redisReadTask	typeref:struct:redisReadTask::redisReadTask
+path	libs/antirez-hiredis-d5d8843/test.c	/^        const char *path;$/;"	m	struct:config::__anon5	file:
+patterns	libs/antirez-hiredis-d5d8843/async.h	/^        struct dict *patterns;$/;"	m	struct:redisAsyncContext::__anon3	typeref:struct:redisAsyncContext::__anon3::dict
+ping	src/SDRedisServer.cpp	/^bool SDRedisServer::ping()$/;"	f	class:SDRedisServer
+ping	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::ping()$/;"	f	class:SDRedisServer
+port	libs/antirez-hiredis-d5d8843/test.c	/^        int port;$/;"	m	struct:config::__anon4	file:
+pos	libs/antirez-hiredis-d5d8843/hiredis.h	/^    size_t pos; \/* Buffer cursor *\/$/;"	m	struct:redisReader
+pos	libs/include/hiredis/hiredis.h	/^    size_t pos; \/* Buffer cursor *\/$/;"	m	struct:redisReader
+primaryCmpFunc	src_xllog/SDDenyFrequentCrawler.cpp	/^int SDDenyFrequentCrawler::primaryCmpFunc(void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg, int *timeout_or_null)$/;"	f	class:SDDenyFrequentCrawler
+primaryCmpFunc	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^int SDDenyIpOverPidNumLimitCrawler::primaryCmpFunc(void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg, int *timeout_or_null)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+primaryCmpFunc	src_xllog/SDDenySlowCrawler.cpp	/^int SDDenySlowCrawler::primaryCmpFunc(void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg, int *timeout_or_null)$/;"	f	class:SDDenySlowCrawler
+privdata	libs/antirez-hiredis-d5d8843/async.h	/^    void *privdata;$/;"	m	struct:redisCallback
+privdata	libs/antirez-hiredis-d5d8843/dict.h	/^    void *privdata;$/;"	m	struct:dict
+privdata	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *privdata; \/* user-settable arbitrary field *\/$/;"	m	struct:redisReadTask
+privdata	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *privdata;$/;"	m	struct:redisReader
+privdata	libs/include/hiredis/hiredis.h	/^    void *privdata; \/* user-settable arbitrary field *\/$/;"	m	struct:redisReadTask
+privdata	libs/include/hiredis/hiredis.h	/^    void *privdata;$/;"	m	struct:redisReader
+processBulkItem	libs/antirez-hiredis-d5d8843/hiredis.c	/^static int processBulkItem(redisReader *r) {$/;"	f	file:
+processItem	libs/antirez-hiredis-d5d8843/hiredis.c	/^static int processItem(redisReader *r) {$/;"	f	file:
+processLineItem	libs/antirez-hiredis-d5d8843/hiredis.c	/^static int processLineItem(redisReader *r) {$/;"	f	file:
+processMultiBulkItem	libs/antirez-hiredis-d5d8843/hiredis.c	/^static int processMultiBulkItem(redisReader *r) {$/;"	f	file:
+ptr	src_xllog/SDRedisServerPool.h	/^	SDRedisServer_ptr ptr()$/;"	f	class:SDAutoRedis
+put	src/SDRedisServerPool.cpp	/^void SDRedisServerPool::put(SDRedisServer* redis_server)$/;"	f	class:SDRedisServerPool
+queryIP	src_xllog/SDDenyFrequentCrawler.cpp	/^bool SDDenyFrequentCrawler::queryIP(int32_t ip, bool& exist, SDDenyFrequentCrawlerValue& cache_value)$/;"	f	class:SDDenyFrequentCrawler
+queryIP	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^bool SDDenyIpOverPidNumLimitCrawler::queryIP(int32_t ip, bool& exist, SDDenyIpOverPidNumLimitCrawlerValue& cache_value)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+queryIP	src_xllog/SDDenySlowCrawler.cpp	/^bool SDDenySlowCrawler::queryIP(int32_t ip, bool& exist, SDDenySlowCrawlerValue& cache_value)$/;"	f	class:SDDenySlowCrawler
+queryIPValidDenyTimeOut	src_xllog/SDDenyFrequentCrawler.cpp	/^bool SDDenyFrequentCrawler::queryIPValidDenyTimeOut(uint32_t ip, const string& peerid)$/;"	f	class:SDDenyFrequentCrawler
+queryIPValidDenyTimeOut	src_xllog/SDDenySlowCrawler.cpp	/^bool SDDenySlowCrawler::queryIPValidDenyTimeOut(uint32_t ip, const string& peerid)$/;"	f	class:SDDenySlowCrawler
+query_ip_peerid	src_xllog/SDDenyCrawler.cpp	/^bool SDDenyCrawler::query_ip_peerid(uint32_t ip, std::string peerid)$/;"	f	class:SDDenyCrawler
+query_ip_peerid	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^bool SDDenyIpOverPidNumLimitCrawler::query_ip_peerid(uint32_t ip,string peerid)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+query_valid	src_xllog/SDDenyCrawler.cpp	/^bool SDDenyCrawler::query_valid(uint32_t ip,const string& peerid)$/;"	f	class:SDDenyCrawler
+readBytes	libs/antirez-hiredis-d5d8843/hiredis.c	/^static char *readBytes(redisReader *r, unsigned int bytes) {$/;"	f	file:
+readLine	libs/antirez-hiredis-d5d8843/hiredis.c	/^static char *readLine(redisReader *r, int *_len) {$/;"	f	file:
+readLongLong	libs/antirez-hiredis-d5d8843/hiredis.c	/^static long long readLongLong(char *s) {$/;"	f	file:
+read_conf	src_xllog/SDDenyCrawler.cpp	/^void SDDenyCrawler::read_conf()$/;"	f	class:SDDenyCrawler
+reader	libs/antirez-hiredis-d5d8843/hiredis.h	/^    redisReader *reader; \/* Protocol reader *\/$/;"	m	struct:redisContext
+reader	libs/include/hiredis/hiredis.h	/^    redisReader *reader; \/* Protocol reader *\/$/;"	m	struct:redisContext
+reading	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^    int reading, writing;$/;"	m	struct:redisAeEvents
+reading	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^    int reading, writing;$/;"	m	struct:redisLibevEvents
+redisAeAddRead	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeAddRead(void *privdata) {$/;"	f
+redisAeAddWrite	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeAddWrite(void *privdata) {$/;"	f
+redisAeAttach	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static int redisAeAttach(aeEventLoop *loop, redisAsyncContext *ac) {$/;"	f
+redisAeCleanup	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeCleanup(void *privdata) {$/;"	f
+redisAeDelRead	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeDelRead(void *privdata) {$/;"	f
+redisAeDelWrite	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeDelWrite(void *privdata) {$/;"	f
+redisAeEvents	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^typedef struct redisAeEvents {$/;"	s
+redisAeEvents	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^} redisAeEvents;$/;"	t	typeref:struct:redisAeEvents
+redisAeReadEvent	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeReadEvent(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f
+redisAeWriteEvent	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^static void redisAeWriteEvent(aeEventLoop *el, int fd, void *privdata, int mask) {$/;"	f
+redisAppendCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisAppendCommand(redisContext *c, const char *format, ...) {$/;"	f
+redisAppendCommandArgv	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisAppendCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisAsyncCommand	libs/antirez-hiredis-d5d8843/async.c	/^int redisAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, ...) {$/;"	f
+redisAsyncCommandArgv	libs/antirez-hiredis-d5d8843/async.c	/^int redisAsyncCommandArgv(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisAsyncConnect	libs/antirez-hiredis-d5d8843/async.c	/^redisAsyncContext *redisAsyncConnect(const char *ip, int port) {$/;"	f
+redisAsyncConnectUnix	libs/antirez-hiredis-d5d8843/async.c	/^redisAsyncContext *redisAsyncConnectUnix(const char *path) {$/;"	f
+redisAsyncContext	libs/antirez-hiredis-d5d8843/async.h	/^typedef struct redisAsyncContext {$/;"	s
+redisAsyncContext	libs/antirez-hiredis-d5d8843/async.h	/^} redisAsyncContext;$/;"	t	typeref:struct:redisAsyncContext
+redisAsyncDisconnect	libs/antirez-hiredis-d5d8843/async.c	/^void redisAsyncDisconnect(redisAsyncContext *ac) {$/;"	f
+redisAsyncFree	libs/antirez-hiredis-d5d8843/async.c	/^void redisAsyncFree(redisAsyncContext *ac) {$/;"	f
+redisAsyncHandleRead	libs/antirez-hiredis-d5d8843/async.c	/^void redisAsyncHandleRead(redisAsyncContext *ac) {$/;"	f
+redisAsyncHandleWrite	libs/antirez-hiredis-d5d8843/async.c	/^void redisAsyncHandleWrite(redisAsyncContext *ac) {$/;"	f
+redisAsyncInitialize	libs/antirez-hiredis-d5d8843/async.c	/^static redisAsyncContext *redisAsyncInitialize(redisContext *c) {$/;"	f	file:
+redisAsyncSetConnectCallback	libs/antirez-hiredis-d5d8843/async.c	/^int redisAsyncSetConnectCallback(redisAsyncContext *ac, redisConnectCallback *fn) {$/;"	f
+redisAsyncSetDisconnectCallback	libs/antirez-hiredis-d5d8843/async.c	/^int redisAsyncSetDisconnectCallback(redisAsyncContext *ac, redisDisconnectCallback *fn) {$/;"	f
+redisBufferRead	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisBufferRead(redisContext *c) {$/;"	f
+redisBufferWrite	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisBufferWrite(redisContext *c, int *done) {$/;"	f
+redisCallback	libs/antirez-hiredis-d5d8843/async.h	/^typedef struct redisCallback {$/;"	s
+redisCallback	libs/antirez-hiredis-d5d8843/async.h	/^} redisCallback;$/;"	t	typeref:struct:redisCallback
+redisCallbackFn	libs/antirez-hiredis-d5d8843/async.h	/^typedef void (redisCallbackFn)(struct redisAsyncContext*, void*, void*);$/;"	t
+redisCallbackList	libs/antirez-hiredis-d5d8843/async.h	/^typedef struct redisCallbackList {$/;"	s
+redisCallbackList	libs/antirez-hiredis-d5d8843/async.h	/^} redisCallbackList;$/;"	t	typeref:struct:redisCallbackList
+redisCheckSocketError	libs/antirez-hiredis-d5d8843/net.c	/^int redisCheckSocketError(redisContext *c, int fd) {$/;"	f
+redisCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^void *redisCommand(redisContext *c, const char *format, ...) {$/;"	f
+redisCommandArgv	libs/antirez-hiredis-d5d8843/hiredis.c	/^void *redisCommandArgv(redisContext *c, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisConnect	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisContext *redisConnect(const char *ip, int port) {$/;"	f
+redisConnectCallback	libs/antirez-hiredis-d5d8843/async.h	/^typedef void (redisConnectCallback)(const struct redisAsyncContext*, int status);$/;"	t
+redisConnectNonBlock	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisContext *redisConnectNonBlock(const char *ip, int port) {$/;"	f
+redisConnectUnix	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisContext *redisConnectUnix(const char *path) {$/;"	f
+redisConnectUnixNonBlock	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisContext *redisConnectUnixNonBlock(const char *path) {$/;"	f
+redisConnectUnixWithTimeout	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisContext *redisConnectUnixWithTimeout(const char *path, struct timeval tv) {$/;"	f
+redisConnectWithTimeout	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisContext *redisConnectWithTimeout(const char *ip, int port, struct timeval tv) {$/;"	f
+redisContext	libs/antirez-hiredis-d5d8843/hiredis.h	/^typedef struct redisContext {$/;"	s
+redisContext	libs/antirez-hiredis-d5d8843/hiredis.h	/^} redisContext;$/;"	t	typeref:struct:redisContext
+redisContext	libs/include/hiredis/hiredis.h	/^typedef struct redisContext {$/;"	s
+redisContext	libs/include/hiredis/hiredis.h	/^} redisContext;$/;"	t	typeref:struct:redisContext
+redisContextConnectTcp	libs/antirez-hiredis-d5d8843/net.c	/^int redisContextConnectTcp(redisContext *c, const char *addr, int port, struct timeval *timeout) {$/;"	f
+redisContextConnectUnix	libs/antirez-hiredis-d5d8843/net.c	/^int redisContextConnectUnix(redisContext *c, const char *path, struct timeval *timeout) {$/;"	f
+redisContextInit	libs/antirez-hiredis-d5d8843/hiredis.c	/^static redisContext *redisContextInit(void) {$/;"	f	file:
+redisContextSetTimeout	libs/antirez-hiredis-d5d8843/net.c	/^int redisContextSetTimeout(redisContext *c, struct timeval tv) {$/;"	f
+redisContextWaitReady	libs/antirez-hiredis-d5d8843/net.c	/^static int redisContextWaitReady(redisContext *c, int fd, const struct timeval *timeout) {$/;"	f	file:
+redisCreateSocket	libs/antirez-hiredis-d5d8843/net.c	/^static int redisCreateSocket(redisContext *c, int type) {$/;"	f	file:
+redisDisconnectCallback	libs/antirez-hiredis-d5d8843/async.h	/^typedef void (redisDisconnectCallback)(const struct redisAsyncContext*, int status);$/;"	t
+redisFormatCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisFormatCommand(char **target, const char *format, ...) {$/;"	f
+redisFormatCommandArgv	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisFormatCommandArgv(char **target, int argc, const char **argv, const size_t *argvlen) {$/;"	f
+redisFree	libs/antirez-hiredis-d5d8843/hiredis.c	/^void redisFree(redisContext *c) {$/;"	f
+redisGetReply	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisGetReply(redisContext *c, void **reply) {$/;"	f
+redisGetReplyFromReader	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisGetReplyFromReader(redisContext *c, void **reply) {$/;"	f
+redisLibevAddRead	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevAddRead(void *privdata) {$/;"	f
+redisLibevAddWrite	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevAddWrite(void *privdata) {$/;"	f
+redisLibevAttach	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static int redisLibevAttach(EV_P_ redisAsyncContext *ac) {$/;"	f
+redisLibevCleanup	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevCleanup(void *privdata) {$/;"	f
+redisLibevDelRead	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevDelRead(void *privdata) {$/;"	f
+redisLibevDelWrite	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevDelWrite(void *privdata) {$/;"	f
+redisLibevEvents	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^typedef struct redisLibevEvents {$/;"	s
+redisLibevEvents	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^} redisLibevEvents;$/;"	t	typeref:struct:redisLibevEvents
+redisLibevReadEvent	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevReadEvent(EV_P_ ev_io *watcher, int revents) {$/;"	f
+redisLibevWriteEvent	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^static void redisLibevWriteEvent(EV_P_ ev_io *watcher, int revents) {$/;"	f
+redisLibeventAddRead	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventAddRead(void *privdata) {$/;"	f
+redisLibeventAddWrite	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventAddWrite(void *privdata) {$/;"	f
+redisLibeventAttach	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static int redisLibeventAttach(redisAsyncContext *ac, struct event_base *base) {$/;"	f
+redisLibeventCleanup	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventCleanup(void *privdata) {$/;"	f
+redisLibeventDelRead	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventDelRead(void *privdata) {$/;"	f
+redisLibeventDelWrite	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventDelWrite(void *privdata) {$/;"	f
+redisLibeventEvents	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^typedef struct redisLibeventEvents {$/;"	s
+redisLibeventEvents	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^} redisLibeventEvents;$/;"	t	typeref:struct:redisLibeventEvents
+redisLibeventReadEvent	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventReadEvent(int fd, short event, void *arg) {$/;"	f
+redisLibeventWriteEvent	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^static void redisLibeventWriteEvent(int fd, short event, void *arg) {$/;"	f
+redisProcessCallbacks	libs/antirez-hiredis-d5d8843/async.c	/^void redisProcessCallbacks(redisAsyncContext *ac) {$/;"	f
+redisReadTask	libs/antirez-hiredis-d5d8843/hiredis.h	/^typedef struct redisReadTask {$/;"	s
+redisReadTask	libs/antirez-hiredis-d5d8843/hiredis.h	/^} redisReadTask;$/;"	t	typeref:struct:redisReadTask
+redisReadTask	libs/include/hiredis/hiredis.h	/^typedef struct redisReadTask {$/;"	s
+redisReadTask	libs/include/hiredis/hiredis.h	/^} redisReadTask;$/;"	t	typeref:struct:redisReadTask
+redisReader	libs/antirez-hiredis-d5d8843/hiredis.h	/^typedef struct redisReader {$/;"	s
+redisReader	libs/antirez-hiredis-d5d8843/hiredis.h	/^} redisReader;$/;"	t	typeref:struct:redisReader
+redisReader	libs/include/hiredis/hiredis.h	/^typedef struct redisReader {$/;"	s
+redisReader	libs/include/hiredis/hiredis.h	/^} redisReader;$/;"	t	typeref:struct:redisReader
+redisReaderCreate	libs/antirez-hiredis-d5d8843/hiredis.c	/^redisReader *redisReaderCreate(void) {$/;"	f
+redisReaderFeed	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisReaderFeed(redisReader *r, const char *buf, size_t len) {$/;"	f
+redisReaderFree	libs/antirez-hiredis-d5d8843/hiredis.c	/^void redisReaderFree(redisReader *r) {$/;"	f
+redisReaderGetReply	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisReaderGetReply(redisReader *r, void **reply) {$/;"	f
+redisReply	libs/antirez-hiredis-d5d8843/hiredis.h	/^typedef struct redisReply {$/;"	s
+redisReply	libs/antirez-hiredis-d5d8843/hiredis.h	/^} redisReply;$/;"	t	typeref:struct:redisReply
+redisReply	libs/include/hiredis/hiredis.h	/^typedef struct redisReply {$/;"	s
+redisReply	libs/include/hiredis/hiredis.h	/^} redisReply;$/;"	t	typeref:struct:redisReply
+redisReplyObjectFunctions	libs/antirez-hiredis-d5d8843/hiredis.h	/^typedef struct redisReplyObjectFunctions {$/;"	s
+redisReplyObjectFunctions	libs/antirez-hiredis-d5d8843/hiredis.h	/^} redisReplyObjectFunctions;$/;"	t	typeref:struct:redisReplyObjectFunctions
+redisReplyObjectFunctions	libs/include/hiredis/hiredis.h	/^typedef struct redisReplyObjectFunctions {$/;"	s
+redisReplyObjectFunctions	libs/include/hiredis/hiredis.h	/^} redisReplyObjectFunctions;$/;"	t	typeref:struct:redisReplyObjectFunctions
+redisReplyReaderCreate	libs/antirez-hiredis-d5d8843/hiredis.h	141;"	d
+redisReplyReaderCreate	libs/include/hiredis/hiredis.h	141;"	d
+redisReplyReaderFeed	libs/antirez-hiredis-d5d8843/hiredis.h	143;"	d
+redisReplyReaderFeed	libs/include/hiredis/hiredis.h	143;"	d
+redisReplyReaderFree	libs/antirez-hiredis-d5d8843/hiredis.h	142;"	d
+redisReplyReaderFree	libs/include/hiredis/hiredis.h	142;"	d
+redisReplyReaderGetError	libs/antirez-hiredis-d5d8843/hiredis.h	147;"	d
+redisReplyReaderGetError	libs/include/hiredis/hiredis.h	147;"	d
+redisReplyReaderGetObject	libs/antirez-hiredis-d5d8843/hiredis.h	146;"	d
+redisReplyReaderGetObject	libs/include/hiredis/hiredis.h	146;"	d
+redisReplyReaderGetReply	libs/antirez-hiredis-d5d8843/hiredis.h	144;"	d
+redisReplyReaderGetReply	libs/include/hiredis/hiredis.h	144;"	d
+redisReplyReaderSetPrivdata	libs/antirez-hiredis-d5d8843/hiredis.h	145;"	d
+redisReplyReaderSetPrivdata	libs/include/hiredis/hiredis.h	145;"	d
+redisSetBlocking	libs/antirez-hiredis-d5d8843/net.c	/^static int redisSetBlocking(redisContext *c, int fd, int blocking) {$/;"	f	file:
+redisSetReuseAddr	libs/antirez-hiredis-d5d8843/net.c	/^static int redisSetReuseAddr(redisContext *c, int fd) {$/;"	f	file:
+redisSetTcpNoDelay	libs/antirez-hiredis-d5d8843/net.c	/^static int redisSetTcpNoDelay(redisContext *c, int fd) {$/;"	f	file:
+redisSetTimeout	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisSetTimeout(redisContext *c, struct timeval tv) {$/;"	f
+redisvAppendCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisvAppendCommand(redisContext *c, const char *format, va_list ap) {$/;"	f
+redisvAsyncCommand	libs/antirez-hiredis-d5d8843/async.c	/^int redisvAsyncCommand(redisAsyncContext *ac, redisCallbackFn *fn, void *privdata, const char *format, va_list ap) {$/;"	f
+redisvCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^void *redisvCommand(redisContext *c, const char *format, va_list ap) {$/;"	f
+redisvFormatCommand	libs/antirez-hiredis-d5d8843/hiredis.c	/^int redisvFormatCommand(char **target, const char *format, va_list ap) {$/;"	f
+remove	src/SDRedisServer.cpp	/^int SDRedisServer::remove(const std::string &key)$/;"	f	class:SDRedisServer
+remove	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::remove(const std::string &key)$/;"	f	class:SDRedisServer
+replies	libs/antirez-hiredis-d5d8843/async.h	/^    redisCallbackList replies;$/;"	m	struct:redisAsyncContext
+reply	libs/antirez-hiredis-d5d8843/hiredis.h	/^    void *reply; \/* Temporary reply pointer *\/$/;"	m	struct:redisReader
+reply	libs/include/hiredis/hiredis.h	/^    void *reply; \/* Temporary reply pointer *\/$/;"	m	struct:redisReader
+reset_status	src/SDRedisStringHandler.cpp	/^void SDRedisStringHandler::reset_status(void)$/;"	f	class:SDRedisStringHandler
+resolve	common/SDUtility.cpp	/^vector<string> SDUtility::resolve(string hostname)$/;"	f	class:SDUtility
+restore	src_xllog/SDRedisServerPool.cpp	/^void SDRedisServerPool::restore(SDRedisServer_ptr redis_server)$/;"	f	class:SDRedisServerPool
+rev	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^    ev_io rev, wev;$/;"	m	struct:redisLibevEvents
+rev	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^    struct event rev, wev;$/;"	m	struct:redisLibeventEvents	typeref:struct:redisLibeventEvents::event
+ridx	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int ridx; \/* Index of current read task *\/$/;"	m	struct:redisReader
+ridx	libs/include/hiredis/hiredis.h	/^    int ridx; \/* Index of current read task *\/$/;"	m	struct:redisReader
+rstack	libs/antirez-hiredis-d5d8843/hiredis.h	/^    redisReadTask rstack[4];$/;"	m	struct:redisReader
+rstack	libs/include/hiredis/hiredis.h	/^    redisReadTask rstack[4];$/;"	m	struct:redisReader
+run	src/main.cpp	/^void run()$/;"	f
+sadd	src/SDRedisServer.cpp	/^int SDRedisServer::sadd(const std::string &key, std::vector<std::string> &members)$/;"	f	class:SDRedisServer
+sadd	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::sadd(const std::string &key, std::vector<std::string> &members)$/;"	f	class:SDRedisServer
+sadd2	src/SDRedisServer.cpp	/^int SDRedisServer::sadd2(const std::string &key, std::vector<std::string> &members, uint32_t duration_time)$/;"	f	class:SDRedisServer
+sadd2	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::sadd2(const std::string &key, std::vector<std::string> &members, uint32_t duration_time)$/;"	f	class:SDRedisServer
+sds	libs/antirez-hiredis-d5d8843/sds.h	/^typedef char *sds;$/;"	t
+sdsMakeRoomFor	libs/antirez-hiredis-d5d8843/sds.c	/^static sds sdsMakeRoomFor(sds s, size_t addlen) {$/;"	f	file:
+sdsOomAbort	libs/antirez-hiredis-d5d8843/sds.c	/^static void sdsOomAbort(void) {$/;"	f	file:
+sdsavail	libs/antirez-hiredis-d5d8843/sds.h	/^static inline size_t sdsavail(const sds s) {$/;"	f
+sdscat	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscat(sds s, const char *t) {$/;"	f
+sdscatlen	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscatlen(sds s, const void *t, size_t len) {$/;"	f
+sdscatprintf	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscatprintf(sds s, const char *fmt, ...) {$/;"	f
+sdscatrepr	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscatrepr(sds s, char *p, size_t len) {$/;"	f
+sdscatvprintf	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscatvprintf(sds s, const char *fmt, va_list ap) {$/;"	f
+sdscmp	libs/antirez-hiredis-d5d8843/sds.c	/^int sdscmp(sds s1, sds s2) {$/;"	f
+sdscpy	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscpy(sds s, char *t) {$/;"	f
+sdscpylen	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdscpylen(sds s, char *t, size_t len) {$/;"	f
+sdsdup	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsdup(const sds s) {$/;"	f
+sdsempty	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsempty(void) {$/;"	f
+sdsfree	libs/antirez-hiredis-d5d8843/sds.c	/^void sdsfree(sds s) {$/;"	f
+sdsfreesplitres	libs/antirez-hiredis-d5d8843/sds.c	/^void sdsfreesplitres(sds *tokens, int count) {$/;"	f
+sdsfromlonglong	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsfromlonglong(long long value) {$/;"	f
+sdsgrowzero	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsgrowzero(sds s, size_t len) {$/;"	f
+sdshdr	libs/antirez-hiredis-d5d8843/sds.h	/^struct sdshdr {$/;"	s
+sdslen	libs/antirez-hiredis-d5d8843/sds.h	/^static inline size_t sdslen(const sds s) {$/;"	f
+sdsnew	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsnew(const char *init) {$/;"	f
+sdsnewlen	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsnewlen(const void *init, size_t initlen) {$/;"	f
+sdsrange	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdsrange(sds s, int start, int end) {$/;"	f
+sdssplitargs	libs/antirez-hiredis-d5d8843/sds.c	/^sds *sdssplitargs(char *line, int *argc) {$/;"	f
+sdssplitlen	libs/antirez-hiredis-d5d8843/sds.c	/^sds *sdssplitlen(char *s, int len, char *sep, int seplen, int *count) {$/;"	f
+sdstolower	libs/antirez-hiredis-d5d8843/sds.c	/^void sdstolower(sds s) {$/;"	f
+sdstoupper	libs/antirez-hiredis-d5d8843/sds.c	/^void sdstoupper(sds s) {$/;"	f
+sdstrim	libs/antirez-hiredis-d5d8843/sds.c	/^sds sdstrim(sds s, const char *cset) {$/;"	f
+sdsupdatelen	libs/antirez-hiredis-d5d8843/sds.c	/^void sdsupdatelen(sds s) {$/;"	f
+secondCmpFunc	src_xllog/SDDenyFrequentCrawler.cpp	/^int SDDenyFrequentCrawler::secondCmpFunc(void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg, int *timeout_or_null)$/;"	f	class:SDDenyFrequentCrawler
+secondCmpFunc	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^int SDDenyIpOverPidNumLimitCrawler::secondCmpFunc(void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg, int *timeout_or_null)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+secondCmpFunc	src_xllog/SDDenySlowCrawler.cpp	/^int SDDenySlowCrawler::secondCmpFunc(void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg, int *timeout_or_null)$/;"	f	class:SDDenySlowCrawler
+seekNewline	libs/antirez-hiredis-d5d8843/hiredis.c	/^static char *seekNewline(char *s, size_t len) {$/;"	f	file:
+select_database	libs/antirez-hiredis-d5d8843/test.c	/^static redisContext *select_database(redisContext *c) {$/;"	f	file:
+select_db	src/SDRedisServer.cpp	/^bool SDRedisServer::select_db(uint16_t db_index)$/;"	f	class:SDRedisServer
+select_db	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::select_db(uint16_t db_index)$/;"	f	class:SDRedisServer
+serialize	src/SDCondValue.h	/^	void serialize(Archive &ar, const unsigned int version)$/;"	f	class:Condition
+serialize	src/SDCondValue.h	/^	void serialize(Archive &ar, const unsigned int version)$/;"	f	class:RedisKey
+serialize	src/SDCondValue.h	/^    template<class Archive> void serialize(Archive & ar, const unsigned int version)$/;"	f	class:Value
+set_size_in	src_xllog/SDRedisServerPool.cpp	/^void SDRedisServerPool::set_size_in(unsigned int size)$/;"	f	class:SDRedisServerPool
+sget	src/SDRedisServer.cpp	/^int SDRedisServer::sget(const std::string &key, std::vector<std::string> &members)$/;"	f	class:SDRedisServer
+sget	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::sget(const std::string &key, std::vector<std::string> &members)$/;"	f	class:SDRedisServer
+sget2	src/SDRedisServer.cpp	/^int SDRedisServer::sget2(const std::string &key, std::vector<std::string> &members, uint32_t duration_time)$/;"	f	class:SDRedisServer
+sget2	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::sget2(const std::string &key, std::vector<std::string> &members, uint32_t duration_time)$/;"	f	class:SDRedisServer
+sign	common/fast_log.h	/^	uint32_t sign;$/;"	m	struct:__anon1
+size	libs/antirez-hiredis-d5d8843/dict.h	/^    unsigned long size;$/;"	m	struct:dict
+sizemask	libs/antirez-hiredis-d5d8843/dict.h	/^    unsigned long sizemask;$/;"	m	struct:dict
+slaveof	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::slaveof(const std::string host, uint16_t port)$/;"	f	class:SDRedisServer
+slaveofnoone	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::slaveofnoone()$/;"	f	class:SDRedisServer
+split_v	common/SDUtility.cpp	/^vector<string> SDUtility::split_v(const  string & str,const std :: string & sp)$/;"	f	class:SDUtility
+srem	src/SDRedisServer.cpp	/^int SDRedisServer::srem(const std::string &key, std::vector<std::string> &members)$/;"	f	class:SDRedisServer
+srem	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::srem(const std::string &key, std::vector<std::string> &members)$/;"	f	class:SDRedisServer
+start_address	common/fast_log.h	/^	void *start_address;$/;"	m	struct:__anon1
+str	libs/antirez-hiredis-d5d8843/hiredis.h	/^    char *str; \/* Used for both REDIS_REPLY_ERROR and REDIS_REPLY_STRING *\/$/;"	m	struct:redisReply
+str	libs/include/hiredis/hiredis.h	/^    char *str; \/* Used for both REDIS_REPLY_ERROR and REDIS_REPLY_STRING *\/$/;"	m	struct:redisReply
+str2hex	common/SDUtility.cpp	/^	str2hex(const string& buffer)$/;"	f	class:SDUtility
+str2hex	common/SDUtility.cpp	/^string SDUtility::str2hex(const char * buf,int size)$/;"	f	class:SDUtility
+str_get	src/SDRedisStringHandler.cpp	/^bool SDRedisStringHandler::str_get(const string& key,string& value)$/;"	f	class:SDRedisStringHandler
+str_remove	src/SDRedisStringHandler.cpp	/^bool SDRedisStringHandler::str_remove(const std::string& key)$/;"	f	class:SDRedisStringHandler
+str_set	src/SDRedisStringHandler.cpp	/^bool SDRedisStringHandler::str_set(const string& key,const string& value)$/;"	f	class:SDRedisStringHandler
+strget	src/SDRedisServer.cpp	/^int SDRedisServer::strget(const std::string &key, std::string &value)$/;"	f	class:SDRedisServer
+strget	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::strget(const std::string &key, std::string &value)$/;"	f	class:SDRedisServer
+strget2	src/SDRedisServer.cpp	/^int SDRedisServer::strget2(const std::string &key, std::string &value, uint32_t duration_time)$/;"	f	class:SDRedisServer
+strget2	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::strget2(const std::string &key, std::string &value, uint32_t duration_time)$/;"	f	class:SDRedisServer
+strset2	src/SDRedisServer.cpp	/^int SDRedisServer::strset2(const std::string &key, const std::string &value, uint32_t duration_time)$/;"	f	class:SDRedisServer
+strset2	src_xllog/SDRedisServer.cpp	/^int SDRedisServer::strset2(const std::string &key,const std::string &value, uint32_t duration_time)$/;"	f	class:SDRedisServer
+sub	libs/antirez-hiredis-d5d8843/async.h	/^    } sub;$/;"	m	struct:redisAsyncContext	typeref:struct:redisAsyncContext::__anon3
+sync_status	src_xllog/SDRedisServer.cpp	/^bool SDRedisServer::sync_status()$/;"	f	class:SDRedisServer
+table	libs/antirez-hiredis-d5d8843/dict.h	/^    dictEntry **table;$/;"	m	struct:dict
+tail	libs/antirez-hiredis-d5d8843/async.h	/^    redisCallback *head, *tail;$/;"	m	struct:redisCallbackList
+tcp	libs/antirez-hiredis-d5d8843/test.c	/^    } tcp;$/;"	m	struct:config	typeref:struct:config::__anon4	file:
+test	libs/antirez-hiredis-d5d8843/test.c	34;"	d	file:
+test_blocking_connection	libs/antirez-hiredis-d5d8843/test.c	/^static void test_blocking_connection(struct config config) {$/;"	f	file:
+test_blocking_connection_errors	libs/antirez-hiredis-d5d8843/test.c	/^static void test_blocking_connection_errors(void) {$/;"	f	file:
+test_blocking_io_errors	libs/antirez-hiredis-d5d8843/test.c	/^static void test_blocking_io_errors(struct config config) {$/;"	f	file:
+test_cond	libs/antirez-hiredis-d5d8843/sds.c	509;"	d	file:
+test_cond	libs/antirez-hiredis-d5d8843/test.c	35;"	d	file:
+test_format_commands	libs/antirez-hiredis-d5d8843/test.c	/^static void test_format_commands(void) {$/;"	f	file:
+test_reply_reader	libs/antirez-hiredis-d5d8843/test.c	/^static void test_reply_reader(void) {$/;"	f	file:
+test_report	libs/antirez-hiredis-d5d8843/sds.c	513;"	d	file:
+test_throughput	libs/antirez-hiredis-d5d8843/test.c	/^static void test_throughput(struct config config) {$/;"	f	file:
+tests	libs/antirez-hiredis-d5d8843/test.c	/^static int tests = 0, fails = 0;$/;"	v	file:
+trim	common/SDConfiguration.cpp	/^void SDConfiguration::trim(string& s)$/;"	f	class:SDConfiguration
+type	libs/antirez-hiredis-d5d8843/dict.h	/^    dictType *type;$/;"	m	struct:dict
+type	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int type; \/* REDIS_REPLY_* *\/$/;"	m	struct:redisReply
+type	libs/antirez-hiredis-d5d8843/hiredis.h	/^    int type;$/;"	m	struct:redisReadTask
+type	libs/antirez-hiredis-d5d8843/test.c	/^    enum connection_type type;$/;"	m	struct:config	typeref:enum:config::connection_type	file:
+type	libs/include/hiredis/hiredis.h	/^    int type; \/* REDIS_REPLY_* *\/$/;"	m	struct:redisReply
+type	libs/include/hiredis/hiredis.h	/^    int type;$/;"	m	struct:redisReadTask
+uname_S	libs/antirez-hiredis-d5d8843/Makefile	/^uname_S := $(shell sh -c 'uname -s 2>\/dev\/null || echo not')$/;"	m
+unix	libs/antirez-hiredis-d5d8843/test.c	/^    } unix;$/;"	m	struct:config	typeref:struct:config::__anon5	file:
+update_tos	src/SDRedisHandler.h	/^        void update_tos(uint32_t update_key_tos, uint32_t set_key_tos,uint32_t empty_key_tos)$/;"	f	class:SDRedisHandler
+usec	libs/antirez-hiredis-d5d8843/test.c	/^static long long usec(void) {$/;"	f	file:
+used	libs/antirez-hiredis-d5d8843/dict.h	/^    unsigned long used;$/;"	m	struct:dict
+utf82gbk	common/SDUtility.cpp	/^string SDUtility::utf82gbk(const char* text)$/;"	f	class:SDUtility
+utf8_decode	common/SDUtility.cpp	/^unsigned int SDUtility::utf8_decode( char *s, unsigned int *pi )$/;"	f	class:SDUtility
+val	libs/antirez-hiredis-d5d8843/dict.h	/^    void *val;$/;"	m	struct:dictEntry
+valDestructor	libs/antirez-hiredis-d5d8843/dict.h	/^    void (*valDestructor)(void *privdata, void *obj);$/;"	m	struct:dictType
+valDup	libs/antirez-hiredis-d5d8843/dict.h	/^    void *(*valDup)(void *privdata, const void *obj);$/;"	m	struct:dictType
+valueCmpFunc	src_xllog/SDDenyFrequentCrawler.cpp	/^int SDDenyFrequentCrawler::valueCmpFunc(void *primary_key, uint32_t primary_key_len, void *second_key, uint32_t second_key_len, void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg)$/;"	f	class:SDDenyFrequentCrawler
+valueCmpFunc	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^int SDDenyIpOverPidNumLimitCrawler::valueCmpFunc(void *primary_key, uint32_t primary_key_len, void *second_key, uint32_t second_key_len, void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg)$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+valueCmpFunc	src_xllog/SDDenySlowCrawler.cpp	/^int SDDenySlowCrawler::valueCmpFunc(void *primary_key, uint32_t primary_key_len, void *second_key, uint32_t second_key_len, void *data1, uint32_t data1_len, void *data2, uint32_t data2_len, void *arg)$/;"	f	class:SDDenySlowCrawler
+wev	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^    ev_io rev, wev;$/;"	m	struct:redisLibevEvents
+wev	libs/antirez-hiredis-d5d8843/adapters/libevent.h	/^    struct event rev, wev;$/;"	m	struct:redisLibeventEvents	typeref:struct:redisLibeventEvents::
+writing	libs/antirez-hiredis-d5d8843/adapters/ae.h	/^    int reading, writing;$/;"	m	struct:redisAeEvents
+writing	libs/antirez-hiredis-d5d8843/adapters/libev.h	/^    int reading, writing;$/;"	m	struct:redisLibevEvents
+ylog	common/fast_log.h	18;"	d
+~RedisKey	src/SDCondValue.h	/^	~RedisKey()$/;"	f	class:RedisKey
+~SDAutoRedis	src_xllog/SDRedisServerPool.h	/^	~SDAutoRedis()$/;"	f	class:SDAutoRedis
+~SDConfiguration	common/SDConfiguration.cpp	/^SDConfiguration::~SDConfiguration()$/;"	f	class:SDConfiguration
+~SDConfigurationSingleton	src/SDConfigurationSingleton.h	/^	~SDConfigurationSingleton(){delete m_config;}$/;"	f	class:SDConfigurationSingleton
+~SDDenyCrawler	src_xllog/SDDenyCrawler.cpp	/^SDDenyCrawler::~SDDenyCrawler()$/;"	f	class:SDDenyCrawler
+~SDDenyFrequentCrawler	src_xllog/SDDenyFrequentCrawler.cpp	/^SDDenyFrequentCrawler::~SDDenyFrequentCrawler()$/;"	f	class:SDDenyFrequentCrawler
+~SDDenyIpOverPidNumLimitCrawler	src_xllog/SDDenyIpOverPidNumLimitCrawler.cpp	/^SDDenyIpOverPidNumLimitCrawler::~SDDenyIpOverPidNumLimitCrawler()$/;"	f	class:SDDenyIpOverPidNumLimitCrawler
+~SDDenySlowCrawler	src_xllog/SDDenySlowCrawler.cpp	/^SDDenySlowCrawler::~SDDenySlowCrawler()$/;"	f	class:SDDenySlowCrawler
+~SDRedisHandler	src/SDRedisHandler.cpp	/^SDRedisHandler::~SDRedisHandler()$/;"	f	class:SDRedisHandler
+~SDRedisServer	src/SDRedisServer.cpp	/^SDRedisServer::~SDRedisServer()$/;"	f	class:SDRedisServer
+~SDRedisServer	src_xllog/SDRedisServer.cpp	/^SDRedisServer::~SDRedisServer()$/;"	f	class:SDRedisServer
+~SDRedisServerPool	src/SDRedisServerPool.cpp	/^SDRedisServerPool::~SDRedisServerPool()$/;"	f	class:SDRedisServerPool
+~SDRedisServerPool	src_xllog/SDRedisServerPool.cpp	/^SDRedisServerPool::~SDRedisServerPool()$/;"	f	class:SDRedisServerPool
+~SDRedisStringHandler	src/SDRedisStringHandler.cpp	/^SDRedisStringHandler::~SDRedisStringHandler()$/;"	f	class:SDRedisStringHandler
