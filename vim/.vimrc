@@ -3,21 +3,29 @@ set nocompatible
 let $LANG="zh_CN.UTF-8"
 set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
-set fileencoding=utf-8
-set encoding=utf-8
+set encoding=utf-8 
+set fileencodings=ucs-bom,utf-8,cp936
 set fileformats=unix
-set encoding=prc
+language messages zh_CN.utf-8
 set nu
 "backup
 set backup
+set writebackup
 set backupext=.bak
 set backupdir=~/.vim_backup
+if !isdirectory($HOME . "/.vim_backup")
+	call mkdir($HOME . "/.vim_backup","p",0744)
+endif
 
 "set tab width
 set tabstop=4
+set softtabstop=4
+set smarttab
 set shiftwidth=4
 autocmd FileType c,cpp set expandtab
-set smarttab
+
+autocmd FileType c,cpp setl fdm=syntax
+
 
 " syntax enable
 syntax enable
@@ -79,7 +87,7 @@ set tags=tags
 
 " load project.vim
 if filereadable("project.vim")
-	source ~/.vim/project.vimm
+	source ~/.vim/project.vim
 endif
 
 :helptags ~/.vim/doc/
@@ -140,7 +148,7 @@ if has("cscope")
 	set cscopequickfix=s-,g-,c-,d-,t-,e-,f-,i- " cscope in quick fix
 	nmap <leader>fs :cs find s <C-R>=expand("<cword>")<CR><CR> " find simbol
 	nmap <leader>fg :cs find g <C-R>=expand("<cword>")<CR><CR> " find global define
-	nmap <leader>fc :cs find c <C-R>=expand("<cword>")<CR><CR> " find this function be called
+	nmap <leader>cc :cs find c <C-R>=expand("<cword>")<CR><CR> " find this function be called
 	nmap <leader>ft :cs find t <C-R>=expand("<cword>")<CR><CR> " find this string
 	nmap <leader>eg :cs find e <C-R>=expand("<cword>")<CR><CR> " egrep
 	nmap <leader>ff :cs find f <C-R>=expand("<cfile>")<CR><CR> " find this file
@@ -170,7 +178,7 @@ let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Sort_Type="name"
 "let Tlist_Use_Right_Window = 1
-nmap <silent> <leader>tl :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr>
+"nmap <silent> <leader>tl :!ctags -R --c++-kinds=+p --fields=+iaS --extra=+q<cr>
 
 "winmanager
 let g:winManagerWindowLayout = "FileExplorer,BufExplorer,TagList"
@@ -206,12 +214,11 @@ imap <f12> <esc>:noh<cr>
 
 "by shufawei begin.
 "
-map <F2> :ls<Enter>:b
-set path+=/usr/lib/x86_64-redhat-linux4E/include
-set path+=/usr/local/include
+"map <F2> :ls<Enter>:b
+"set path+=/usr/lib/x86_64-redhat-linux4E/include
+"set path+=/usr/local/include
 set autowrite
 
-"set encoding=utf-8 fileencodings=ucs-bom,utf-8,cp936
 "by shufawei end...
 "
 
@@ -229,7 +236,7 @@ let g:neocomplcache_enable_underbar_completion = 1
 let g:neocomplcache_min_syntax_length = 3 
 let g:neocomplcache_lock_buffer_name_pattern = '\*ku\*' 
 
-let g:neocomplcache_enable_auto_select = 1
+let g:neocomplcache_enable_auto_select = 0
 
 
 " Recommended key-mappings. 
@@ -244,5 +251,17 @@ inoremap <expr><C-h> neocomplcache#smart_close_popup()."\<C-h>"
 inoremap <expr><BS> neocomplcache#smart_close_popup()."\<C-h>" 
 inoremap <expr><C-y>  neocomplcache#close_popup() 
 inoremap <expr><C-e>  neocomplcache#cancel_popup() 
-inoremap <expr><Enter>  pumvisible() ? "\<C-Y>" . neocomplcache#smart_close_popup(): "\<Enter>"
+"inoremap <expr><Enter>  pumvisible() ? "\<C-Y>" . neocomplcache#smart_close_popup(): "\<Enter>"
+inoremap <expr><Enter>  pumvisible() ? "\<C-Y>" : "\<Enter>"
+
+" doc gen
+"let g:DoxygenToolkit_briefTag_pre="@briedf: "
+let g:DoxygenToolkit_paramTag_pre="@Param: "
+let g:DoxygenToolkit_returnTag   ="@Returns: "
+let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
+let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
+let g:DoxygenToolkit_authorName="qioalei,qiaolei@xunlei.com"
+let g:DoxygenToolkit_licenseTag="Copyright (C) thunder Technology LimitedCompany"
+let g:DoxygenToolkit_briefTag_funcName="yes"
+let g:doxygen_enhanced_color=1
 

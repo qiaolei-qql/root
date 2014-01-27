@@ -11,7 +11,7 @@ endf
 call setline(1, "/*")
 call append(SelfAdd(), " * filename      : ".expand("%:t"))
 call append(SelfAdd(), " * descriptor    :  ")
-call append(SelfAdd(), " * author        : fengyajie")
+call append(SelfAdd(), " * author        : qiaolei")
 call append(SelfAdd(), " * create time   : ".strftime("%Y-%m-%d %H:%M"))
 call append(SelfAdd(), " * modify list   :")
 call append(SelfAdd(), " * +----------------+---------------+---------------------------+")
