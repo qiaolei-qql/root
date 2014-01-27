@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AF_LOCAL	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	39;"	d
+ANET_CONNECT_NONBLOCK	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	145;"	d	file:
+ANET_CONNECT_NONE	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	144;"	d	file:
+ANET_ERR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	35;"	d
+ANET_ERR_LEN	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	36;"	d
+ANET_H	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	32;"	d
+ANET_OK	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	34;"	d
+ARCH	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^ARCH:=$(shell uname -m)$/;"	m
+BIT32	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^BIT32:=i686$/;"	m
+BIT64	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^BIT64:=x86_64$/;"	m
+CC	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^CC=gcc$/;"	m
+CFLAGS	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^CFLAGS:=-Wall -g -O2  -Wextra -std=c99 -D_GNU_SOURCE  -DOS_LINUX  $(INCLUDE) $/;"	m
+COMMON_DEP	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^COMMON_DEP:=$(patsubst %.cpp,%.d,$(COMMON_SRC))$/;"	m
+COMMON_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^COMMON_DIR=common\/$/;"	m
+COMMON_OBJ	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^COMMON_OBJ:=$(patsubst %.cpp,%.o,$(COMMON_SRC))$/;"	m
+COMMON_SRC	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^COMMON_SRC:=$(wildcard $(COMMON_DIR)*.cpp)$/;"	m
+CPPFLAGS	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^CPPFLAGS:=$(CFLAGS) $/;"	m
+INCLUDE	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^INCLUDE:=-I\/usr\/include -I\/usr\/local\/include  -I. -I.\/include -I.\/libs\/include -I.\/libs\/$/;"	m
+LIB	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^LIB=-lstdc++ -L${LIB_DIR} -L${LOCAL_LIB_DIR} -L.\/lib\/  -lpthread  -L${LIBS_PATH}$/;"	m
+LIBS_PATH	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^LIBS_PATH:=${PWD}\/libs$/;"	m
+LIB_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^    LIB_DIR = \/usr\/lib64$/;"	m
+LIB_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^LIB_DIR = \/usr\/lib$/;"	m
+LIB_NAME	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^LIB_NAME=bin\/test_${ARCH}_${OS}$/;"	m
+LOCAL_LIB_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^    LOCAL_LIB_DIR = \/usr\/local\/lib64$/;"	m
+LOCAL_LIB_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^LOCAL_LIB_DIR = \/usr\/local\/lib$/;"	m
+OBJ_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^OBJ_DIR=.\/lib\/$/;"	m
+OS	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^OS:=$(shell uname -s)$/;"	m
+SRC_DEP	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^SRC_DEP:=$(patsubst %.cpp,%.d,$(SRC_SRC))$/;"	m
+SRC_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^SRC_DIR=src\/$/;"	m
+SRC_OBJ	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^SRC_OBJ:=$(patsubst %.cpp,%.o,$(SRC_SRC))$/;"	m
+SRC_SRC	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^SRC_SRC:=$(wildcard $(SRC_DIR)*.cpp)$/;"	m
+TEST_DEP	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^TEST_DEP:=$(patsubst %.cpp,%.d,$(TEST_SRC))$/;"	m
+TEST_DIR	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^TEST_DIR=test\/$/;"	m
+TEST_OBJ	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^TEST_OBJ:=$(patsubst %.cpp,%.o,$(TEST_SRC))$/;"	m
+TEST_SRC	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^TEST_SRC:=$(wildcard $(TEST_DIR)*.cpp)$/;"	m
+TIME	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/Makefile	/^TIME:=$(shell date +'%Y%m%d')$/;"	m
+anetCreateSocket	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^static int anetCreateSocket(char *err, int domain) {$/;"	f	file:	signature:(char *err, int domain)
+anetGenericAccept	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^static int anetGenericAccept(char *err, int s, struct sockaddr *sa, socklen_t *len) {$/;"	f	file:	signature:(char *err, int s, struct sockaddr *sa, socklen_t *len)
+anetListen	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^static int anetListen(char *err, int s, struct sockaddr *sa, socklen_t len) {$/;"	f	file:	signature:(char *err, int s, struct sockaddr *sa, socklen_t len)
+anetNonBlock	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetNonBlock(char *err, int fd)$/;"	f	signature:(char *err, int fd)
+anetNonBlock	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetNonBlock(char *err, int fd);$/;"	p	signature:(char *err, int fd)
+anetPeerToString	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetPeerToString(int fd, char *ip, int *port) {$/;"	f	signature:(int fd, char *ip, int *port)
+anetPeerToString	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetPeerToString(int fd, char *ip, int *port);$/;"	p	signature:(int fd, char *ip, int *port)
+anetRead	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetRead(int fd, char *buf, int count)$/;"	f	signature:(int fd, char *buf, int count)
+anetRead	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetRead(int fd, char *buf, int count);$/;"	p	signature:(int fd, char *buf, int count)
+anetResolve	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetResolve(char *err, char *host, char *ipbuf)$/;"	f	signature:(char *err, char *host, char *ipbuf)
+anetResolve	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetResolve(char *err, char *host, char *ipbuf);$/;"	p	signature:(char *err, char *host, char *ipbuf)
+anetSetError	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^static void anetSetError(char *err, const char *fmt, ...)$/;"	f	file:	signature:(char *err, const char *fmt, ...)
+anetSetSendBuffer	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetSetSendBuffer(char *err, int fd, int buffsize)$/;"	f	signature:(char *err, int fd, int buffsize)
+anetSockName	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetSockName(int fd, char *ip, int *port) {$/;"	f	signature:(int fd, char *ip, int *port)
+anetTcpAccept	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetTcpAccept(char *err, int s, char *ip, int *port) {$/;"	f	signature:(char *err, int s, char *ip, int *port)
+anetTcpAccept	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetTcpAccept(char *err, int serversock, char *ip, int *port);$/;"	p	signature:(char *err, int serversock, char *ip, int *port)
+anetTcpConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetTcpConnect(char *err, char *addr, int port)$/;"	f	signature:(char *err, char *addr, int port)
+anetTcpConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetTcpConnect(char *err, char *addr, int port);$/;"	p	signature:(char *err, char *addr, int port)
+anetTcpGenericConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^static int anetTcpGenericConnect(char *err, char *addr, int port, int flags)$/;"	f	file:	signature:(char *err, char *addr, int port, int flags)
+anetTcpKeepAlive	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetTcpKeepAlive(char *err, int fd)$/;"	f	signature:(char *err, int fd)
+anetTcpKeepAlive	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetTcpKeepAlive(char *err, int fd);$/;"	p	signature:(char *err, int fd)
+anetTcpNoDelay	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetTcpNoDelay(char *err, int fd)$/;"	f	signature:(char *err, int fd)
+anetTcpNoDelay	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetTcpNoDelay(char *err, int fd);$/;"	p	signature:(char *err, int fd)
+anetTcpNonBlockConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetTcpNonBlockConnect(char *err, char *addr, int port)$/;"	f	signature:(char *err, char *addr, int port)
+anetTcpNonBlockConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetTcpNonBlockConnect(char *err, char *addr, int port);$/;"	p	signature:(char *err, char *addr, int port)
+anetTcpServer	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetTcpServer(char *err, int port, char *bindaddr)$/;"	f	signature:(char *err, int port, char *bindaddr)
+anetTcpServer	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetTcpServer(char *err, int port, char *bindaddr);$/;"	p	signature:(char *err, int port, char *bindaddr)
+anetUnixAccept	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetUnixAccept(char *err, int s) {$/;"	f	signature:(char *err, int s)
+anetUnixAccept	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetUnixAccept(char *err, int serversock);$/;"	p	signature:(char *err, int serversock)
+anetUnixConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetUnixConnect(char *err, char *path)$/;"	f	signature:(char *err, char *path)
+anetUnixConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetUnixConnect(char *err, char *path);$/;"	p	signature:(char *err, char *path)
+anetUnixGenericConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetUnixGenericConnect(char *err, char *path, int flags)$/;"	f	signature:(char *err, char *path, int flags)
+anetUnixNonBlockConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetUnixNonBlockConnect(char *err, char *path)$/;"	f	signature:(char *err, char *path)
+anetUnixNonBlockConnect	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetUnixNonBlockConnect(char *err, char *path);$/;"	p	signature:(char *err, char *path)
+anetUnixServer	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetUnixServer(char *err, char *path, mode_t perm)$/;"	f	signature:(char *err, char *path, mode_t perm)
+anetUnixServer	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetUnixServer(char *err, char *path, mode_t perm);$/;"	p	signature:(char *err, char *path, mode_t perm)
+anetWrite	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.c	/^int anetWrite(int fd, char *buf, int count)$/;"	f	signature:(int fd, char *buf, int count)
+anetWrite	/home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/src/anet.h	/^int anetWrite(int fd, char *buf, int count);$/;"	p	signature:(int fd, char *buf, int count)
