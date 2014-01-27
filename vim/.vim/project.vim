@@ -131,8 +131,10 @@ function! s:ProjectCreate()
     endif
 
     " create cscope file
+    call system('cscope -Rbqk -f' . g:project_data . '/cstags ')
     if executable('cscope')
-        call system('cscope -Rbqk -f' . g:project_data . "/cstags")
+        call system('find . -type f | egrep ".*\.[hc](pp|xx|c)?$" > cscope.files ')
+        call system('cscope -Rbqk -f' . g:project_data . '/cstags ')
     else
         call s:WarnMsg("command 'cscope' not exist.")
         return -1
@@ -164,7 +166,9 @@ function! s:ProjectUpdate()
 
     " create cscope file
     if executable('cscope')
+        call system('find . -type f | egrep ".*\.[hc](pp|xx|c)?$" > ' . proj_data . "/cscope.files ")
         call system('cscope -Rbqk -f' . proj_data . "/cstags")
+        call system('cs add cscope.out')
     else
         call s:WarnMsg("command 'cscope' not exist.")
         return -1
