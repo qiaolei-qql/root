@@ -1,12 +1,17 @@
 #!/bin/sh
 
-user="qiaolei"
+user="root1"
 host=""
 login()
 {
 	line=`grep $host hostkeys.conf | grep $user `
 	if [ -z "${line}" ];then
 		echo "$host $user not found in hostkeys.conf" 
+		exit
+	fi
+	cnt=`grep $host hostkeys.conf | grep $user | wc -l`
+	if [ $cnt -gt 1 ];then
+		echo "$line" 
 		exit
 	fi
 	host=`echo ${line} | awk '{print $1}'`
