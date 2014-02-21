@@ -22,14 +22,14 @@ endif
 
 CC=gcc
 
-INCLUDE:=-I/usr/include -I/usr/local/include  -I. -I./include -I./libs/include -I./libs/
+INCLUDE:=-I/usr/include -I/usr/local/include  -I. -I./libs/include/libev -I./libs/include/rock/
 
 # lib directions
-LIBS_PATH:=${PWD}/libs
-LIB=-lstdc++ -L${LIB_DIR} -L${LOCAL_LIB_DIR} -L./lib/  -lpthread  -L${LIBS_PATH}
+LIBS_PATH:=${PWD}/libs/lib
+LIB=-L${LIB_DIR} -L${LOCAL_LIB_DIR}   -lpthread -L${LIBS_PATH} /home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/libs/lib/libev.a -lm -lrock# -lstdc++ -lm -lev  
 
-CFLAGS:=-Wall -g -O2  -Wextra -std=c99 -D_GNU_SOURCE  -DOS_LINUX  $(INCLUDE) 
-CPPFLAGS:=$(CFLAGS) 
+CFLAGS:=-Wall -g -O2  -Wextra -std=c99 $(INCLUDE)   -D_GNU_SOURCE  -DOS_LINUX 
+#CPPFLAGS:=$(CFLAGS) 
 
 COMMON_SRC:=$(wildcard $(COMMON_DIR)*.c)
 SRC_SRC:=$(wildcard $(SRC_DIR)*.c)
