@@ -24,7 +24,7 @@ int delete_ev_loop(ev_loop_s* ev_loop_s_ptr)
         ev_loop_destroy(ev_loop_s_ptr->ev_loop_ptr);
     }
 }
-int create_ev_event(ev_loop_s* ev_loop_s_ptr, int fd, int mask,ev_sock_cb* cb_proc, void* client_data)
+int create_ev_event(ev_loop_s* ev_loop_s_ptr,int fd, int mask,ev_sock_cb* cb_proc, void* client_data)
 {
     if (fd > g_max_event_num){
         perror("fd > max_event_num");
@@ -42,7 +42,7 @@ int create_ev_event(ev_loop_s* ev_loop_s_ptr, int fd, int mask,ev_sock_cb* cb_pr
     return 0;
 }
 
-int delete_ev_event(ev_loop_s* ev_loop_s_ptr, int fd)
+int delete_ev_event(ev_loop_s* ev_loop_s_ptr,int fd)
 {
     if (fd > g_max_event_num){
         return -1;
@@ -86,7 +86,8 @@ list_item_ptr(conn_list) create_client(enum conn_type_e conn_type, enum conn_sta
     conn_ptr->fd = fd;
     conn_ptr->event_mask = EV_READ;
     
-    conn_ptr->rbuf = NULL;
+    conn_ptr->rbuf = (char*)malloc(1024);
+    assert(conn_ptr->rbuf != NULL);
     conn_ptr->rbytes = 0;
     conn_ptr->rsize = 1024;
 

@@ -28,6 +28,7 @@
 #include <unistd.h>
 #include <stdint.h>
 
+#include "log.h"
 // local
 #define true 1
 #define false 0

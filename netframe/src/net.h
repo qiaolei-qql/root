@@ -84,6 +84,6 @@ typedef void ev_sock_cb(struct ev_loop* loop, struct ev_io* io_w, int events);
 int create_ev_loop(ev_loop_s* ev_loop_s_ptr);
 int delete_ev_loop(ev_loop_s* ev_loop_s_ptr);
 
-int create_ev_event(ev_loop_s* ev_loop_s_ptr, int fd, int mask,ev_sock_cb* cb_proc, void* client_data);
-int delete_ev_event(ev_loop_s* ev_loop_s_ptr, int fd);
+int create_ev_event(ev_loop_s* ev_loop_s_ptr,int fd, int mask,ev_sock_cb* cb_proc, void* client_data);
+int delete_ev_event(ev_loop_s* ev_loop_s_ptr,int fd);
 #endif

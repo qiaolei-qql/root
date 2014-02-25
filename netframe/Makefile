@@ -26,7 +26,7 @@ INCLUDE:=-I/usr/include -I/usr/local/include  -I. -I./libs/include/libev -I./lib
 
 # lib directions
 LIBS_PATH:=${PWD}/libs/lib
-LIB=-L${LIB_DIR} -L${LOCAL_LIB_DIR}   -lpthread -L${LIBS_PATH} /home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/libs/lib/libev.a -lm -lrock# -lstdc++ -lm -lev  
+LIB=-L${LIB_DIR} -L${LOCAL_LIB_DIR}   -lpthread -L${LIBS_PATH} /home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/libs/lib/libev.a -lm /home/qiaolei/virtualboxshare/dpan/git_workspace/root/netframe/libs/lib/librock.a # -lstdc++ -lm -lev  
 
 CFLAGS:=-Wall -g -O2  -Wextra -std=c99 $(INCLUDE)   -D_GNU_SOURCE  -DOS_LINUX 
 #CPPFLAGS:=$(CFLAGS) 
@@ -56,6 +56,7 @@ $(LIB_NAME): $(COMMON_OBJ) $(SRC_OBJ)
 clean:
 	rm $(COMMON_DIR)*.o $(SRC_DIR)*.o $(TEST_DIR)*.o -fv
 	rm $(COMMON_DIR)*.d $(SRC_DIR)*.d $(TEST_DIR)*.d -fv
+	rm $(LIB_NAME)
 
 -include $(COMMON_DEP) $(SRC_DEP) $(TEST_DEP)
 
