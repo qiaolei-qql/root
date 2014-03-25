@@ -54,5 +54,7 @@ if {$flag == 0} {
 }
 send "${passwd}\r"
 expect "]*"
+send "rm -rf /home/qiaolei/tmp/${src_file}\r"
+send_user "rm -rf /home/qiaolei/tmp/${src_file}\r"
 send "exit\r"
 interact 

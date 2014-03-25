@@ -15,13 +15,13 @@ gorsync()
 	fi
 	host=`echo ${line} | awk '{print $1}'`
 	passwd=`echo ${line} |awk '{print $3}'`
-	ip=`echo ${host} | egrep -o "[0-9.]+"`
+	ip=`echo ${host} | egrep -o "([0-9]{1,3}\.){3}[0-9]{1,3}"`
 	cd `dirname ${src_path}`
-	if [ "X"$ip!="X" ];then
-		autorsync.inner.expect $user $host $passwd $src_file $dest_path
-	else
+	if [ -z "$ip" ];then
 		echo $PATH
 		autorsync.expect $user $host $passwd $src_file $dest_path
+	else
+		autorsync.inner.expect $user $host $passwd $src_file $dest_path
 	fi
 	cd ${work_dir}
 }
