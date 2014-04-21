@@ -1,5 +1,7 @@
 #include "socket_utility.h"
+#include <string.h>
 #include <strings.h>
+#include <stdlib.h>
 #include <errno.h>
 #include <stdio.h>
 
@@ -189,12 +191,12 @@ int recv_data(int fd,char** buffer, int* bytes, int* buffer_size)
             *buffer = new_buf;
             *buffer_size *= 2;
         }
-		int ret = read(fd, *buffer + *bytes, *buffer_size - *bytes);
+		int ret = recv(fd, *buffer + *bytes, *buffer_size - *bytes,0);
 		if(ret > 0) {
             *bytes += ret;
         }
         else if (ret == 0) {
-            perror("client closed conn!");
+            fprintf(stderr,"client closed conn fd %d %s ",fd,strerror(errno));
             return -1;
         }
         else if (ret == -1) {
@@ -205,6 +207,7 @@ int recv_data(int fd,char** buffer, int* bytes, int* buffer_size)
             else if (EAGAIN == errno|| EWOULDBLOCK == errno) {
                 return 0;
             }
+            perror("recv error");
             return -2;
 		}
         else{
@@ -215,24 +218,26 @@ int recv_data(int fd,char** buffer, int* bytes, int* buffer_size)
 
 int send_data(int fd, const char* buffer, int buffer_len)
 {
-	int total_send_bytes = buffer_len;
-	while (buffer_len > 0)
+	int send_bytes = 0;
+	while (send_bytes < buffer_len)
 	{
-		int send_bytes = send(fd, buffer, buffer_len, MSG_NOSIGNAL);
-		if(send_bytes <= 0) 
+		int ret = send(fd, buffer, buffer_len - send_bytes,0);
+		if(ret < 0) 
         {
 			if (errno == EINTR) 
             {
 				continue;
 			}
-			return send_bytes;
+            else if (EAGAIN == errno|| EWOULDBLOCK == errno) {
+                return send_bytes;
+            }
+            return ret;
 		}
 
-		buffer += send_bytes;
-		buffer_len -= send_bytes;
+		buffer += ret;
+		send_bytes += ret;
 	}
-
-	return total_send_bytes;
+	return send_bytes;
 }
 
 int recv_data2(int fd,char * buffer,int buffer_len, struct sockaddr* from, socklen_t* fromlen)
@@ -343,8 +348,8 @@ void get_local_ipport(int sock_fd, unsigned int* ip, unsigned int* port)
 	int len = sizeof(local_addr);
 	if(!getsockname(sock_fd, (struct sockaddr*)&local_addr, (socklen_t*)&len))
 	{
-		ip   = (unsigned int)(local_addr.sin_addr.s_addr);
-		port = (unsigned int)(local_addr.sin_port);
+		*ip   = (unsigned int)(local_addr.sin_addr.s_addr);
+		*port = (unsigned int)(local_addr.sin_port);
 	}
 }
 
@@ -356,8 +361,8 @@ void get_peer_ipport(int sock_fd, unsigned int* ip, unsigned int* port)
 	int len = sizeof(peer_addr);
 	if(!getpeername(sock_fd, (struct sockaddr*)&peer_addr, (socklen_t*)&len))
 	{
-		ip	 = (unsigned int)(peer_addr.sin_addr.s_addr);
-		port = (unsigned int)(peer_addr.sin_port);
+		*ip	 = (unsigned int)(peer_addr.sin_addr.s_addr);
+		*port = (unsigned int)(peer_addr.sin_port);
 	}
 }
 void addr_to_ipport(struct sockaddr_in* addr, char* ip, uint32_t* port)

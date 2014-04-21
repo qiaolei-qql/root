@@ -14,6 +14,7 @@
 #include <ev.h>
 #include "queue.h"
 #include "base_header.h"
+#include "uthash.h"
 
 /*
  * conn
@@ -28,10 +29,21 @@ enum conn_type_e{
     CONN_SERVER
 };
 
+typedef struct {
+    char* buf;
+    int offset;
+    int len;
+}io_buf_t;
 
-list_def(conn_list);
-struct list_item_name(conn_list){
+list_def(async_buf_queue);
+struct list_item_name(async_buf_queue)
+{
+    io_buf_t io_buf;
+    list_next_ptr(async_buf_queue);
+};
+typedef struct {
     int fd;
+    int handle;
     char listen_ip[16];
     int port;
     enum conn_stat_e conn_stat;
@@ -43,14 +55,16 @@ struct list_item_name(conn_list){
     char* rbuf;
     int rbytes;
     int rsize;
-    char* wbuf;
+/*    char* wbuf;
     int wbytes;
     int wsize;
+    */
+    list_head_ptr(async_buf_queue) wbuffers;
     int thread_id;
-    list_next_ptr(conn_list);
-};
-int conn_list_init();
-list_item_ptr(conn_list) create_client(enum conn_type_e conn_type, enum conn_stat_e conn_stat, int fd);
+}conn_t;
+
+
+
 
 /*
  * socket_event 
@@ -84,6 +98,7 @@ typedef void ev_sock_cb(struct ev_loop* loop, struct ev_io* io_w, int events);
 int create_ev_loop(ev_loop_s* ev_loop_s_ptr);
 int delete_ev_loop(ev_loop_s* ev_loop_s_ptr);
 
-int create_ev_event(ev_loop_s* ev_loop_s_ptr,int fd, int mask,ev_sock_cb* cb_proc, void* client_data);
-int delete_ev_event(ev_loop_s* ev_loop_s_ptr,int fd);
+int create_ev_event(ev_loop_s* ev_loop_s_ptr,const int fd, int mask,ev_sock_cb* cb_proc, void* client_data);
+int delete_ev_event(ev_loop_s* ev_loop_s_ptr,const int fd);
+
 #endif
