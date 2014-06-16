@@ -1,9 +1,10 @@
 set nocompatible
 
 let $LANG="zh_CN.UTF-8"
-set fileencodings=utf-8,gb2312,gbk,gb18030
+"set fileencodings=utf-8,gb2312,gbk,gb18030
 set termencoding=utf-8
 set encoding=utf-8 
+set fenc=cp936
 set fileencodings=ucs-bom,utf-8,cp936
 set fileformats=unix
 language messages zh_CN.utf-8
@@ -184,6 +185,7 @@ let Tlist_Sort_Type="name"
 let g:winManagerWindowLayout = "FileExplorer,BufExplorer,TagList"
 let g:winManagerWidth = 30
 let g:defaultExplorer = 0
+let g:persistentBehaviour = 0
 nmap <C-W><C-F> :FirstExplorerWindow<cr>
 nmap <C-W><C-B> :BottomExplorerWindow<cr>
 nmap <silent> <leader>wm :WMToggle<cr>
@@ -258,10 +260,14 @@ inoremap <expr><Enter>  pumvisible() ? "\<C-Y>" : "\<Enter>"
 "let g:DoxygenToolkit_briefTag_pre="@briedf: "
 let g:DoxygenToolkit_paramTag_pre="@Param: "
 let g:DoxygenToolkit_returnTag   ="@Returns: "
-let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
-let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
-let g:DoxygenToolkit_authorName="qioalei,qiaolei@xunlei.com"
-let g:DoxygenToolkit_licenseTag="Copyright (C) thunder Technology LimitedCompany"
+let g:DoxygenToolkit_blockHeader=""
+let g:DoxygenToolkit_blockFooter=""
+let g:DoxygenToolkit_authorName="rayqiao"
+let g:DoxygenToolkit_licenseTag=""
 let g:DoxygenToolkit_briefTag_funcName="yes"
 let g:doxygen_enhanced_color=1
+
+let g:DoxygenToolkit_versionString ="" 
+map dx :Dox<cr>
+map da :DoxAuthor<cr>
 

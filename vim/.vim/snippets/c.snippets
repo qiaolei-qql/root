@@ -6,10 +6,10 @@ snippet main
 		return 0;
 	}
 # #include <...>
-snippet inc
+snippet #inc
 	#include <${1:stdio}.h>${2}
 # #include "..."
-snippet Inc
+snippet #in
 	#include "${1:`Filename("$1.h")`}"${2}
 # #ifndef ... #define ... #endif
 snippet Def
@@ -42,7 +42,7 @@ snippet once
 # If Condition
 snippet if
 	if (${1:/* condition */}) {
-		${2:/* code */}
+		${2:}
 	}
 snippet el
 	else {
@@ -51,6 +51,15 @@ snippet el
 # Tertiary conditional
 snippet t
 	${1:/* condition */} ? ${2:a} : ${3:b}
+# switch
+snippet swi
+	switch (${1})
+	{
+		case ${2}:
+			break;
+		default:
+			break;
+	}
 # Do While Loop
 snippet do
 	do {
@@ -63,12 +72,12 @@ snippet wh
 	}
 # For Loop
 snippet for
-	for (${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
+	for (int ${2:i} = 0; $2 < ${1:count}; $2${3:++}) {
 		${4:/* code */}
 	}
 # Custom For Loop
 snippet forr
-	for (${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
+	for (int ${1:i} = ${2:0}; ${3:$1 < 10}; $1${4:++}) {
 		${5:/* code */}
 	}
 # Function
@@ -110,3 +119,5 @@ snippet .
 	[${1}]${2}
 snippet un
 	unsigned
+snippet ret
+	return ${1};

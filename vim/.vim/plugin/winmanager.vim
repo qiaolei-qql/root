@@ -453,7 +453,7 @@ function! WinManagerFileEdit(bufName, split)
 			call s:GotoWindow(bufwinnr(bufnr(lastBufferNumber)))
 			" now split it or not depending on stuff.
 			if (&modified && !&hidden) || a:split
-				exe 'silent! split '.bufcall
+				exe 'silent! vsplit '.bufcall
 			else
 				exe 'silent! e '.bufcall
 			end
