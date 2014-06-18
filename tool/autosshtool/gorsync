@@ -1,6 +1,6 @@
 #!/bin/sh
 
-user="qiaolei"
+user="rayqiao"
 host=""
 work_dir=`pwd`
 src_path=""
@@ -8,7 +8,7 @@ src_file=""
 dest_path=""
 gorsync()
 {
-	line=`grep $host hostkeys.conf | grep $user `
+	line=`grep $host ~/bin/hostkeys.conf | grep $user `
 	if [ -z "${line}" ];then
 		echo "$host $user not found in hostkeys.conf" 
 		exit
@@ -26,7 +26,7 @@ gorsync()
 	cd ${work_dir}
 }
 if [ $# -lt 3 ];then
-	echo "Usage ./gorsync src_path host dest_path user(defalut qiaolei)"
+	echo "Usage ./gorsync src_path host dest_path user(defalut rayqiao)"
 	exit
 elif [ $# = 4 ];then
 	user="$4"
@@ -35,5 +35,5 @@ src_path=$1
 src_file=`basename $1`
 host=$2
 dest_path=$3
-cd /home/qiaolei/bin
+#cd ~/bin
 gorsync
