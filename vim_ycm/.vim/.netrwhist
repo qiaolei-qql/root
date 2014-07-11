@@ -1,0 +1,9 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =7
+let g:netrw_dirhist_1='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15/m4'
+let g:netrw_dirhist_2='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15'
+let g:netrw_dirhist_3='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15/scripts'
+let g:netrw_dirhist_4='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15/t'
+let g:netrw_dirhist_5='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15'
+let g:netrw_dirhist_6='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15/t'
+let g:netrw_dirhist_7='/home/qiaolei/virtualboxshare/dpan/git_workspace/memcached-1.4.15'
