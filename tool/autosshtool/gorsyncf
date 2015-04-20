@@ -1,0 +1,35 @@
+#!/bin/sh
+
+user="rayqiao"
+host=""
+work_dir=`pwd`
+src_path=""
+dest_path=""
+gorsync()
+{
+	line=`grep $host ~/bin/hostkeys.conf | grep $user `
+	if [ -z "${line}" ];then
+		echo "$host $user not found in hostkeys.conf" 
+		exit
+	fi
+	host=`echo ${line} | awk '{print $1}'`
+	passwd=`echo ${line} |awk '{print $3}'`
+	ip=`echo ${host} | egrep -o "([0-9]{1,3}\.){3}[0-9]{1,3}"`
+	if [ -z "$ip" ];then
+		echo $PATH
+		autorsync.expect $user $host $passwd $src_path $dest_path
+	else
+		autorsyncf.inner.expect $user $host $passwd $src_path $dest_path
+	fi
+}
+if [ $# -lt 3 ];then
+	echo "Usage ./gorsync src_path host dest_path user(defalut rayqiao)"
+	exit
+elif [ $# = 4 ];then
+	user="$4"
+fi
+src_path=$1
+host=$2
+dest_path=$3
+#cd ~/bin
+gorsync
