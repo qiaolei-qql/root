@@ -12,12 +12,12 @@ set timeout 40
 spawn ssh -p 36000 ${user}@${hostname}
 set flag 0
 expect {
-	"*connecting*" {send "yes\r"}
-	"*password:*" {set flag 1}
+	"*onnecting*" {send "yes\r"}
+	"*assword:*" {set flag 1}
 }
 #{send "${passwd}\r";expect eof;interact}
 if {$flag == 0} {
-	expect "*password:*"
+	expect "*assword:*"
 }
 send "${passwd}\r"
 interact 

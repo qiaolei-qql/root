@@ -29,7 +29,7 @@ send "ssh ${user}@${hostname}\r"
 send_user "ssh ${user}@${hostname}\r"
 set flag 0
 expect {
-	"*connecting*" {send "yes\r"}
+	"*onnecting*" {send "yes\r"}
 	"*password:*" {set flag 1}
 }
 #spawn ssh ${user}@${hostname}
