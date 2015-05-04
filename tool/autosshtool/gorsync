@@ -26,7 +26,7 @@ gorsync()
 	cd ${work_dir}
 }
 if [ $# -lt 3 ];then
-	echo "Usage ./gorsync src_path host dest_path user(defalut rayqiao)"
+	echo "Usage gorsync SRC_PATH DEST_HOST DEST_PATH DEST_USER(DEFALUT rayqiao)"
 	exit
 elif [ $# = 4 ];then
 	user="$4"

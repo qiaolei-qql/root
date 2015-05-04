@@ -24,7 +24,7 @@ login()
 	fi
 }
 if [ $# = 0 ];then
-	echo "Usage ./login.sh host user(defalut qiaolei)"
+	echo "Usage gosh HOST USER(DEFALUT rayqiao)"
 	exit
 elif [ $# = 2 ];then
 	user="$2"
